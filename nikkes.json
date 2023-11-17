@@ -14,7 +14,7 @@
         "control_mode": "普通型",
         "skill1": {
             "name": "麗塔推動",
-            "skill1_content": [
+            "skill_content": [
                 "⯀全爆裂時間開始時,全體隊友",
                 "【不同起始次數不同效果】",
                 "【低階效果重複生效】",
@@ -28,8 +28,8 @@
                 "2次:【爆擊傷害12.46%▲】【持續5秒】",
                 "3次:【攻擊力14.42%▲】【持續5秒】"
             ],
-            "skill1_type": "P",
-            "skill1_cooldown": "0"
+            "skill_type": "P",
+            "skill_cooldown": "0"
         },
         "skill2": {
             "name": "伏特推動",
@@ -68,12 +68,12 @@
         "control_mode": "普通型",
         "skill1": {
             "name": "割肉斷骨",
-            "skill1_content": [
+            "skill_content": [
                 "⯀普通攻擊命中10次時,自身",
                 "【攻擊力23.15%▲】【疊加5次】【持續5秒】【當前體力4·01%▼】"
             ],
-            "skill1_type": "P",
-            "skill1_cooldown": "0"
+            "skill_type": "P",
+            "skill_cooldown": "0"
         },
         "skill2": {
             "name": "人劍合一",
@@ -116,13 +116,13 @@
         "control_mode": "普通型",
         "skill1": {
             "name": "陣型F.F",
-            "skill1_content": [
+            "skill_content": [
                 "⯀被攻擊20次時,自身",
                 "【攻擊力21.8%▲】",
                 "【持續20秒】"
             ],
-            "skill1_type": "P",
-            "skill1_cooldown": "0"
+            "skill_type": "P",
+            "skill_cooldown": "0"
         },
         "skill2": {
             "name": "飛彈",
@@ -178,11 +178,11 @@
         "//": "技能1",
         "skill1": {
             "name": "",
-            "skill1_content": [],
+            "skill_content": [],
             "//": "A:主動 P:被動",
-            "skill1_type": "",
+            "skill_type": "",
             "//": "冷卻時間",
-            "skill1_cooldown": ""
+            "skill_cooldown": ""
         },
         "//": "技能2",
         "skill2": {
