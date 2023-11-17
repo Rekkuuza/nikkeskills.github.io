@@ -2,224 +2,182 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Nikke Skills</title>
+  <title>Nikke Skills</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" />
+  <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" />
 </head>
 
 <body class="bg-dark">
-    <div class="container">
-        <br>
-        <h1 class="text-light">Nikke Skills</h1>
-        <br>
-        <br>
-        <br>
+  <div class="container">
+    <br />
+    <h1 class="text-light">Nikke Skills</h1>
+    <br />
+    <br />
+    <br />
 
-
-        <div id="toolbar">
-            <div class="form-inline" role="form">
-                <button id="rarity_all" class="btn btn-primary">All</button>
-                <button id="rarity_r" class="btn btn-primary">R</button>
-                <button id="rarity_sr" class="btn btn-primary">SR</button>
-                <button id="rarity_ssr" class="btn btn-primary">SSR</button>
-
-            </div>
-        </div>
-
-
-        <table class="table-dark" id="nikkesTable" data-show-columns="true" data-toolbar="#toolbar"
-            data-query-params="queryParams">
-            <thead>
-                <tr>
-                    <th data-field="icon">
-                    </th>
-                    <th data-field="name">
-                        <span>
-                            名稱
-                        </span>
-                    </th>
-                    <th data-field="rarity">
-                        <span>
-                            稀有度
-                        </span>
-                    </th>
-                    <th data-field="class">
-                        <span>
-                            職業
-                        </span>
-                    </th>
-                    <th data-field="code">
-                        <span>
-                            代碼
-                        </span>
-                    </th>
-                    <th data-field="company">
-                        <span>
-                            企業
-                        </span>
-                    </th>
-                    <th data-field="squad">
-                        <span>
-                            部隊
-                        </span>
-                    </th>
-                    <th data-field="burst">
-                        <span>
-                            爆裂
-                        </span>
-                    </th>
-                    <th data-field="skill1" data-formatter="skillFormatter">
-                        <span>
-                            技能1
-                        </span>
-                    </th>
-                    <th data-field="skill2" data-formatter="skillFormatter">
-                        <span>
-                            技能2
-                        </span>
-                    </th>
-                    <th data-field="skill3" data-formatter="skillFormatter">
-                        <span>
-                            技能3
-                        </span>
-                    </th>
-                </tr>
-
-            </thead>
-
-        </table>
+    <div id="toolbar">
+      <div>
+        <p class="text-light">稀有度</p>
+        <hr class="text-light">
+        <button id=" rarity_all" class="btn btn-success">All</button>
+        <input id="rarity_r" type="checkbox" data-toggle="toggle" checked data-on="R" data-off="R"
+          data-onstyle="success" data-offstyle="warning" />
+        <input id="rarity_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
+          data-onstyle="success" data-offstyle="warning" />
+        <input id="rarity_ssr" type="checkbox" data-toggle="toggle" checked data-on="SSR" data-off="SSR"
+          data-onstyle="success" data-offstyle="warning" />
+      </div>
     </div>
 
+    <table class="table-dark" id="nikkesTable" data-show-columns="true" data-toolbar="#toolbar"
+      data-query-params="queryParams">
+      <thead>
+        <tr>
+          <th data-field="icon"></th>
+          <th data-field="name">
+            <span> 名稱 </span>
+          </th>
+          <th data-field="rarity">
+            <span> 稀有度 </span>
+          </th>
+          <th data-field="class">
+            <span> 職業 </span>
+          </th>
+          <th data-field="code">
+            <span> 代碼 </span>
+          </th>
+          <th data-field="company">
+            <span> 企業 </span>
+          </th>
+          <th data-field="squad">
+            <span> 部隊 </span>
+          </th>
+          <th data-field="burst">
+            <span> 爆裂 </span>
+          </th>
+          <th data-field="skill1" data-formatter="skillFormatter">
+            <span> 技能1 </span>
+          </th>
+          <th data-field="skill2" data-formatter="skillFormatter">
+            <span> 技能2 </span>
+          </th>
+          <th data-field="skill3" data-formatter="skillFormatter">
+            <span> 技能3 </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
+  <script type="text/javascript">
+    function skillFormatter(index, row, element) {
+      //  console.log(JSON.stringify(index));
 
+      var skill = "";
+      skill += "<p><b>" + index.name + "</b></p>";
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
-    <script type="text/javascript">
-
-
-
-
-        function skillFormatter(index, row, element) {
-            //  console.log(JSON.stringify(index));
-
-            var skill = '';
-            skill += '<p><b>' + index.name + '</b></p>';
-
-            for (var i = 0; i < index.skill_content.length; i++) {
-
-
-                if (index.skill_content[i][0] == '⯀') {
-                    skill += '<p>' + index.skill_content[i] + '</p>';
-                } else {
-                    skill += '<p  class="text-info">' + index.skill_content[i] + '</p>';
-                }
-            }
-
-            return skill;
+      for (var i = 0; i < index.skill_content.length; i++) {
+        if (index.skill_content[i][0] == "◼") {
+          skill += "<p>" + index.skill_content[i] + "</p>";
+        } else {
+          skill += '<p  class="text-info">' + index.skill_content[i] + "</p>";
         }
+      }
 
+      return skill;
+    }
 
+    $(document).ready(function () {
+      var xmlhttp = new XMLHttpRequest();
 
+      var jsonPath =
+        "https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes.json";
 
-        $(document).ready(function () {
-            var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var jsonData = JSON.parse(this.responseText);
+          listNikkes(jsonData);
+        }
+      };
 
-            var jsonPath = "https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes.json";
+      xmlhttp.open("GET", jsonPath, true);
+      xmlhttp.send();
 
-            xmlhttp.onreadystatechange = function () {
-
-                if (this.readyState == 4 && this.status == 200) {
-                    var jsonData = JSON.parse(this.responseText);
-                    listNikkes(jsonData);
-                }
-            };
-
-            xmlhttp.open("GET", jsonPath, true);
-            xmlhttp.send();
-
-            function listNikkes(jsonData) {
-
-                $('#nikkesTable').bootstrapTable({
-                    data: jsonData
-                });
-            }
+      function listNikkes(jsonData) {
+        $("#nikkesTable").bootstrapTable({
+          data: jsonData,
         });
+      }
 
 
 
 
-        var $rarity_all = $('#rarity_all');
-        var $rarity_r = $('#rarity_r');
-        var $rarity_sr = $('#rarity_sr');
-        var $rarity_ssr = $('#rarity_ssr');
+      $('#rarity_all').click(function () {
+        $('#rarity_r').bootstrapToggle('on')
+        $('#rarity_sr').bootstrapToggle('on')
+        $('#rarity_ssr').bootstrapToggle('on')
 
-        var search_r = true;
-        var search_sr = true;
-        var search_ssr = true;
-
-        $(function () {
-
-            $rarity_all.click(function () {
-
-                search_r = true;
-                search_sr = true;
-                search_ssr = true;
-
-                showConsole();
-            })
+        showConsole();
+      });
 
 
-            $rarity_r.click(function () {
-                search_r = !search_r;
-                showConsole();
-            })
+      $('#rarity_r').change(function () {
+        search_r = !search_r;
+        showConsole();
+      });
+      $('#rarity_sr').change(function () {
+        search_sr = !search_sr;
+        showConsole();
+      });
 
-            $rarity_sr.click(function () {
-                search_sr = !search_sr;
-                showConsole();
-            })
-
-            $rarity_ssr.click(function () {
-                search_ssr = !search_ssr;
-                showConsole();
-            })
-
-        })
-
-
-        function showConsole() {
-
-            console.log('search_r:' + search_r + '\r\n' + 'search_sr:' + search_sr + '\r\n' + 'search_ssr:' + search_ssr);
-
-
-        }
-
-
-        function queryParams() {
-            var params = {};
+      $('#rarity_ssr').change(function () {
+        search_ssr = !search_ssr;
+        showConsole();
+      });
+    });
 
 
 
-            return params
-        }
+    var search_r = true;
+    var search_sr = true;
+    var search_ssr = true;
 
 
 
+    function showConsole() {
+      console.log(
+        "search_r:" +
+        search_r +
+        "\r\n" +
+        "search_sr:" +
+        search_sr +
+        "\r\n" +
+        "search_ssr:" +
+        search_ssr
+      );
+    }
 
-    </script>
+    function queryParams() {
+      var params = {};
+
+      return params;
+    }
+  </script>
 </body>
 
 </html>
