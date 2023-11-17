@@ -23,54 +23,55 @@
     <br />
     <br />
 
-    <div id="toolbar">
-      <div>
-        <p class="text-light">稀有度</p>
+
+    <div>
+      <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#rarity_collapse">+稀有度</button>
+
+      <div class="collapse show" id="rarity_collapse">
         <hr class="text-light">
-        <button id=" rarity_all" class="btn btn-success">All</button>
+        <button id="rarity_all" class="btn btn-success">All</button>
         <input id="rarity_r" type="checkbox" data-toggle="toggle" checked data-on="R" data-off="R"
-          data-onstyle="success" data-offstyle="warning" />
+          data-onstyle="success" data-offstyle="secondary" />
         <input id="rarity_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
-          data-onstyle="success" data-offstyle="warning" />
+          data-onstyle="success" data-offstyle="secondary" />
         <input id="rarity_ssr" type="checkbox" data-toggle="toggle" checked data-on="SSR" data-off="SSR"
-          data-onstyle="success" data-offstyle="warning" />
+          data-onstyle="success" data-offstyle="secondary" />
       </div>
     </div>
 
-    <table class="table-dark" id="nikkesTable" data-show-columns="true" data-toolbar="#toolbar"
-      data-query-params="queryParams">
+    <table class="table-dark" data-show-columns="true" id="nikkesTable">
       <thead>
         <tr>
           <th data-field="icon"></th>
-          <th data-field="name">
-            <span> 名稱 </span>
+          <th class="text-center" data-field="name">
+            名稱
           </th>
-          <th data-field="rarity">
-            <span> 稀有度 </span>
+          <th class="text-center" data-field="rarity" data-filter-control="select">
+            稀有度
           </th>
-          <th data-field="class">
-            <span> 職業 </span>
+          <th class="text-center" data-field="class">
+            職業
           </th>
-          <th data-field="code">
-            <span> 代碼 </span>
+          <th class="text-center" data-field="code">
+            代碼
           </th>
-          <th data-field="company">
-            <span> 企業 </span>
+          <th class="text-center" data-field="company">
+            企業
           </th>
-          <th data-field="squad">
-            <span> 部隊 </span>
+          <th class="text-center" data-field="squad">
+            部隊
           </th>
-          <th data-field="burst">
-            <span> 爆裂 </span>
+          <th class="text-center" data-field="burst">
+            爆裂
           </th>
-          <th data-field="skill1" data-formatter="skillFormatter">
-            <span> 技能1 </span>
+          <th class="align-text-top" data-field="skill1" data-formatter="skillFormatter">
+            技能1
           </th>
-          <th data-field="skill2" data-formatter="skillFormatter">
-            <span> 技能2 </span>
+          <th class="align-text-top" data-field="skill2" data-formatter="skillFormatter">
+            技能2
           </th>
-          <th data-field="skill3" data-formatter="skillFormatter">
-            <span> 技能3 </span>
+          <th class="align-text-top" data-field="skill3" data-formatter="skillFormatter">
+            技能3
           </th>
         </tr>
       </thead>
@@ -102,6 +103,12 @@
       return skill;
     }
 
+    var jsonData = [];
+    var search_r = true;
+    var search_sr = true;
+    var search_ssr = true;
+
+
     $(document).ready(function () {
       var xmlhttp = new XMLHttpRequest();
 
@@ -110,7 +117,7 @@
 
       xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-          var jsonData = JSON.parse(this.responseText);
+          jsonData = JSON.parse(this.responseText);
           listNikkes(jsonData);
         }
       };
@@ -121,41 +128,56 @@
       function listNikkes(jsonData) {
         $("#nikkesTable").bootstrapTable({
           data: jsonData,
+          filterControl: true
         });
       }
 
 
 
 
-      $('#rarity_all').click(function () {
-        $('#rarity_r').bootstrapToggle('on')
-        $('#rarity_sr').bootstrapToggle('on')
-        $('#rarity_ssr').bootstrapToggle('on')
 
-        showConsole();
+      $('#rarity_all').click(function () {
+
+        if (search_r == search_sr == search_ssr == true) return;
+        if (!search_r) $('#rarity_r').bootstrapToggle('on');
+        if (!search_sr) $('#rarity_sr').bootstrapToggle('on');
+        if (!search_ssr) $('#rarity_ssr').bootstrapToggle('on');
+        reloadTable();
       });
 
 
       $('#rarity_r').change(function () {
         search_r = !search_r;
-        showConsole();
+        reloadTable();
       });
       $('#rarity_sr').change(function () {
         search_sr = !search_sr;
-        showConsole();
+        reloadTable();
       });
 
       $('#rarity_ssr').change(function () {
         search_ssr = !search_ssr;
-        showConsole();
+        reloadTable();
       });
+
+
+      // get ready end
     });
 
 
+    function reloadTable() {
 
-    var search_r = true;
-    var search_sr = true;
-    var search_ssr = true;
+      var filterRarity = [];
+      if (search_r) filterRarity.push('R');
+      if (search_sr) filterRarity.push('SR');
+      if (search_ssr) filterRarity.push('SSR');
+
+
+      $("#nikkesTable").bootstrapTable('filterBy',
+        {
+          rarity: filterRarity
+        });
+    }
 
 
 
@@ -172,11 +194,7 @@
       );
     }
 
-    function queryParams() {
-      var params = {};
 
-      return params;
-    }
   </script>
 </body>
 
