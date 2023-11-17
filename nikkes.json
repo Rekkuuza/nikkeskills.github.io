@@ -33,21 +33,21 @@
         },
         "skill2": {
             "name": "伏特推動",
-            "skill2_content": [
+            "skill_content": [
                 "⯀掩體體力最低的2名隊友",
                 "【掩體體力恢復52·5%】"
             ],
-            "skill2_type": "A",
-            "skill2_cooldown": "15"
+            "skill_type": "A",
+            "skill_cooldown": "15"
         },
         "skill3": {
             "name": "雙推動",
-            "skill3_content": [
+            "skill_content": [
                 "⯀全體隊友",
                 "【攻擊力66%▲】【持續5秒】"
             ],
-            "skill3_type": "A",
-            "skill3_cooldown": "20.0"
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
         },
         "hp": "647453",
         "atk": "21307",
@@ -77,25 +77,25 @@
         },
         "skill2": {
             "name": "人劍合一",
-            "skill2_content": [
+            "skill_content": [
                 "⯀被攻擊時,以30%的機率對目標造成",
                 "【相當於最終攻擊力138.24%的傷害】",
                 "⯀自身體力為60%以下時,自身",
                 "【暴擊傷害6.61%▲】"
             ],
-            "skill2_type": "P",
-            "skill2_cooldown": "0"
+            "skill_type": "P",
+            "skill_cooldown": "0"
         },
         "skill3": {
             "name": "紅蓮一閃",
-            "skill3_content": [
+            "skill_content": [
                 "⯀自身體力為50%以下時,自身",
                 "【暴擊率19,57%▲】【持續10秒】",
                 "⯀對全體敵人造成",
                 "【相當於最終攻擊力849·15%的傷害】"
             ],
-            "skill3_type": "A",
-            "skill3_cooldown": "40.0"
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
         },
         "hp": "583734",
         "atk": "25554",
@@ -126,26 +126,26 @@
         },
         "skill2": {
             "name": "飛彈",
-            "skill2_content": [
+            "skill_content": [
                 "⯀對攻擊力最高的1名敵人造成",
                 "【相當於最終攻擊力333.06%的傷害】",
                 "【挑釁】",
                 "【持續5秒】"
             ],
-            "skill2_type": "A",
-            "skill2_cooldown": "20.0"
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
         },
         "skill3": {
             "name": "多彈頭飛彈",
-            "skill3_content": [
+            "skill_content": [
                 "⯀對攻擊力最高的1名敵人造成",
                 "【相當於最終攻擊力365.4%的傷害】",
                 "⯀自身",
                 "【攻擊力33.75%▲】",
                 "【持續10秒】"
             ],
-            "skill3_type": "A",
-            "skill3_cooldown": "40.0"
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
         },
         "hp": "252742",
         "atk": "12982",
@@ -187,16 +187,16 @@
         "//": "技能2",
         "skill2": {
             "name": "",
-            "skill2_content": [],
-            "skill2_type": "",
-            "skill2_cooldown": ""
+            "skill_content": [],
+            "skill_type": "",
+            "skill_cooldown": ""
         },
         "//": "技能3",
         "skill3": {
             "name": "",
-            "skill3_content": [],
-            "skill3_type": "",
-            "skill3_cooldown": ""
+            "skill_content": [],
+            "skill_type": "",
+            "skill_cooldown": ""
         },
         "hp": "",
         "atk": "",
