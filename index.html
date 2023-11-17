@@ -1,22 +1,162 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-    body {
-        background-color: #343434;
-        color: white
-    }
-</style>
-
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Nikke Skills</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
 </head>
 
-<body>
+<body class="bg-dark">
+    <div class="container">
+        <br>
+        <h1 class="text-light">Nikke Skills</h1>
+        <br>
+        <br>
+        <br>
 
-    <h1>Nikke Skills</h1>
-    <p>This is a paragraph.</p>
 
+
+
+
+        <table class="table-dark" id="nikkesTable" data-show-columns="true">
+            <thead>
+                <tr>
+                    <th data-field="icon">
+                    </th>
+                    <th data-field="name">
+                        <span>
+                            名稱
+                        </span>
+                    </th>
+                    <th data-field="rarity">
+                        <span>
+                            稀有度
+                        </span>
+                    </th>
+                    <th data-field="class">
+                        <span>
+                            職業
+                        </span>
+                    </th>
+                    <th data-field="code">
+                        <span>
+                            代碼
+                        </span>
+                    </th>
+                    <th data-field="company">
+                        <span>
+                            企業
+                        </span>
+                    </th>
+                    <th data-field="squad">
+                        <span>
+                            部隊
+                        </span>
+                    </th>
+                    <th data-field="burst">
+                        <span>
+                            爆裂
+                        </span>
+                    </th>
+                    <th data-field="skill1" data-formatter="skillFormatter">
+                        <span>
+                            技能1
+                        </span>
+                    </th>
+                    <th data-field="skill2" data-formatter="skillFormatter">
+                        <span>
+                            技能2
+                        </span>
+                    </th>
+                    <th data-field="skill3" data-formatter="skillFormatter">
+                        <span>
+                            技能3
+                        </span>
+                    </th>
+                </tr>
+
+            </thead>
+
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script type="text/javascript">
+
+
+
+
+        function skillFormatter(index, row, element) {
+            //  console.log(JSON.stringify(index));
+
+            var skill = '';
+            skill += '<p><b>' + index.name + '</b></p>';
+
+            for (var i = 0; i < index.skill_content.length; i++) {
+
+
+                if (index.skill_content[i][0] == '⯀') {
+                    skill += '<p>' + index.skill_content[i] + '</p>';
+                } else {
+                    skill += '<p  class="text-info">' + index.skill_content[i] + '</p>';
+                }
+            }
+
+            return skill;
+        }
+
+
+
+
+        $(document).ready(function () {
+            var xmlhttp = new XMLHttpRequest();
+
+            var jsonPath = "https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes.json";
+
+            xmlhttp.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+                    var jsonData = JSON.parse(this.responseText);
+                    listNikkes(jsonData);
+                }
+            };
+
+            xmlhttp.open("GET", jsonPath, true);
+            xmlhttp.send();
+
+            function listNikkes(jsonData) {
+
+                $('#nikkesTable').bootstrapTable({
+                    data: jsonData
+                });
+            }
+        });
+
+
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
