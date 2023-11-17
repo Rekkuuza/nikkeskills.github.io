@@ -3,46 +3,52 @@
         "icon": "",
         "name": "麗塔",
         "rarity": "SSR",
-        "class": "S",
-        "code": "Iron",
-        "company": "Missilis",
+        "class": "輔助型",
+        "code": "鐵甲",
+        "company": "米西利斯",
         "squad": "非凡工具部隊",
         "burst": "1",
         "weapon": "SMG",
         "ammo_capacity": "120",
         "reload_time": "1.50",
-        "control_mode": "N",
-        "skill1": "麗塔推動",
-        "skill1_content": [
-            "⯀全爆裂時間開始時,全體隊友",
-            "【不同起始次數不同效果】",
-            "【低階效果重複生效】",
-            "1次:【爆裂技能冷卻時間2.34秒▼】",
-            "2次:【爆裂技能冷卻時間2.7秒▼】",
-            "3次:【爆裂技能冷卻時間3.17秒▼】",
-            "⯀使用爆裂技能時,全體隊友",
-            "【不同起始次數不同效果】",
-            "【低階效果重複生效】",
-            "1次:【最大裝彈數45.17%▲】【持續5秒】",
-            "2次:【爆擊傷害12.46%▲】【持續5秒】",
-            "3次:【攻擊力14.42%▲】【持續5秒】"
-        ],
-        "skill1_type": "P",
-        "kill1_cooldown": "0",
-        "skill2": "伏特推動",
-        "skill2_content": [
-            "⯀掩體體力最低的2名隊友",
-            "【掩體體力恢復52·5%】"
-        ],
-        "skill2_type": "A",
-        "kill2_cooldown": "15",
-        "skill3": "雙推動",
-        "skill3_content": [
-            "⯀全體隊友",
-            "【攻擊力66%▲】【持續5秒】"
-        ],
-        "skill3_type": "A",
-        "kill3_cooldown": "20.0",
+        "control_mode": "普通型",
+        "skill1": {
+            "name": "麗塔推動",
+            "skill1_content": [
+                "⯀全爆裂時間開始時,全體隊友",
+                "【不同起始次數不同效果】",
+                "【低階效果重複生效】",
+                "1次:【爆裂技能冷卻時間2.34秒▼】",
+                "2次:【爆裂技能冷卻時間2.7秒▼】",
+                "3次:【爆裂技能冷卻時間3.17秒▼】",
+                "⯀使用爆裂技能時,全體隊友",
+                "【不同起始次數不同效果】",
+                "【低階效果重複生效】",
+                "1次:【最大裝彈數45.17%▲】【持續5秒】",
+                "2次:【爆擊傷害12.46%▲】【持續5秒】",
+                "3次:【攻擊力14.42%▲】【持續5秒】"
+            ],
+            "skill1_type": "P",
+            "skill1_cooldown": "0"
+        },
+        "skill2": {
+            "name": "伏特推動",
+            "skill2_content": [
+                "⯀掩體體力最低的2名隊友",
+                "【掩體體力恢復52·5%】"
+            ],
+            "skill2_type": "A",
+            "skill2_cooldown": "15"
+        },
+        "skill3": {
+            "name": "雙推動",
+            "skill3_content": [
+                "⯀全體隊友",
+                "【攻擊力66%▲】【持續5秒】"
+            ],
+            "skill3_type": "A",
+            "skill3_cooldown": "20.0"
+        },
         "hp": "647453",
         "atk": "21307",
         "def": "3999"
@@ -51,40 +57,46 @@
         "icon": "",
         "name": "紅蓮",
         "rarity": "SSR",
-        "class": "A",
-        "code": "Electric",
-        "company": "Pilifrim",
+        "class": "火力型",
+        "code": "電擊",
+        "company": "朝聖者",
         "squad": "開拓者部隊",
         "burst": "3",
         "weapon": "AR",
         "ammo_capacity": "20",
         "reload_time": "2.30",
-        "control_mode": "N",
-        "skill1": "割肉斷骨",
-        "skill1_content": [
-            "⯀普通攻擊命中10次時,自身",
-            "【攻擊力23.15%▲】【疊加5次】【持續5秒】【當前體力4·01%▼】"
-        ],
-        "skill1_type": "P",
-        "kill1_cooldown": "0",
-        "skill2": "人劍合一",
-        "skill2_content": [
-            "⯀被攻擊時,以30%的機率對目標造成",
-            "【相當於最終攻擊力138.24%的傷害】",
-            "⯀自身體力為60%以下時,自身",
-            "【暴擊傷害6.61%▲】"
-        ],
-        "skill2_type": "P",
-        "kill2_cooldown": "0",
-        "skill3": "紅蓮一閃",
-        "skill3_content": [
-            "⯀自身體力為50%以下時,自身",
-            "【暴擊率19,57%▲】【持續10秒】",
-            "⯀對全體敵人造成",
-            "【相當於最終攻擊力849·15%的傷害】"
-        ],
-        "skill3_type": "A",
-        "kill3_cooldown": "40.0",
+        "control_mode": "普通型",
+        "skill1": {
+            "name": "割肉斷骨",
+            "skill1_content": [
+                "⯀普通攻擊命中10次時,自身",
+                "【攻擊力23.15%▲】【疊加5次】【持續5秒】【當前體力4·01%▼】"
+            ],
+            "skill1_type": "P",
+            "skill1_cooldown": "0"
+        },
+        "skill2": {
+            "name": "人劍合一",
+            "skill2_content": [
+                "⯀被攻擊時,以30%的機率對目標造成",
+                "【相當於最終攻擊力138.24%的傷害】",
+                "⯀自身體力為60%以下時,自身",
+                "【暴擊傷害6.61%▲】"
+            ],
+            "skill2_type": "P",
+            "skill2_cooldown": "0"
+        },
+        "skill3": {
+            "name": "紅蓮一閃",
+            "skill3_content": [
+                "⯀自身體力為50%以下時,自身",
+                "【暴擊率19,57%▲】【持續10秒】",
+                "⯀對全體敵人造成",
+                "【相當於最終攻擊力849·15%的傷害】"
+            ],
+            "skill3_type": "A",
+            "skill3_cooldown": "40.0"
+        },
         "hp": "583734",
         "atk": "25554",
         "def": "4164"
@@ -93,42 +105,48 @@
         "icon": "",
         "name": "拉毗",
         "rarity": "SR",
-        "class": "A",
-        "code": "Fire",
-        "company": "Elysion",
+        "class": "火力型",
+        "code": "燃燒",
+        "company": "極樂淨土",
         "squad": "反擊部隊",
         "burst": "3",
         "weapon": "AR",
         "ammo_capacity": "60",
         "reload_time": "1.00",
-        "control_mode": "N",
-        "skill1": "陣型F.F",
-        "skill1_content": [
-            "⯀被攻擊20次時,自身",
-            "【攻擊力21.8%▲】",
-            "【持續20秒】"
-        ],
-        "skill1_type": "P",
-        "kill1_cooldown": "0",
-        "skill2": "飛彈",
-        "skill2_content": [
-            "⯀對攻擊力最高的1名敵人造成",
-            "【相當於最終攻擊力333.06%的傷害】",
-            "【挑釁】",
-            "【持續5秒】"
-        ],
-        "skill2_type": "A",
-        "kill2_cooldown": "20.0",
-        "skill3": "多彈頭飛彈",
-        "skill3_content": [
-            "⯀對攻擊力最高的1名敵人造成",
-            "【相當於最終攻擊力365.4%的傷害】",
-            "⯀自身",
-            "【攻擊力33.75%▲】",
-            "【持續10秒】"
-        ],
-        "skill3_type": "A",
-        "kill3_cooldown": "40.0",
+        "control_mode": "普通型",
+        "skill1": {
+            "name": "陣型F.F",
+            "skill1_content": [
+                "⯀被攻擊20次時,自身",
+                "【攻擊力21.8%▲】",
+                "【持續20秒】"
+            ],
+            "skill1_type": "P",
+            "skill1_cooldown": "0"
+        },
+        "skill2": {
+            "name": "飛彈",
+            "skill2_content": [
+                "⯀對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力333.06%的傷害】",
+                "【挑釁】",
+                "【持續5秒】"
+            ],
+            "skill2_type": "A",
+            "skill2_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "多彈頭飛彈",
+            "skill3_content": [
+                "⯀對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力365.4%的傷害】",
+                "⯀自身",
+                "【攻擊力33.75%▲】",
+                "【持續10秒】"
+            ],
+            "skill3_type": "A",
+            "skill3_cooldown": "40.0"
+        },
         "hp": "252742",
         "atk": "12982",
         "def": "2122"
@@ -158,22 +176,28 @@
         "//": "操作類型 N(普通型),C(蓄力型)",
         "control_mode": "",
         "//": "技能1",
-        "skill1": "",
-        "skill1_content": [],
-        "//": "A:主動 P:被動",
-        "skill1_type": "",
-        "//": "冷卻時間",
-        "skill1_cooldown": "",
+        "skill1": {
+            "name": "",
+            "skill1_content": [],
+            "//": "A:主動 P:被動",
+            "skill1_type": "",
+            "//": "冷卻時間",
+            "skill1_cooldown": ""
+        },
         "//": "技能2",
-        "skill2": "",
-        "skill2_content": [],
-        "skill2_type": "",
-        "kill2_cooldown": "",
+        "skill2": {
+            "name": "",
+            "skill2_content": [],
+            "skill2_type": "",
+            "skill2_cooldown": ""
+        },
         "//": "技能3",
-        "skill3": "",
-        "skill3_content": [],
-        "skill3_type": "",
-        "kill3_cooldown": "",
+        "skill3": {
+            "name": "",
+            "skill3_content": [],
+            "skill3_type": "",
+            "skill3_cooldown": ""
+        },
         "hp": "",
         "atk": "",
         "def": ""
