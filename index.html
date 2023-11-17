@@ -22,10 +22,19 @@
         <br>
 
 
+        <div id="toolbar">
+            <div class="form-inline" role="form">
+                <button id="rarity_all" class="btn btn-primary">All</button>
+                <button id="rarity_r" class="btn btn-primary">R</button>
+                <button id="rarity_sr" class="btn btn-primary">SR</button>
+                <button id="rarity_ssr" class="btn btn-primary">SSR</button>
+
+            </div>
+        </div>
 
 
-
-        <table class="table-dark" id="nikkesTable" data-show-columns="true">
+        <table class="table-dark" id="nikkesTable" data-show-columns="true" data-toolbar="#toolbar"
+            data-query-params="queryParams">
             <thead>
                 <tr>
                     <th data-field="icon">
@@ -152,6 +161,60 @@
 
 
 
+        var $rarity_all = $('#rarity_all');
+        var $rarity_r = $('#rarity_r');
+        var $rarity_sr = $('#rarity_sr');
+        var $rarity_ssr = $('#rarity_ssr');
+
+        var search_r = true;
+        var search_sr = true;
+        var search_ssr = true;
+
+        $(function () {
+
+            $rarity_all.click(function () {
+
+                search_r = true;
+                search_sr = true;
+                search_ssr = true;
+
+                showConsole();
+            })
+
+
+            $rarity_r.click(function () {
+                search_r = !search_r;
+                showConsole();
+            })
+
+            $rarity_sr.click(function () {
+                search_sr = !search_sr;
+                showConsole();
+            })
+
+            $rarity_ssr.click(function () {
+                search_ssr = !search_ssr;
+                showConsole();
+            })
+
+        })
+
+
+        function showConsole() {
+
+            console.log('search_r:' + search_r + '\r\n' + 'search_sr:' + search_sr + '\r\n' + 'search_ssr:' + search_ssr);
+
+
+        }
+
+
+        function queryParams() {
+            var params = {};
+
+
+
+            return params
+        }
 
 
 
