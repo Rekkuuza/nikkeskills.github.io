@@ -2,200 +2,575 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Nikke Skills</title>
+    <title>Nikke Skills</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" />
-  <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" />
 </head>
 
 <body class="bg-dark">
-  <div class="container">
-    <br />
-    <h1 class="text-light">Nikke Skills</h1>
-    <br />
-    <br />
-    <br />
+    <div class="container-fluid">
+        <br />
+        <h1 class="text-light">Nikke Skills</h1>
+        <br />
+        <br />
+        <br />
 
 
-    <div>
-      <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#rarity_collapse">+稀有度</button>
+        <div>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#rarity_collapse">+稀有度</button>
 
-      <div class="collapse show" id="rarity_collapse">
-        <hr class="text-light">
-        <button id="rarity_all" class="btn btn-success">All</button>
-        <input id="rarity_r" type="checkbox" data-toggle="toggle" checked data-on="R" data-off="R"
-          data-onstyle="success" data-offstyle="secondary" />
-        <input id="rarity_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
-          data-onstyle="success" data-offstyle="secondary" />
-        <input id="rarity_ssr" type="checkbox" data-toggle="toggle" checked data-on="SSR" data-off="SSR"
-          data-onstyle="success" data-offstyle="secondary" />
-      </div>
+            <div class="collapse show" id="rarity_collapse">
+                <hr class="text-light">
+                <button id="rarity_all" class="btn btn-success">All</button>
+                <input id="rarity_r" type="checkbox" data-toggle="toggle" checked data-on="R" data-off="R"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="rarity_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="rarity_ssr" type="checkbox" data-toggle="toggle" checked data-on="SSR" data-off="SSR"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+            <br />
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#class_collapse">+職業</button>
+
+            <div class="collapse show" id="class_collapse">
+                <hr class="text-light">
+                <button id="class_all" class="btn btn-success">All</button>
+                <input id="class_atk" type="checkbox" data-toggle="toggle" checked data-on="火力型" data-off="火力型"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="class_def" type="checkbox" data-toggle="toggle" checked data-on="防禦型" data-off="防禦型"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="class_sup" type="checkbox" data-toggle="toggle" checked data-on="輔助型	" data-off="輔助型"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
+            <br />
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#code_collapse">+代碼</button>
+
+            <div class="collapse show" id="code_collapse">
+                <hr class="text-light">
+                <button id="code_all" class="btn btn-success">All</button>
+                <input id="code_fire" type="checkbox" data-toggle="toggle" checked data-on="燃燒" data-off="燃燒"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="code_wind" type="checkbox" data-toggle="toggle" checked data-on="風壓" data-off="風壓"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="code_iron" type="checkbox" data-toggle="toggle" checked data-on="鐵甲" data-off="鐵甲"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="code_electric" type="checkbox" data-toggle="toggle" checked data-on="電擊" data-off="電擊"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="code_water" type="checkbox" data-toggle="toggle" checked data-on="水冷" data-off="水冷"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
+            <br />
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#company_collapse">+企業</button>
+
+            <div class="collapse show" id="company_collapse">
+                <hr class="text-light">
+                <button id="company_all" class="btn btn-success">All</button>
+                <input id="company_elysion" type="checkbox" data-toggle="toggle" checked data-on="極樂淨土" data-off="極樂淨土"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="company_missilis" type="checkbox" data-toggle="toggle" checked data-on="米西利斯" data-off="米西利斯"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="company_tetra" type="checkbox" data-toggle="toggle" checked data-on="泰特拉" data-off="泰特拉"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="company_pilifrim" type="checkbox" data-toggle="toggle" checked data-on="朝聖者" data-off="朝聖者"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="company_abnormal" type="checkbox" data-toggle="toggle" checked data-on="反常" data-off="反常"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
+            <br />
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#burst_collapse">+爆裂</button>
+
+            <div class="collapse show" id="burst_collapse">
+                <hr class="text-light">
+                <button id="burst_all" class="btn btn-success">All</button>
+                <input id="burst_1" type="checkbox" data-toggle="toggle" checked data-on="Ⅰ" data-off="Ⅰ"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="burst_2" type="checkbox" data-toggle="toggle" checked data-on="Ⅱ" data-off="Ⅱ"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="burst_3" type="checkbox" data-toggle="toggle" checked data-on="Ⅲ" data-off="Ⅲ"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="burst_na" type="checkbox" data-toggle="toggle" checked data-on="⊼" data-off="⊼"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
+            <br />
+
+
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#weapon_collapse">+武器</button>
+
+            <div class="collapse show" id="weapon_collapse">
+                <hr class="text-light">
+                <button id="weapon_all" class="btn btn-success">All</button>
+                <input id="weapon_sg" type="checkbox" data-toggle="toggle" checked data-on="SG" data-off="SG"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_smg" type="checkbox" data-toggle="toggle" checked data-on="SMG" data-off="SMG"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_ar" type="checkbox" data-toggle="toggle" checked data-on="AR" data-off="AR"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_mg" type="checkbox" data-toggle="toggle" checked data-on="MG" data-off="MG"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_rl" type="checkbox" data-toggle="toggle" checked data-on="RL" data-off="RL"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_normal" type="checkbox" data-toggle="toggle" checked data-on="普通" data-off="普通"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="weapon_charge" type="checkbox" data-toggle="toggle" checked data-on="蓄力" data-off="蓄力"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
+
+        </div>
+
+        <table class="table-dark" data-show-columns="true" id="nikkesTable">
+            <thead>
+                <tr>
+                    <th data-field="icon"></th>
+                    <th class="text-center" data-field="name">
+                        名稱
+                    </th>
+                    <th class="text-center" data-field="rarity" data-filter-control="select">
+                        稀有度
+                    </th>
+                    <th class="text-center" data-field="class">
+                        職業
+                    </th>
+                    <th class="text-center" data-field="code">
+                        代碼
+                    </th>
+                    <th class="text-center" data-field="company">
+                        企業
+                    </th>
+                    <th class="text-center" data-field="squad" data-visible="false">
+                        部隊
+                    </th>
+                    <th class="text-center" data-field="burst">
+                        爆裂
+                    </th>
+                    <th class="text-center" data-field="weapon" data-formatter="weaponFormatter" data-visible="false">
+                        武器
+                    </th>
+                    <th class="align-text-top" data-field="skill1" data-formatter="skillFormatter">
+                        技能1
+                    </th>
+                    <th class="align-text-top" data-field="skill2" data-formatter="skillFormatter">
+                        技能2
+                    </th>
+                    <th class="align-text-top" data-field="skill3" data-formatter="skillFormatter">
+                        技能3
+                    </th>
+                </tr>
+            </thead>
+        </table>
     </div>
 
-    <table class="table-dark" data-show-columns="true" id="nikkesTable">
-      <thead>
-        <tr>
-          <th data-field="icon"></th>
-          <th class="text-center" data-field="name">
-            名稱
-          </th>
-          <th class="text-center" data-field="rarity" data-filter-control="select">
-            稀有度
-          </th>
-          <th class="text-center" data-field="class">
-            職業
-          </th>
-          <th class="text-center" data-field="code">
-            代碼
-          </th>
-          <th class="text-center" data-field="company">
-            企業
-          </th>
-          <th class="text-center" data-field="squad">
-            部隊
-          </th>
-          <th class="text-center" data-field="burst">
-            爆裂
-          </th>
-          <th class="align-text-top" data-field="skill1" data-formatter="skillFormatter">
-            技能1
-          </th>
-          <th class="align-text-top" data-field="skill2" data-formatter="skillFormatter">
-            技能2
-          </th>
-          <th class="align-text-top" data-field="skill3" data-formatter="skillFormatter">
-            技能3
-          </th>
-        </tr>
-      </thead>
-    </table>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
-  <script type="text/javascript">
-    function skillFormatter(index, row, element) {
-      //  console.log(JSON.stringify(index));
-
-      var skill = "";
-      skill += "<p><b>" + index.name + "</b></p>";
-
-      for (var i = 0; i < index.skill_content.length; i++) {
-        if (index.skill_content[i][0] == "◽") {
-          skill += "<p>" + index.skill_content[i] + "</p>";
-        } else {
-          skill += '<p  class="text-info">' + index.skill_content[i] + "</p>";
-        }
-      }
-
-      return skill;
-    }
-
-    var jsonData = [];
-    var search_r = true;
-    var search_sr = true;
-    var search_ssr = true;
+    <script type="text/javascript">
 
 
-    $(document).ready(function () {
-      var xmlhttp = new XMLHttpRequest();
+        var jsonData = [];
+        var rarity_r = true;
+        var rarity_sr = true;
+        var rarity_ssr = true;
+        var class_atk = true;
+        var class_def = true;
+        var class_sup = true;
+        var code_fire = true;
+        var code_wind = true;
+        var code_iron = true;
+        var code_electric = true;
+        var code_water = true;
+        var company_elysion = true;
+        var company_missilis = true;
+        var company_tetra = true;
+        var company_pilifrim = true;
+        var company_abnormal = true;
+        var burst_1 = true;
+        var burst_2 = true;
+        var burst_3 = true;
+        var burst_na = true;
+        var weapon_sg = true;
+        var weapon_smg = true;
+        var weapon_ar = true;
+        var weapon_mg = true;
+        var weapon_sr = true;
+        var weapon_rl = true;
+        var weapon_normal = true;
+        var weapon_charge = true;
 
-      var jsonPath =
-        "https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes.json";
+        $(document).ready(function () {
+            var xmlhttp = new XMLHttpRequest();
 
-      xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          jsonData = JSON.parse(this.responseText);
-          listNikkes(jsonData);
-        }
-      };
+            var jsonPath =
+                "https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes.json";
 
-      xmlhttp.open("GET", jsonPath, true);
-      xmlhttp.send();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    jsonData = JSON.parse(this.responseText);
+                    listNikkes(jsonData);
+                }
+            };
 
-      function listNikkes(jsonData) {
-        $("#nikkesTable").bootstrapTable({
-          data: jsonData,
-          filterControl: true
+            xmlhttp.open("GET", jsonPath, true);
+            xmlhttp.send();
+
+            function listNikkes(jsonData) {
+                $("#nikkesTable").bootstrapTable({
+                    data: jsonData,
+                    filterControl: true
+                });
+            }
+
+
+
+
+            // 稀有度
+            $('#rarity_all').click(function () {
+                if (!rarity_r) $('#rarity_r').bootstrapToggle('on');
+                if (!rarity_sr) $('#rarity_sr').bootstrapToggle('on');
+                if (!rarity_ssr) $('#rarity_ssr').bootstrapToggle('on');
+            });
+
+            $('#rarity_r').change(function () {
+                rarity_r = !rarity_r;
+                reloadTable();
+            });
+            $('#rarity_sr').change(function () {
+                rarity_sr = !rarity_sr;
+                reloadTable();
+            });
+
+            $('#rarity_ssr').change(function () {
+                rarity_ssr = !rarity_ssr;
+                reloadTable();
+            });
+
+            // 職業
+
+            $('#class_all').click(function () {
+                if (!class_atk) $('#class_atk').bootstrapToggle('on');
+                if (!class_def) $('#class_def').bootstrapToggle('on');
+                if (!class_sup) $('#class_sup').bootstrapToggle('on');
+            });
+
+            $('#class_atk').change(function () {
+                class_atk = !class_atk;
+                reloadTable();
+            });
+            $('#class_def').change(function () {
+                class_def = !class_def;
+                reloadTable();
+            });
+
+            $('#class_sup').change(function () {
+                class_sup = !class_sup;
+                reloadTable();
+            });
+
+
+            // 代碼
+            $('#code_all').click(function () {
+                if (!code_fire) $('#code_fire').bootstrapToggle('on');
+                if (!code_wind) $('#code_wind').bootstrapToggle('on');
+                if (!code_iron) $('#code_iron').bootstrapToggle('on');
+                if (!code_electric) $('#code_electric').bootstrapToggle('on');
+                if (!code_water) $('#code_water').bootstrapToggle('on');
+            });
+
+            $('#code_fire').change(function () {
+                code_fire = !code_fire;
+                reloadTable();
+            });
+            $('#class_def').change(function () {
+                code_wind = !code_wind;
+                reloadTable();
+            });
+
+            $('#code_iron').change(function () {
+                code_iron = !code_iron;
+                reloadTable();
+            });
+
+            $('#code_electric').change(function () {
+                code_electric = !code_electric;
+                reloadTable();
+            });
+
+            $('#code_water').change(function () {
+                code_water = !code_water;
+                reloadTable();
+            });
+
+
+            // 企業
+
+            $('#company_all').click(function () {
+                if (!company_elysion) $('#company_elysion').bootstrapToggle('on');
+                if (!company_missilis) $('#company_missilis').bootstrapToggle('on');
+                if (!company_tetra) $('#company_tetra').bootstrapToggle('on');
+                if (!company_pilifrim) $('#company_pilifrim').bootstrapToggle('on');
+                if (!company_abnormal) $('#company_abnormal').bootstrapToggle('on');
+            });
+
+            $('#company_elysion').change(function () {
+                company_elysion = !company_elysion;
+                reloadTable();
+            });
+            $('#company_missilis').change(function () {
+                company_missilis = !company_missilis;
+                reloadTable();
+            });
+
+            $('#company_tetra').change(function () {
+                company_tetra = !company_tetra;
+                reloadTable();
+            });
+
+            $('#company_pilifrim').change(function () {
+                company_pilifrim = !company_pilifrim;
+                reloadTable();
+            });
+
+            $('#company_abnormal').change(function () {
+                company_abnormal = !company_abnormal;
+                reloadTable();
+            });
+
+            // 爆裂
+            $('#burst_all').click(function () {
+                if (!burst_1) $('#burst_1').bootstrapToggle('on');
+                if (!burst_2) $('#burst_2').bootstrapToggle('on');
+                if (!burst_3) $('#burst_3').bootstrapToggle('on');
+                if (!burst_na) $('#burst_na').bootstrapToggle('on');
+            });
+
+            $('#burst_1').change(function () {
+                burst_1 = !burst_1;
+                reloadTable();
+            });
+            $('#burst_2').change(function () {
+                burst_2 = !burst_2;
+                reloadTable();
+            });
+
+            $('#burst_3').change(function () {
+                burst_3 = !burst_3;
+                reloadTable();
+            });
+
+            $('#burst_na').change(function () {
+                burst_na = !burst_na;
+                reloadTable();
+            });
+
+
+
+            //武器
+
+            $('#weapon_all').click(function () {
+                if (!weapon_sg) $('#weapon_sg').bootstrapToggle('on');
+                if (!weapon_smg) $('#weapon_smg').bootstrapToggle('on');
+                if (!weapon_ar) $('#weapon_ar').bootstrapToggle('on');
+                if (!weapon_mg) $('#weapon_mg').bootstrapToggle('on');
+                if (!weapon_sr) $('#weapon_sr').bootstrapToggle('on');
+                if (!weapon_rl) $('#weapon_rl').bootstrapToggle('on');
+                if (!weapon_normal) $('#weapon_normal').bootstrapToggle('on');
+                if (!weapon_charge) $('#weapon_charge').bootstrapToggle('on');
+            });
+
+            $('#weapon_sg').change(function () {
+                weapon_sg = !weapon_sg;
+                reloadTable();
+            });
+            $('#weapon_smg').change(function () {
+                weapon_smg = !weapon_smg;
+                reloadTable();
+            });
+
+            $('#weapon_ar').change(function () {
+                weapon_ar = !weapon_ar;
+                reloadTable();
+            });
+
+            $('#weapon_mg').change(function () {
+                weapon_mg = !weapon_mg;
+                reloadTable();
+            });
+
+
+            $('#weapon_sr').change(function () {
+                weapon_sr = !weapon_sr;
+                reloadTable();
+            });
+            $('#weapon_rl').change(function () {
+                weapon_rl = !weapon_rl;
+                reloadTable();
+            });
+
+            $('#weapon_normal').change(function () {
+                weapon_normal = !weapon_normal;
+                reloadTable();
+            });
+
+            $('#weapon_charge').change(function () {
+                weapon_charge = !weapon_charge;
+                reloadTable();
+            });
+
+            // get ready end
         });
-      }
+
+
+
+        function reloadTable() {
+
+            var filterRarity = [];
+            if (rarity_r) filterRarity.push('R');
+            if (rarity_sr) filterRarity.push('SR');
+            if (rarity_ssr) filterRarity.push('SSR');
+
+
+            var filterClass = [];
+            if (class_atk) filterClass.push('A');
+            if (class_def) filterClass.push('D');
+            if (class_sup) filterClass.push('S');
+
+
+            var filterCode = [];
+            if (code_fire) filterCode.push('Fire');
+            if (code_wind) filterCode.push('Wind');
+            if (code_iron) filterCode.push('Iron');
+            if (code_electric) filterCode.push('Electric');
+            if (code_water) filterCode.push('Water');
+
+
+            var filterCompany = [];
+            if (company_elysion) filterCompany.push('Elysion');
+            if (company_missilis) filterCompany.push('Missilis');
+            if (company_tetra) filterCompany.push('Tetra');
+            if (company_pilifrim) filterCompany.push('Pilifrim');
+            if (company_abnormal) filterCompany.push('Abnormal');
+
+            var filterBurst = [];
+            if (burst_1) filterBurst.push('Elysion');
+            if (burst_2) filterBurst.push('Missilis');
+            if (burst_3) filterBurst.push('Tetra');
+            if (burst_na) filterBurst.push('Pilifrim');
+
+            var filterWeapon = [];
+            if (weapon_sg) filterWeapon.push('SG');
+            if (weapon_smg) filterWeapon.push('SMG');
+            if (weapon_ar) filterWeapon.push('AR');
+            if (weapon_mg) filterWeapon.push('MG');
+            if (weapon_sr) filterWeapon.push('SR');
+            if (weapon_rl) filterWeapon.push('RL');
+
+            var filterControlMode = [];
+            if (weapon_normal) filterControlMode.push('N');
+            if (weapon_charge) filterControlMode.push('C');
+
+
+            $("#nikkesTable").bootstrapTable('filterBy',
+                {
+                    rarity: filterRarity,
+                    class: filterClass,
+                    code: filterCode,
+                    company: filterCompany,
+                    burst: filterBurst,
+                    weapon: filterWeapon,
+                    control_mode: filterControlMode
+                });
+        }
 
 
 
 
 
-      $('#rarity_all').click(function () {
-
-        if (search_r == search_sr == search_ssr == true) return;
-        if (!search_r) $('#rarity_r').bootstrapToggle('on');
-        if (!search_sr) $('#rarity_sr').bootstrapToggle('on');
-        if (!search_ssr) $('#rarity_ssr').bootstrapToggle('on');
-        reloadTable();
-      });
-
-
-      $('#rarity_r').change(function () {
-        search_r = !search_r;
-        reloadTable();
-      });
-      $('#rarity_sr').change(function () {
-        search_sr = !search_sr;
-        reloadTable();
-      });
-
-      $('#rarity_ssr').change(function () {
-        search_ssr = !search_ssr;
-        reloadTable();
-      });
-
-
-      // get ready end
-    });
-
-
-    function reloadTable() {
-
-      var filterRarity = [];
-      if (search_r) filterRarity.push('R');
-      if (search_sr) filterRarity.push('SR');
-      if (search_ssr) filterRarity.push('SSR');
-
-
-      $("#nikkesTable").bootstrapTable('filterBy',
-        {
-          rarity: filterRarity
-        });
-    }
 
 
 
-    function showConsole() {
-      console.log(
-        "search_r:" +
-        search_r +
-        "\r\n" +
-        "search_sr:" +
-        search_sr +
-        "\r\n" +
-        "search_ssr:" +
-        search_ssr
-      );
-    }
 
 
-  </script>
+        function skillFormatter(index, row, element) {
+            //  console.log(JSON.stringify(index));
+
+            var skill = "";
+            skill += '<div class="row">'
+
+            skill += '<div class="col">';
+            skill += '<b>' + index.name + '</b>'
+            skill += '</div>'
+
+            if (index.skill_cooldown != '0' & index.skill_cooldown != '') {
+                skill += '<div class="col">';
+                skill += '<i class="bi bi-clock"></i>    ' + index.skill_cooldown + '秒';
+                skill += '</div>'
+            }
+            skill += '</div>'
+            for (var i = 0; i < index.skill_content.length; i++) {
+                if (index.skill_content[i][0] == "◽") {
+                    skill += "<p>" + index.skill_content[i] + "</p>";
+                } else {
+                    skill += '<p  class="text-info">' + index.skill_content[i] + "</p>";
+                }
+            }
+
+            return skill;
+        }
+
+        function weaponFormatter(index, row, element) {
+
+            var weapon = '';
+            if (row.weapon != '') {
+                weapon += '<div>';
+                weapon += '<p>' + row.weapon + '</p>';
+                weapon += '<p>' + row.ammo_capacity + '發</p>';
+                weapon += '<p>' + row.reload_time + '秒</p>';
+                weapon += '<p>' + row.control_mode + '</p>';
+                weapon += '</div>';
+            }
+            return weapon;
+        }
+
+
+
+
+
+
+
+
+
+        function showConsole() {
+            console.log(
+                "search_r:" +
+                rarity_r +
+                "\r\n" +
+                "search_sr:" +
+                rarity_sr +
+                "\r\n" +
+                "search_ssr:" +
+                rarity_ssr
+            );
+        }
+
+
+    </script>
 </body>
 
 </html>
