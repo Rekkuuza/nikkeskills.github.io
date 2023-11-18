@@ -1,17 +1,687 @@
 [
     {
         "icon": "",
+        "name": "白雪公主",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Pilifrim",
+        "squad": "開拓者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於14.71%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "純白意志",
+            "skill_content": [
+                "◽普通攻擊命中30次時,對目標造成",
+                "【相當於最終攻擊力82.8%的額外傷害】",
+                "◽普通攻擊命中30次時,自身",
+                "【攻擊力8.28%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "七個小矮人:V&VI",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成",
+                "【相當於最終攻擊力144.73%的傷害】",
+                "◽全爆裂持續期間發動時,自身",
+                "【暴擊率26·1%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "七個小矮人:I",
+            "skill_content": [
+                "◽自身",
+                "【使用武器變更】",
+                "蓄力時間:5秒",
+                "傷害:相當於最終攻擊力的499·5%",
+                "全蓄力傷害:1000%傷害",
+                "最大裝彈數:1發",
+                "追加效果:穿透特化"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "伊莎貝爾",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Pilifrim",
+        "squad": "繼承者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.86",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於210.7%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "目標鎖定",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【按照使用次數觸發追加效果】",
+                "【低階效果重複生效】",
+                "1次:【目標鎖定1:暴擊率6.26%▲】【持續45秒】",
+                "2次:【目標鎖定2:爆擊傷害18.03%▲】【持續45秒】",
+                "3次:【目標鎖定3:攻擊力17.28%▲】【持續45秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "風羽注入",
+            "skill_content": [
+                "◽對防禦力最高的5名敵人造成相當於",
+                "【最終攻擊力170·58%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "音速追擊",
+            "skill_content": [
+                "◽對所有敵人造成",
+                "【等於最終攻擊力149·85%的傷害】",
+                "【按照目標鎖定階段觸發追加效果】",
+                "【低階效果重複生效】:",
+                "目標鎖定1:【所受傷害39.96%▲】【持續5秒】",
+                "目標鎖定2:【造成等於最終攻擊力299.7%的追加傷害】",
+                "目標鎖定3:【造成等於最終攻擊力349.65%的追加傷害】",
+                "◽全體隊友",
+                "【全爆裂持續時間5秒▼】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "長髮公主",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Pilifrim",
+        "squad": "開拓者部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.30",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於62.95%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "犧牲",
+            "skill_content": [
+                "◽全蓄力攻擊時,剩餘的體力比例最低的3名隊友",
+                "【恢復相當於施展者最終最大體力的4.03%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "神之庇佑",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【最大體力8.19%▲】【持續15秒】",
+                "【體力恢復量13.65%▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "世外桃源",
+            "skill_content": [
+                "◽全體隊友",
+                "【恢復相當於施展者最終最大體力的40·83%】",
+                "◽死亡的攻擊力最高的1名隊友",
+                "【以81·67%的體力復活】",
+                "◽若自身的體力為30%以下時,全體敵人陷入",
+                "【昏迷】【持續1秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "60.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "紅蓮",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Pilifrim",
+        "squad": "開拓者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "20",
+            "reload_time": "2.30",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於27.08%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "割肉斷骨",
+            "skill_content": [
+                "◽普通攻擊命中10次時,自身",
+                "【攻擊力23.15%▲】【疊加5次】【持續5秒】【當前體力4.01%▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "人劍合一",
+            "skill_content": [
+                "◽被攻擊時,以30%的機率對目標造成",
+                "【相當於最終攻擊力138.24%的傷害】",
+                "◽自身體力為60%以下時,自身",
+                "【暴擊傷害6.61%▲】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "紅蓮一閃",
+            "skill_content": [
+                "◽自身體力為50%以下時,自身",
+                "【暴擊率19,57%▲】【持續10秒】",
+                "◽對全體敵人造成",
+                "【相當於最終攻擊力849.15%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "哈蘭",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Pilifrim",
+        "squad": "繼承者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.30",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於70.89%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "瘟疫轉移",
+            "skill_content": [
+                "◽攻擊時以25%的機率對目標",
+                "【病毒轉移:造成相當於最終攻擊力17.28%的持續傷害】【間隔1秒】【持續5秒】",
+                "◽敵人死亡時,若目標處於病毒轉移狀態,則對最近的2名敵人",
+                "【病毒轉移:造成相當於最終攻擊力17,28%的持續傷害】【間隔1秒】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "捕食",
+            "skill_content": [
+                "◽全蓄力攻擊時,自身",
+                "【穿透特化】【持續1發】】",
+                "【暴擊率2.95%▲】【持續1發】",
+                "◽消滅敵人時,自身",
+                "【攻擊力3·02%▲】【疊加15次】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "滅亡之刃",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力999%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "諾雅",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Wind",
+        "company": "Pilifrim",
+        "squad": "繼承者部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.50",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於32.02%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "似疼似痛？",
+            "skill_content": [
+                "◽被攻擊時,有10%的機率全體隊友",
+                "【所受傷害8%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "來打我？",
+            "skill_content": [
+                "◽全蓄力攻擊時,對目標進行",
+                "【挑釁】【持續2秒】",
+                "【攻擊力13.25%▼】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "氣不氣人啊？",
+            "skill_content": [
+                "◽自身",
+                "【注目:挑釁全體敵人】【持續10秒】",
+                "◽全體隊友",
+                "【無敵】【持續3秒】",
+                "【防禦力133.48%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4900"
+    },
+    {
+        "icon": "",
+        "name": "神罰",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Pilifrim",
+        "squad": "異端者",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.30",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於7.71%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "高速進化",
+            "skill_content": [
+                "◽普通攻擊命中時,對目標造成",
+                "【相當於最終攻擊力3.05%的額外傷害】",
+                "◽普通攻擊命中200次時,自身",
+                "【暴擊傷害14.25%▲】【疊加5次】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "大飛躍",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【命中率8·56%▲】【持續15秒】",
+                "◽普通攻擊命中200次時,若自身處於命中率增加狀態,則自身",
+                "【攻擊力29.38%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "新世界",
+            "skill_content": [
+                "◽全體隊友",
+                "【全爆裂持續時間5秒▲】",
+                "◽自身",
+                "【裝彈數無限】【持續15秒】",
+                "【殲滅模式】:",
+                "功能：瞄準線擴大&",
+                "同時瞄準處於瞄準範圍內的所有敵人。",
+                "無視BOSS阻擋部位及零件,",
+                "將其視為單體敵人",
+                "傷害:相當於攻擊力2.24%的傷害",
+                "持續時間:15秒"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
+        "icon": "",
+        "name": "尼希利斯塔",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Pilifrim",
+        "squad": "異端者",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "烈焰球",
+            "skill_content": [
+                "◽全蓄力攻擊時,自身",
+                "【穿透特化】【持續1發】",
+                "【穿透範圍擴大50%】【持續1發】",
+                "◽若同時命中2名以上,則對目標造成",
+                "【相當於最終攻擊力50.33%的額外傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "戰場火焰",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成",
+                "【相當於最終攻擊力112.64%的傷害】",
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill3": {
+            "name": "伯恩.天啟",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力158·59%的傷害】",
+                "【燒傷:造成相當於最終攻擊力13·19%的持續傷害】【間隔1秒】【持續10秒】",
+                "◽自身",
+                "【最大裝彈數6發▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "桃樂絲",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Water",
+        "company": "Pilifrim",
+        "squad": "繼承者部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "聖火",
+            "skill_content": [
+                "◽最後的子彈攻擊時,全體隊友",
+                "【爆裂技能冷卻時間1.56秒▼】",
+                "◽最後的子彈攻擊時,若自身處於顯現狀態,則全體隊友,",
+                "【零件傷害50.68%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "洗禮",
+            "skill_content": [
+                "◽對全體敵人造成",
+                "【焦土化:最終攻擊力216%的分攤傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "失樂園",
+            "skill_content": [
+                "◽自身",
+                "【顯現:2號技能冷卻時間18▼】【持續10秒】",
+                "【穿透特化】【持續10秒】",
+                "◽對指定的1名目標造成",
+                "【烙印:持續期間內,記錄指定敵人累計受到的傷害。持續時間結束時,對全體敵人造成等同於累積紀錄的分攤傷害。傷害最大累積量相當於施展者攻擊力的8900.83%】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4589"
+    },
+    {
+        "icon": "",
+        "name": "小紅帽",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Pilifrim",
+        "squad": "女神部隊",
+        "burst": "⊼",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "怒目相視",
+            "skill_content": [
+                "◽普通攻擊時,自身",
+                "【蓄力速度3.81%A】【疊加10次】【持續5秒】",
+                "◽戰鬥開始時,自身",
+                "【蓄力速度超出100%時,將超出值轉換為蓄力傷害】",
+                "【超出值的240%蓄力傷害▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "野獸之牙",
+            "skill_content": [
+                "◽戰鬥開始時,自身",
+                "【穿透特化】【持續】",
+                "◽自身野獸之籠生效時,全體隊友",
+                "【以施展者為基準的防禦力50.68%▲】【持續10秒】",
+                "◽自身最終的嚎叫生效時,自身",
+                "【恢復相當於攻擊傷害的23.04%】【持續10秒】",
+                "◽自身發生大紅狼時,自身",
+                "【以施展者為基準的攻擊力71.42%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "大紅狼",
+            "skill_content": [
+                "<在Stepl使用時:野獸之籠>",
+                "◽全體隊友",
+                "【以施展者為基準的攻擊力77.55%▲】【持續10秒】",
+                "◽自身",
+                "【爆裂技能冷卻時間40秒▼】【戰鬥中發生一次】",
+                "<在Step2使用時:最終的嚎叫>",
+                "◽自身",
+                "【注目:挑釁所有敵人】【持續10秒】",
+                "【體力恢復量74.88%▲】【持續10秒】",
+                "【爆裂技能冷卻時間40秒▼】【戰鬥中發生一次】",
+                "<在Step3使用時:大紅狼>",
+                "◽自身",
+                "【變更使用武器】:",
+                "傷害:最終攻擊力51.46%的傷害",
+                "全蓄力傷害:250%",
+                "持續時間:10秒",
+                "追加效果",
+                "【穿透範圍擴張100%】【持續10秒】",
+                "【蓄力速度100.8%】【持續10秒】",
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "白雪公主:純真年代",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Pilifrim",
+        "squad": "女神部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "七個小矮人V&Ⅵ",
+            "skill_content": [
+                "◽普通攻擊命中30次時,自身",
+                "【最大裝彈數25.66%▲】【疊加5次】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "七個小矮人Ⅳ",
+            "skill_content": [
+                "◽普通攻擊命中50次時,對全體敵人造成",
+                "【最終攻擊力61·69%的傷害】",
+                "◽使用爆裂技能時,自身",
+                "【攻擊傷害2L12%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "七個小矮人III",
+            "skill_content": [
+                "◽自身",
+                "【技能2命中次數條件20次▼】【持續10秒】",
+                "【以施展者為基準的攻擊力97.2%▲】【持續10秒】",
+                "【裝彈數無限】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
         "name": "麗塔",
         "rarity": "SSR",
         "class": "S",
         "code": "Iron",
         "company": "Missilis",
         "squad": "非凡工具部隊",
-        "burst": "Ⅰ",
-        "weapon": "SMG",
-        "ammo_capacity": "120",
-        "reload_time": "1.50",
-        "control_mode": "N",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
         "skill1": {
             "name": "麗塔推動",
             "skill_content": [
@@ -55,54 +725,6 @@
     },
     {
         "icon": "",
-        "name": "紅蓮",
-        "rarity": "SSR",
-        "class": "A",
-        "code": "Electric",
-        "company": "Pilifrim",
-        "squad": "開拓者部隊",
-        "burst": "Ⅲ",
-        "weapon": "AR",
-        "ammo_capacity": "20",
-        "reload_time": "2.30",
-        "control_mode": "N",
-        "skill1": {
-            "name": "割肉斷骨",
-            "skill_content": [
-                "◽普通攻擊命中10次時,自身",
-                "【攻擊力23.15%▲】【疊加5次】【持續5秒】【當前體力4·01%▼】"
-            ],
-            "skill_type": "P",
-            "skill_cooldown": "0"
-        },
-        "skill2": {
-            "name": "人劍合一",
-            "skill_content": [
-                "◽被攻擊時,以30%的機率對目標造成",
-                "【相當於最終攻擊力138.24%的傷害】",
-                "◽自身體力為60%以下時,自身",
-                "【暴擊傷害6.61%▲】"
-            ],
-            "skill_type": "P",
-            "skill_cooldown": "0"
-        },
-        "skill3": {
-            "name": "紅蓮一閃",
-            "skill_content": [
-                "◽自身體力為50%以下時,自身",
-                "【暴擊率19,57%▲】【持續10秒】",
-                "◽對全體敵人造成",
-                "【相當於最終攻擊力849·15%的傷害】"
-            ],
-            "skill_type": "A",
-            "skill_cooldown": "40.0"
-        },
-        "hp": "583734",
-        "atk": "25554",
-        "def": "4164"
-    },
-    {
-        "icon": "",
         "name": "拉毗",
         "rarity": "SR",
         "class": "A",
@@ -110,10 +732,17 @@
         "company": "Elysion",
         "squad": "反擊部隊",
         "burst": "Ⅲ",
-        "weapon": "AR",
-        "ammo_capacity": "60",
-        "reload_time": "1.00",
-        "control_mode": "N",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
         "skill1": {
             "name": "陣型F.F",
             "skill_content": [
@@ -165,16 +794,19 @@
         "company": "",
         "//": "部隊",
         "squad": "",
-        "//": "爆裂 Ⅰ,Ⅱ,Ⅲ,⊼",
+        "//": "爆裂 I,Ⅱ,Ⅲ,⊼",
         "burst": "",
-        "//": "武器 SG(霰彈槍),SMG(衝鋒槍),AR(步槍),MG(機槍),SR(狙擊步槍),RL(發射器)",
-        "weapon": "",
-        "//": "最大裝彈數",
-        "ammo_capacity": "",
-        "//": "換彈時間",
-        "reload_time": "",
-        "//": "操作類型 N(普通型),C(蓄力型)",
-        "control_mode": "",
+        "weapon": {
+            "//": "武器 SG(霰彈槍),SMG(衝鋒槍),AR(步槍),MG(機槍),SR(狙擊步槍),RL(發射器)",
+            "type": "",
+            "//": "最大裝彈數",
+            "ammo_capacity": "",
+            "//": "換彈時間",
+            "reload_time": "",
+            "//": "操作類型 N(普通型),C(蓄力型)",
+            "control_mode": "",
+            "weapon_content": []
+        },
         "//": "技能1",
         "skill1": {
             "name": "",
