@@ -130,6 +130,20 @@
             </div>
 
 
+            <br />
+
+            <button class="btn btn-dark" data-bs-toggle="collapse"
+                data-bs-target="#burst_cd_collapse">+爆裂技能冷卻時間</button>
+
+            <div class="collapse show" id="burst_cd_collapse">
+                <hr class="text-light">
+                <button id="burst_cd_all" class="btn btn-success">All</button>
+                <input id="burst_cd_20" type="checkbox" data-toggle="toggle" checked data-on="20" data-off="20"
+                    data-onstyle="success" data-offstyle="secondary" />
+                <input id="burst_cd_40" type="checkbox" data-toggle="toggle" checked data-on="40" data-off="40"
+                    data-onstyle="success" data-offstyle="secondary" />
+            </div>
+
         </div>
 
         <table class="table-dark" data-show-columns="true" id="nikkesTable">
@@ -139,13 +153,13 @@
                     <th class="text-center" data-field="name">
                         名稱
                     </th>
-                    <th class="text-center" data-field="rarity" data-filter-control="select">
+                    <th class="text-center" data-field="rarity">
                         稀有度
                     </th>
-                    <th class="text-center" data-field="class">
+                    <th class="text-center" data-field="class" data-formatter="classFormatter">
                         職業
                     </th>
-                    <th class="text-center" data-field="code">
+                    <th class="text-center" data-field="code" data-formatter="codeFormatter">
                         代碼
                     </th>
                     <th class="text-center" data-field="company">
@@ -213,6 +227,8 @@
         var weapon_rl = true;
         var weapon_normal = true;
         var weapon_charge = true;
+        var burst_cd_20 = true;
+        var burst_cd_40 = true;
 
         $(document).ready(function () {
             var xmlhttp = new XMLHttpRequest();
@@ -433,6 +449,26 @@
                 reloadTable();
             });
 
+
+            // 爆裂技能冷卻時間
+            $('#burst_cd_all').click(function () {
+                if (!burst_cd_20) $('#burst_cd_20').bootstrapToggle('on');
+                if (!burst_cd_40) $('#burst_cd_40').bootstrapToggle('on');
+
+            });
+
+            $('#burst_cd_20').change(function () {
+                burst_cd_20 = !burst_cd_20;
+                reloadTable();
+            });
+            $('#burst_cd_40').change(function () {
+                burst_cd_40 = !burst_cd_40;
+                reloadTable();
+            });
+
+
+
+
             // get ready end
         });
 
@@ -468,10 +504,10 @@
             if (company_abnormal) filterCompany.push('Abnormal');
 
             var filterBurst = [];
-            if (burst_1) filterBurst.push('Elysion');
-            if (burst_2) filterBurst.push('Missilis');
-            if (burst_3) filterBurst.push('Tetra');
-            if (burst_na) filterBurst.push('Pilifrim');
+            if (burst_1) filterBurst.push('Ⅰ');
+            if (burst_2) filterBurst.push('Ⅱ');
+            if (burst_3) filterBurst.push('Ⅲ');
+            if (burst_na) filterBurst.push('⊼');
 
             var filterWeapon = [];
             if (weapon_sg) filterWeapon.push('SG');
@@ -486,6 +522,10 @@
             if (weapon_charge) filterControlMode.push('C');
 
 
+            var filterBurstCd = [];
+            if (burst_cd_20) filterBurstCd.push('20.0');
+            if (burst_cd_40) filterBurstCd.push('40.0');
+
             $("#nikkesTable").bootstrapTable('filterBy',
                 {
                     rarity: filterRarity,
@@ -494,21 +534,21 @@
                     company: filterCompany,
                     burst: filterBurst,
                     weapon: filterWeapon,
-                    control_mode: filterControlMode
-                });
+                    control_mode: filterControlMode,
+                }, {
+                'filterAlgorithm': (row, filters) => {
+
+                    console.log(row);
+
+                    return filterBurstCd.includes(row.skill3.skill_cooldown);
+                }
+
+            });
         }
 
 
 
-
-
-
-
-
-
-
         function skillFormatter(index, row, element) {
-            //  console.log(JSON.stringify(index));
 
             var skill = "";
             skill += '<div class="row">'
@@ -542,32 +582,40 @@
                 weapon += '<p>' + row.weapon + '</p>';
                 weapon += '<p>' + row.ammo_capacity + '發</p>';
                 weapon += '<p>' + row.reload_time + '秒</p>';
-                weapon += '<p>' + row.control_mode + '</p>';
+                weapon += '<p>'
+                if (row.control_mode == 'N') weapon += '普通型'
+                if (row.control_mode == 'C') weapon += '蓄力型'
+                row.control_mode + '</p>';
                 weapon += '</div>';
             }
             return weapon;
         }
 
+        function codeFormatter(index, row, element) {
 
-
-
-
-
-
-
-
-        function showConsole() {
-            console.log(
-                "search_r:" +
-                rarity_r +
-                "\r\n" +
-                "search_sr:" +
-                rarity_sr +
-                "\r\n" +
-                "search_ssr:" +
-                rarity_ssr
-            );
+            var code = '';
+            if (row.code == 'Fire') code += '燃燒';
+            if (row.code == 'Wind') code += '風壓';
+            if (row.code == 'Iron') code += '鐵甲';
+            if (row.code == 'Electric') code += '電擊';
+            if (row.code == 'Water') code += '水冷';
+            return code;
         }
+
+
+
+        function classFormatter(index, row, element) {
+            var _class = '';
+            if (row.class == 'A') _class += '火力型';
+            if (row.class == 'D') _class += '防禦型';
+            if (row.class == 'S') _class += '輔助型';
+            return _class;
+        }
+
+
+
+
+
 
 
     </script>
