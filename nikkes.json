@@ -1,6 +1,1022 @@
 [
     {
         "icon": "",
+        "name": "貝斯蒂",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Elysion",
+        "squad": "特種部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "想像成真",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,自身",
+                "【爆炸範圍15.01%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "生存本能",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【按照使用次數觸發追加效果】",
+                "【低階效果重複生效】",
+                "1次:【生存本能1:攻擊力5.35%▲】【持續45秒】",
+                "2次:【生存本能2:暴擊傷害22.34%▲】【持續45秒】",
+                "3次:【生存本能3:暴擊率15.51%▲】【持續45秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "正當防衛",
+            "skill_content": [
+                "◽自身",
+                "【調用2台飛彈貨櫃】:",
+                "功能:對剩餘的體力數值最低的敵人",
+                "造成相當於最終攻擊力15.56%的傷害",
+                "攻擊間隔:1秒",
+                "持續時間:18秒",
+                "◽對所有敵人",
+                "【按照生存本能階段觸發追加效果】",
+                "【低階效果重複生效】:",
+                "生存本能1:【造成相當於最終攻擊力210.62%的傷害】",
+                "生存本能2:【造成相當於最終攻擊力247.25%的傷害】",
+                "生存本能3:【造成相當於最終攻擊力302.19%的傷害】",
+                "◽全體隊友",
+                "【全爆裂持續時間5秒▼】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4071"
+    },
+    {
+        "icon": "",
+        "name": "銀華",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Elysion",
+        "squad": "特種部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.33",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於71.07%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "準備態勢",
+            "skill_content": [
+                "◽以最後的子彈攻擊後,自身",
+                "【蓄力傷害37.28%▲】【持續2發】",
+                "【蓄力速度15.53%▲】【持續2發】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "弱點識破",
+            "skill_content": [
+                "◽攻擊最後的子彈後,目標",
+                "【防禦力29%▼】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "戰況逆轉",
+            "skill_content": [
+                "◽對攻擊力最高的10名敵人造成",
+                "【相當於最終攻擊力85.62%的傷害】",
+                "【防禦力2.43%▼】【持續15秒】",
+                "◽全體隊友",
+                "【暴擊率4.65%▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "吉蘿婷",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Elysion",
+        "squad": "外界部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.57%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "愉悅",
+            "skill_content": [
+                "◽普通攻擊命中30次時,自身",
+                "【暴擊率9.28%▲】【持續10秒】",
+                "【目前體力2.01%▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "黑化",
+            "skill_content": [
+                "◽普通攻擊命中150次時,自身",
+                "【暴擊傷害14.69%▲】【持續5秒】",
+                "◽自身體力為70%以下時,自身",
+                "【每失去1%的體力,攻擊力則0.96%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "魔界黑龍波",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力1237.5%的傷害】",
+                "◽自身體力為50%以下時,對同一敵人造成",
+                "【相當於最終攻擊力1237.5%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
+        "icon": "",
+        "name": "梅登",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Elysion",
+        "squad": "外界部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.03",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於231.6%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "言靈:技巧之言",
+            "skill_content": [
+                "◽被攻擊20次時,自身",
+                "【復仇:攻擊力26.66%▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "言靈:命中之言",
+            "skill_content": [
+                "◽對全體敵人進行",
+                "【挑釁】【持續10秒】",
+                "◽自身",
+                "【暴擊傷害152.84%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "30.0"
+        },
+        "skill3": {
+            "name": "言靈:力量之言",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力457.87%的傷害】",
+                "若自身處於復仇狀態，則對相同的目標敵人造成相當於",
+                "【最終攻擊力457.87%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "D",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Wind",
+        "company": "Elysion",
+        "squad": "危險席部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "怒濤",
+            "skill_content": [
+                "◽全爆裂時間開始時,自身",
+                "【優越代碼攻擊傷害46.93%▲】【持續15秒】",
+                "【恢復相當於攻擊傷害的3.52%】【持續15秒】",
+                "◽首次發動時，額外使自己",
+                "【恢復相當於攻擊傷害的16.5%】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "突襲",
+            "skill_content": [
+                "◽當目標出現時，全體隊友",
+                "【爆裂進度補充98.56%】",
+                "【戰鬥中發動1次】",
+                "【免疫昏迷】【持續36.95秒】",
+                "◽當目標出現時,自身",
+                "【優越代碼攻擊傷害91.09%▲】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "處決",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力426.24%的傷害】",
+                "◽火力型全體隊友",
+                "【零件傷害42.38%▲】【持續15秒】",
+                "◽若自身處於免疫昏迷狀態，則全體隊友",
+                "【全爆裂持續時間5.04秒▲】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3633"
+    },
+    {
+        "icon": "",
+        "name": "海倫",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Elysion",
+        "squad": "宙斯盾部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "陣前指揮",
+            "skill_content": [
+                "◽最後的子彈命中時,全體隊友",
+                "【普通攻擊暴擊率14.64%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "開炮",
+            "skill_content": [
+                "◽全體隊友",
+                "【阻擋部位攻擊傷害3.08%▲】【持續】",
+                "◽全爆裂時間開始時，全體隊友",
+                "【攻擊傷害11.85%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "宙斯盾加農炮",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力1237.5%的傷害】",
+                "◽全體隊友",
+                "【恢復相當於攻擊傷害的54.45%】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "尼恩：藍色海洋",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Elysion",
+        "squad": "反擊部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.57%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "向上波浪",
+            "skill_content": [
+                "◽使用爆裂技能時，自身",
+                "【不同起始次數不同效果】【低階效果重複生效】",
+                "1次:【零件傷害12.4%▲】【持續20秒】",
+                "1次:【零件傷害12.4%▲】【持續20秒】",
+                "1次:【零件傷害12.4%▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "水槍",
+            "skill_content": [
+                "◽進入爆裂3階時,自身",
+                "【不同起始次數不同效果】【低階效果重複生效】",
+                "1次:【優越代碼攻擊傷害20.56%▲】【持續10秒】",
+                "2次:【優越代碼攻擊傷害20.2%▲】【持續10秒】",
+                "3次:【優越代碼攻擊傷害20.2%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "水力全開一擊",
+            "skill_content": [
+                "◽自身",
+                "【使用武器改變】",
+                "傷害:相當於最終攻擊力的33%",
+                "持續時間:7秒",
+                "◽若目標屬於燃燒屬性，造成相當於",
+                "【最終攻擊力11%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
+        "icon": "",
+        "name": "馬斯特",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Elysion",
+        "squad": "宙斯盾部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "海盜的毅力",
+            "skill_content": [
+                "◽暴擊命中敵人2次時,目標",
+                "【海風:以施展者為標準的防禦力1.9%▼】【疊加50次】【持續3秒】",
+                "◽僅限於自身體力在70%以下時,自身與除自身以外攻擊力最高的2名隊友",
+                "【暴擊傷害50.94%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "海盜的眼光",
+            "skill_content": [
+                "◽戰鬥開始時,自身與除自身以外攻擊力最高的2名隊友",
+                "【暴擊率23.56%▲】【持續30秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "無畏風雨！",
+            "skill_content": [
+                "◽自身與除自身以外攻擊力最高的2名隊友",
+                "【僅限以施展者為標準的最大體力86.2%▲】【持續7秒】",
+                "【暴擊傷害25.19%▲】【持續7秒】",
+                "◽對處於海風狀態的目標造成",
+                "【暴風:相當於最終攻擊力4.52%的傷害】",
+                "【海風疊加複製】【間隔1秒】【持續7秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3999"
+    },
+    {
+        "icon": "",
+        "name": "海倫：海藍寶石",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Elysion",
+        "squad": "宙斯盾部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "與讚美號同行",
+            "skill_content": [
+                "◽普通攻擊命中 30 次後，對目標造成",
+                "【最終攻擊力 131.34%的追加傷害 】",
+                "◽全爆裂時間開始時，全體隊友",
+                "【不同起始次數不同效果】",
+                "【低階效果重複生效 】:",
+                "1次:【爆裂技能冷卻時間1.82秒▼】",
+                "2次:【爆裂技能冷卻時間2.2秒▼】",
+                "3次:【爆裂技能冷卻時間2.6秒▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "宙斯盾加農炮牽制射擊",
+            "skill_content": [
+                "◽對隨機1名敵人造成相當於",
+                "【最終攻擊力105.58%的傷害】",
+                "◽若目標為電擊代碼，則使相同的目標敵人",
+                "【所受傷害5.64%▲】【疊加5次】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "4"
+        },
+        "skill3": {
+            "name": "宙斯盾加農炮過載",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力164.83%的傷害】",
+                "若目標為電擊代碼，則對相同的目標敵人造成相當於",
+                "【最終攻擊力164.83%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "瑪律恰那",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Elysion",
+        "squad": "學術界",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於201.5%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "無人機支援",
+            "skill_content": [
+                "◽最終的子彈命中時,全體隊友",
+                "【恢復相當於傷害的10.95%】【持續3秒】",
+                "◽最終的子彈命中時,攻擊力高的2名隊友",
+                "【體力恢復量26.98%▲】【持續3秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "校醫",
+            "skill_content": [
+                "◽使用爆裂技能時,全體隊友",
+                "【恢復相當於施展者最終最大體力的28.11%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "師恩",
+            "skill_content": [
+                "◽全體隊友",
+                "【儲存:以施展者為基準的最大體力27.87%為上限,儲存溢出的體力恢復量】【持續10秒】",
+                "【相當於施展者防禦力20.9%的防禦力▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "基里",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Elysion",
+        "squad": "A.C.P.U.",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "一警",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,目標",
+                "【相當於以施展者為基準的攻擊力8.94%▼】【持續3秒】",
+                "◽全蓄力攻擊時,2名防禦型隊友",
+                "【相當於以施展者為基準的攻擊力5.81%▲】【持續3秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "打量",
+            "skill_content": [
+                "◽戰鬥開始時,2名防禦型隊友",
+                "【最大體力11.63%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "看穿",
+            "skill_content": [
+                "◽全體隊友",
+                "【恢復相當於施展者最終最大體力的6.96%】【間隔1秒】【持續10秒】",
+                "◽防禦型全體隊友",
+                "【暴擊率19.9%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "拉毗",
+        "rarity": "SR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Elysion",
+        "squad": "反擊部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "陣型F.F",
+            "skill_content": [
+                "◽被攻擊20次時,自身",
+                "【攻擊力21.81%▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "飛彈",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力528.97%的傷害】",
+                "【挑釁】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "多彈頭飛彈",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力657.72的傷害】",
+                "◽自身",
+                "【攻擊力60.75%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "252742",
+        "atk": "12982",
+        "def": "2122"
+    },
+    {
+        "icon": "",
+        "name": "尼恩",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Fire",
+        "company": "Elysion",
+        "squad": "反擊部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.82",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於224.5%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "尼恩特製彈",
+            "skill_content": [
+                "◽消滅敵人時,攻擊力最高的2位隊友",
+                "【暴擊率3.56%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "火力萬歲!",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【暴擊率45.93%▲】【持續2發】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "火力至上!",
+            "skill_content": [
+                "◽對防禦力最高的1名敵人造成",
+                "【相當於最終攻擊力528.97%的傷害】",
+                "◽持有霰彈槍的全體隊友",
+                "【最大裝彈數3發▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "280314",
+        "atk": "10824",
+        "def": "2252"
+    },
+    {
+        "icon": "",
+        "name": "德爾塔",
+        "rarity": "SR",
+        "class": "D",
+        "code": "Wind",
+        "company": "Elysion",
+        "squad": "偵查者部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "1.50",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於65.95%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "回溯",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,自身",
+                "【最大體力8.82%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "最後的記憶",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【防禦力51.42%▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "勿忘我",
+            "skill_content": [
+                "◽自身",
+                "【誘餌:生成相當於施展者最終最大體力91.68%的分身】【持續10秒】",
+                "【注目:挑釁全體敵人】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "307885",
+        "atk": "8666",
+        "def": "2174"
+    },
+    {
+        "icon": "",
+        "name": "安克",
+        "rarity": "SR",
+        "class": "D",
+        "code": "Wind",
+        "company": "Elysion",
+        "squad": "宙斯盾部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.30",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "GS",
+            "skill_content": [
+                "◽最終的子彈命中時,對目標",
+                "【挑釁】【持續5秒】",
+                "◽最終的子彈命中時,自身",
+                "【防禦力23.82%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "MDS",
+            "skill_content": [
+                "◽戰鬥開始時,當自身",
+                "【攻擊敵人發射體時,對相關發射體造成的傷害25.6%▲】【持續】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "9.0"
+        },
+        "skill3": {
+            "name": "CIWS",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力304.45%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "307885",
+        "atk": "8666",
+        "def": "2497"
+    },
+    {
+        "icon": "",
+        "name": "士兵E.G.",
+        "rarity": "R",
+        "class": "A",
+        "code": "Electric",
+        "company": "Elysion",
+        "squad": "替代者具部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.17",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於14.01%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "鷹眼",
+            "skill_content": [
+                "◽普通攻擊時,以5%的機率,自身",
+                "【攻擊力7.92%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "老鷹戰術",
+            "skill_content": [
+                "◽自身",
+                "【最大裝彈數112.77%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "9.0"
+        },
+        "skill3": {
+            "name": "鷹擊",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力720%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "75117",
+        "atk": "3484",
+        "def": "522"
+    },
+    {
+        "icon": "",
+        "name": "士兵F.A.",
+        "rarity": "R",
+        "class": "D",
+        "code": "Iron",
+        "company": "Elysion",
+        "squad": "替代者具部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於214.3%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "鷹翼",
+            "skill_content": [
+                "◽被攻擊時,以10%的機率自身",
+                "【防禦力9.09%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "鷹巢",
+            "skill_content": [
+                "◽自身",
+                "【恢復相當於攻擊傷害的20.19%】【持續8秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "獵鷹推進器",
+            "skill_content": [
+                "◽自身",
+                "【最大體力112.5%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "91809",
+        "atk": "2332",
+        "def": "613"
+    },
+    {
+        "icon": "",
+        "name": "士兵O.W.",
+        "rarity": "R",
+        "class": "S",
+        "code": "Fire",
+        "company": "Elysion",
+        "squad": "替代者具部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "2.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於9.36%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "貓頭鷹烏鴉",
+            "skill_content": [
+                "◽普通攻擊時,有10%的機率對目標造成",
+                "【相當於最終攻擊力75.6%的額外傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "貓頭鷹氣流",
+            "skill_content": [
+                "◽攻擊力最高的3名隊友",
+                "【掩體防禦力128.57%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill3": {
+            "name": "貓頭鷹羽",
+            "skill_content": [
+                "◽燃燒代碼全體隊友的",
+                "【最大裝彈數280%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "83463",
+        "atk": "2903",
+        "def": "499"
+    },
+    {
+        "icon": "",
         "name": "白雪公主",
         "rarity": "SSR",
         "class": "A",
@@ -223,7 +1239,7 @@
             "name": "紅蓮一閃",
             "skill_content": [
                 "◽自身體力為50%以下時,自身",
-                "【暴擊率19,57%▲】【持續10秒】",
+                "【暴擊率19.57%▲】【持續10秒】",
                 "◽對全體敵人造成",
                 "【相當於最終攻擊力849.15%的傷害】"
             ],
@@ -722,63 +1738,6 @@
         "hp": "647453",
         "atk": "21307",
         "def": "3999"
-    },
-    {
-        "icon": "",
-        "name": "拉毗",
-        "rarity": "SR",
-        "class": "A",
-        "code": "Fire",
-        "company": "Elysion",
-        "squad": "反擊部隊",
-        "burst": "Ⅲ",
-        "weapon": {
-            "type": "AR",
-            "ammo_capacity": "60",
-            "reload_time": "1.00",
-            "control_mode": "N",
-            "weapon_content": [
-                "◽對目標造成",
-                "【相當於13.65%攻擊力的傷害】",
-                "【核心傷害200%】"
-            ]
-        },
-        "skill1": {
-            "name": "陣型F.F",
-            "skill_content": [
-                "◽被攻擊20次時,自身",
-                "【攻擊力21.8%▲】",
-                "【持續20秒】"
-            ],
-            "skill_type": "P",
-            "skill_cooldown": "0"
-        },
-        "skill2": {
-            "name": "飛彈",
-            "skill_content": [
-                "◽對攻擊力最高的1名敵人造成",
-                "【相當於最終攻擊力333.06%的傷害】",
-                "【挑釁】",
-                "【持續5秒】"
-            ],
-            "skill_type": "A",
-            "skill_cooldown": "20.0"
-        },
-        "skill3": {
-            "name": "多彈頭飛彈",
-            "skill_content": [
-                "對攻擊力最高的1名敵人造成",
-                "【相當於最終攻擊力365.4%的傷害】",
-                "◽自身",
-                "【攻擊力33.75%▲】",
-                "【持續10秒】"
-            ],
-            "skill_type": "A",
-            "skill_cooldown": "40.0"
-        },
-        "hp": "252742",
-        "atk": "12982",
-        "def": "2122"
     },
     {
         "icon": "",
