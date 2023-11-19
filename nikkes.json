@@ -439,7 +439,7 @@
         "code": "Water",
         "company": "Elysion",
         "squad": "特種部隊",
-        "burst": "Ⅱ",
+        "burst": "Ⅲ",
         "weapon": {
             "type": "RL",
             "ammo_capacity": "6",
@@ -1193,7 +1193,7 @@
         "code": "Wind",
         "company": "Elysion",
         "squad": "偵查者部隊",
-        "burst": "I",
+        "burst": "Ⅱ",
         "weapon": {
             "type": "SR",
             "ammo_capacity": "6",
