@@ -11,7 +11,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" />
 </head>
 
@@ -105,7 +106,6 @@
 
             <br />
 
-
             <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#weapon_collapse">+武器</button>
 
             <div class="collapse show" id="weapon_collapse">
@@ -142,33 +142,35 @@
                     data-onstyle="success" data-offstyle="secondary" />
                 <input id="burst_cd_40" type="checkbox" data-toggle="toggle" checked data-on="40" data-off="40"
                     data-onstyle="success" data-offstyle="secondary" />
+                <input id="burst_cd_60" type="checkbox" data-toggle="toggle" checked data-on="60" data-off="60"
+                    data-onstyle="success" data-offstyle="secondary" />
             </div>
 
         </div>
 
-        <table class="table-dark" data-show-columns="true" id="nikkesTable">
+        <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
             <thead>
                 <tr>
                     <th data-field="icon"></th>
                     <th class="text-center" data-field="name">
                         名稱
                     </th>
-                    <th class="text-center" data-field="rarity">
+                    <th class="text-center" data-field="rarity" data-sortable="true">
                         稀有度
                     </th>
-                    <th class="text-center" data-field="class" data-formatter="classFormatter">
+                    <th class="text-center" data-field="class" data-formatter="classFormatter" data-sortable="true">
                         職業
                     </th>
-                    <th class="text-center" data-field="code" data-formatter="codeFormatter">
+                    <th class="text-center" data-field="code" data-formatter="codeFormatter" data-sortable="true">
                         代碼
                     </th>
-                    <th class="text-center" data-field="company">
+                    <th class="text-center" data-field="company" data-formatter="companyFormatter" data-sortable="true">
                         企業
                     </th>
-                    <th class="text-center" data-field="squad" data-visible="false">
+                    <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
                         部隊
                     </th>
-                    <th class="text-center" data-field="burst">
+                    <th class="text-center" data-field="burst" data-sortable="true">
                         爆裂
                     </th>
                     <th class="text-center" data-field="weapon" data-formatter="weaponFormatter" data-visible="false">
@@ -192,8 +194,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.min.js"></script>
+
     <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script
+        src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/resizable/bootstrap-table-resizable.min.js"></script>
 
     <script type="text/javascript">
 
@@ -229,6 +235,7 @@
         var weapon_charge = true;
         var burst_cd_20 = true;
         var burst_cd_40 = true;
+        var burst_cd_60 = true;
 
         $(document).ready(function () {
             var xmlhttp = new XMLHttpRequest();
@@ -247,9 +254,13 @@
             xmlhttp.send();
 
             function listNikkes(jsonData) {
+
+                var filtJson = jsonData.filter(function (item) {
+                    return item.name != '';
+                })
+
                 $("#nikkesTable").bootstrapTable({
-                    data: jsonData,
-                    filterControl: true
+                    data: filtJson
                 });
             }
 
@@ -313,7 +324,7 @@
                 code_fire = !code_fire;
                 reloadTable();
             });
-            $('#class_def').change(function () {
+            $('#code_wind').change(function () {
                 code_wind = !code_wind;
                 reloadTable();
             });
@@ -454,7 +465,7 @@
             $('#burst_cd_all').click(function () {
                 if (!burst_cd_20) $('#burst_cd_20').bootstrapToggle('on');
                 if (!burst_cd_40) $('#burst_cd_40').bootstrapToggle('on');
-
+                if (!burst_cd_60) $('#burst_cd_60').bootstrapToggle('on');
             });
 
             $('#burst_cd_20').change(function () {
@@ -466,7 +477,10 @@
                 reloadTable();
             });
 
-
+            $('#burst_cd_60').change(function () {
+                burst_cd_60 = !burst_cd_60;
+                reloadTable();
+            });
 
 
             // get ready end
@@ -481,12 +495,10 @@
             if (rarity_sr) filterRarity.push('SR');
             if (rarity_ssr) filterRarity.push('SSR');
 
-
             var filterClass = [];
             if (class_atk) filterClass.push('A');
             if (class_def) filterClass.push('D');
             if (class_sup) filterClass.push('S');
-
 
             var filterCode = [];
             if (code_fire) filterCode.push('Fire');
@@ -494,7 +506,6 @@
             if (code_iron) filterCode.push('Iron');
             if (code_electric) filterCode.push('Electric');
             if (code_water) filterCode.push('Water');
-
 
             var filterCompany = [];
             if (company_elysion) filterCompany.push('Elysion');
@@ -504,7 +515,7 @@
             if (company_abnormal) filterCompany.push('Abnormal');
 
             var filterBurst = [];
-            if (burst_1) filterBurst.push('Ⅰ');
+            if (burst_1) filterBurst.push('I');
             if (burst_2) filterBurst.push('Ⅱ');
             if (burst_3) filterBurst.push('Ⅲ');
             if (burst_na) filterBurst.push('⊼');
@@ -525,6 +536,8 @@
             var filterBurstCd = [];
             if (burst_cd_20) filterBurstCd.push('20.0');
             if (burst_cd_40) filterBurstCd.push('40.0');
+            if (burst_cd_60) filterBurstCd.push('60.0');
+
 
             $("#nikkesTable").bootstrapTable('filterBy',
                 {
@@ -532,18 +545,24 @@
                     class: filterClass,
                     code: filterCode,
                     company: filterCompany,
-                    burst: filterBurst,
-                    weapon: filterWeapon,
-                    control_mode: filterControlMode,
-                }, {
-                'filterAlgorithm': (row, filters) => {
+                    burst: filterBurst
+                },
+                {
+                    'filterAlgorithm': (row, filters) => {
 
-                    console.log(row);
+                        var _rarity = filterRarity.includes(row.rarity);
+                        var _class = filterClass.includes(row.class);
+                        var _code = filterCode.includes(row.code);
+                        var _company = filterCompany.includes(row.company);
+                        var _burst = filterBurst.includes(row.burst);
+                        var _weapon = filterWeapon.includes(row.weapon.type);
+                        var _weapon_contol = filterControlMode.includes(row.weapon.control_mode);
+                        var _cd = filterBurstCd.includes(row.skill3.skill_cooldown);
 
-                    return filterBurstCd.includes(row.skill3.skill_cooldown);
+                        return _rarity & _class & _code & _company & _burst & _weapon & _weapon_contol & _cd;
+                    }
                 }
-
-            });
+            );
         }
 
 
@@ -577,15 +596,15 @@
         function weaponFormatter(index, row, element) {
 
             var weapon = '';
-            if (row.weapon != '') {
+            if (row.weapon.type != '') {
                 weapon += '<div>';
-                weapon += '<p>' + row.weapon + '</p>';
-                weapon += '<p>' + row.ammo_capacity + '發</p>';
-                weapon += '<p>' + row.reload_time + '秒</p>';
+                weapon += '<p>' + row.weapon.type + '</p>';
+                weapon += '<p>' + row.weapon.ammo_capacity + '發</p>';
+                weapon += '<p>' + row.weapon.reload_time + '秒</p>';
                 weapon += '<p>'
-                if (row.control_mode == 'N') weapon += '普通型'
-                if (row.control_mode == 'C') weapon += '蓄力型'
-                row.control_mode + '</p>';
+                if (row.weapon.control_mode == 'N') weapon += '普通型'
+                if (row.weapon.control_mode == 'C') weapon += '蓄力型'
+                weapon += '</p>';
                 weapon += '</div>';
             }
             return weapon;
@@ -613,6 +632,15 @@
         }
 
 
+        function companyFormatter(index, row, element) {
+            var _company = '';
+            if (row.company == 'Elysion') _company += '極樂淨土';
+            if (row.company == 'Missilis') _company += '米西利斯';
+            if (row.company == 'Tetra') _company += '泰特拉';
+            if (row.company == 'Pilifrim') _company += '朝聖者';
+            if (row.company == 'Abnormal') _company += '反常';
+            return _company;
+        }
 
 
 
