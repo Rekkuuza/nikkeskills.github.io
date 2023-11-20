@@ -1,6 +1,1285 @@
 [
     {
         "icon": "",
+        "name": "麥斯威爾",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "墨堤斯部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "直射",
+            "skill_content": [
+                "◽全爆裂時間開始時,攻擊力最高的2名隊友",
+                "【蓄力速度4.48%▲】【持續10秒】",
+                "【攻擊力43.1%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "電擊",
+            "skill_content": [
+                "◽僅限於除了妮姬以外的敵人達5名以上時,自身",
+                "【暴擊率4.83%▲】【持續】",
+                "【暴擊傷害13.91%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "穿刺",
+            "skill_content": [
+                "◽自身",
+                "【使用武器變更】:",
+                "蓄力時間:2秒",
+                "傷害:相當於最終攻擊力的813.42%",
+                "全蓄力傷害:300%傷害",
+                "最大裝彈數:1發",
+                "追加效果:穿透特化"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "尤妮",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Fire",
+        "company": "Missilis",
+        "squad": "警備衛士部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:350%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "DMNS",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【蓄力速度8.97%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "SDS",
+            "skill_content": [
+                "◽全蓄力攻擊時,全體隊友",
+                "【防禦力2.77%▲】【持續10秒】",
+                "【恢復相當於攻擊傷害的2.77%】【持續10秒】",
+                "【最大裝彈數1發▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "BDG",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力348.73%的傷害】",
+                "【無法移動】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4900"
+    },
+    {
+        "icon": "",
+        "name": "麗塔",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "非凡工具部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "麗塔推動",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【不同起始次數不同效果】",
+                "【低階效果重複生效】",
+                "1次:【爆裂技能冷卻時間2.34秒▼】",
+                "2次:【爆裂技能冷卻時間2.7秒▼】",
+                "3次:【爆裂技能冷卻時間3.17秒▼】",
+                "◽使用爆裂技能時,全體隊友",
+                "【不同起始次數不同效果】",
+                "【低階效果重複生效】",
+                "1次:【最大裝彈數45.17%▲】【持續5秒】",
+                "2次:【爆擊傷害12.46%▲】【持續5秒】",
+                "3次:【攻擊力14.42%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "伏特推動",
+            "skill_content": [
+                "◽掩體體力最低的2名隊友",
+                "【掩體體力恢復52·5%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "雙推動",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊力66%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3999"
+    },
+    {
+        "icon": "",
+        "name": "尤莉亞",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "大師之手部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.20",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於14.07攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "漸弱",
+            "skill_content": [
+                "◽自身",
+                "【暴擊率26.04%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "漸強",
+            "skill_content": [
+                "◽最後的子彈命中時,自身",
+                "【漸強:暴擊傷害24.79%▲】",
+                "【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "頂峰",
+            "skill_content": [
+                "◽對防禦力最高的5名敵人造成",
+                "【相當於最終攻擊力544.5%的傷害】",
+                "◽若自身處於漸強最大疊加狀態，則對同一敵人造成",
+                "【相當於最終攻擊力544.5%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "桑迪",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "非凡工具部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "1.52",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "維修工程",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,自身",
+                "【技能2的冷卻時間9.16%▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "現場檢查",
+            "skill_content": [
+                "◽自身",
+                "【生成相當於施展者最終最大體力6.38%的隊友通用護盾】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "9.0"
+        },
+        "skill3": {
+            "name": "開始動工",
+            "skill_content": [
+                "◽對剩餘的體力最低的5名敵人造成相當於",
+                "【最終攻擊力145.46%的傷害】",
+                "【防禦力14.54%▼】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4900"
+    },
+    {
+        "icon": "",
+        "name": "德雷克",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Missilis",
+        "squad": "墨堤斯部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.52",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於214.3%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "超負荷",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【命中率11.85%▲】【持續10秒】",
+                "【攻擊力11.85%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "霹靂",
+            "skill_content": [
+                "◽進行10次攻擊時,對剩餘的體力最低的3名敵人造成相當於",
+                "【最終攻擊力98.55%的傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "德雷克特色",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力1254%的傷害】",
+                "◽【最大裝彈數72.18%▲】",
+                "【最大裝彈數72.18%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "克拉烏",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Fire",
+        "company": "Missilis",
+        "squad": "外來者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.59%攻擊力的傷害】",
+                "【核心傷害250%】"
+            ]
+        },
+        "skill1": {
+            "name": "殺戮時刻",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體敵人",
+                "【攻擊力19.93%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "蠻勇",
+            "skill_content": [
+                "◽最後的子彈命中時,對目標造成",
+                "【相當於最終攻擊力89.09%的額外傷害】",
+                "◽最後的子彈命中時,自身",
+                "【防禦力12.72%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "怒火",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成相當於",
+                "【最終攻擊力915.75%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "佩珀",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "六翼天使部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.03",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於231.6%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "重生之心",
+            "skill_content": [
+                "◽最後的子彈命中時,剩餘的體力比例最低的1名隊友",
+                "【恢復相當於施展者最終最大體力的4.45%】",
+                "◽最後的子彈命中時，全體隊友",
+                "【重生之心:體力恢復量6.53%▲】【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "維生素之力",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成相當於",
+                "【最終攻擊力160%的傷害】",
+                "【攻擊力3.55%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill3": {
+            "name": "佩珀療法",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力1237.5%的傷害】",
+                "◽全體隊友",
+                "【可疊加的增益效果疊加量1個▲】",
+                "◽若自身處於重生之心最大疊加狀態，則全體隊友",
+                "【恢復相當於施展者最終最大體力的27.22%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "艾德米",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "三角部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "1.73",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於67.37%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "助威之手",
+            "skill_content": [
+                "◽被攻擊20次時,全體隊友",
+                "【蓄力傷害9.59%倍率▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "貓之氣息",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【所受傷害28.65%▼】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "愛之報恩",
+            "skill_content": [
+                "◽全體隊友",
+                "【換彈速度50.91%▲】【持續10秒】",
+                "【暴擊傷害28.34%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "豺狼",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "外來者部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.03",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於65.02%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "歡樂豺狼",
+            "skill_content": [
+                "◽被攻擊10次時,體力上限最高的1名敵人",
+                "【所受傷害9.09%▲】【持續10秒】",
+                "【攻擊力9.09%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "興奮豺狼",
+            "skill_content": [
+                "◽戰鬥開始時,自身與除自身以外攻擊力最高的2名隊友",
+                "【分攤被擊傷害】【持續120秒】",
+                "【防禦力8.27%▲】【持續120秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "狂暴豺狼",
+            "skill_content": [
+                "◽全體隊友",
+                "【目標說明以「~1名敵人」結尾的爆裂技能攻擊傷害38.91%▲】【持續15秒】(額外傷害除外)",
+                "【防禦力14.69%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4900"
+    },
+    {
+        "icon": "",
+        "name": "拉普拉斯",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Missilis",
+        "squad": "墨堤斯部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.33",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於63.11%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "英雄使命",
+            "skill_content": [
+                "◽全蓄力攻擊時,自身",
+                "【英雄使命:爆炸範圍3.57%▲】【疊加5次】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "英雄轟炸機",
+            "skill_content": [
+                "◽最後的子彈命中時,對目標造成",
+                "【相當於最終攻擊力81.66%的額外傷害】",
+                "◽命中目標零件時,對目標本體造成",
+                "【相當於最終攻擊力14.78%的額外傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "拉普拉斯炸彈",
+            "skill_content": [
+                "◽自身",
+                "【變更使用武器】：",
+                "初始傷害:造成相當於最終攻擊力897.6%的傷害",
+                "持續傷害:造成相當於最終攻擊力14.52%的傷害",
+                "持續時間:5秒",
+                "追加效果:穿透特化",
+                "特殊事項:爆裂技能施放過程中無法隱蔽",
+                "◽若自身處於英雄使命最大疊加狀態,則對同一敵人造成",
+                "【相當於最終攻擊力11.9%的無視防禦力的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4071"
+    },
+    {
+        "icon": "",
+        "name": "吉爾提",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "真善美",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於231.4%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "借我一下……",
+            "skill_content": [
+                "◽普通攻擊6次時,自身",
+                "【借我一下……:對攻擊力最高的1名隊友複製其攻擊力8.81%】【疊加5次】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "一起玩吧……",
+            "skill_content": [
+                "◽普通攻擊12次時,風壓代碼全體隊友",
+                "【可疊加的增益效果疊加量1個▲】",
+                "【攻擊力4.13%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "抓住了……",
+            "skill_content": [
+                "◽對防禦力最高的1名敵人造成",
+                "【相當於最終攻擊力284.32%的傷害】",
+                "◽若自身處於借我一下……的最大疊加狀態,則對同一目標敵人造成",
+                "【防禦力20.25%▼】【持續5秒】",
+                "【相當於最終攻擊力277.71%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "森",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Electric",
+        "company": "Missilis",
+        "squad": "真善美",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "最終判決",
+            "skill_content": [
+                "◽最後的子彈攻擊時,自身",
+                "【複製最大體力最高的1名隊友的最大體力15.03%】【持續5秒】",
+                "【注目:挑釁所有敵人】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "趕路",
+            "skill_content": [
+                "◽全爆裂時間結束時,自身",
+                "【爆裂進度補充速度16.17%▲】【5秒】",
+                "◽使用爆裂技能時,自身",
+                "【不同使用次數不同效果】【低階效果重複生效】:",
+                "1次:【恢復相當於攻擊傷害的15.3%】【持續5秒】",
+                "2次:【體力恢復量51%▲】【持續5秒】",
+                "3次:【防禦力43.2%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "文字殺",
+            "skill_content": [
+                "◽除妮姬以外的敵人數量在4名以上時,全體敵人",
+                "【所受傷害12.23%▲】【持續5秒】",
+                "對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力176.32%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "5015"
+    },
+    {
+        "icon": "",
+        "name": "坎西",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Missilis",
+        "squad": "真善美",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於4.47%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "新的路線",
+            "skill_content": [
+                "◽進行60次普通攻擊後,自身複製",
+                "【最大體力最高妮姬的最大體力12.42%】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "隱秘的共犯",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【攻擊力16.11%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "8"
+        },
+        "skill3": {
+            "name": "偉大的脫身",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【最大體力43.87%▲】【持續5秒】",
+                "【暴擊傷害29.9%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3999"
+    },
+    {
+        "icon": "",
+        "name": "安妮：奇蹟仙女",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "召回釋放部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "跳舞的精靈",
+            "skill_content": [
+                "◽發動3次普通攻擊時,輔助型全體隊友",
+                "【恢復等同於攻擊傷害的6.07%】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "精靈的玩笑",
+            "skill_content": [
+                "◽當自身體力在90%以上時,全體隊友",
+                "【體力恢復量23.46%▲】【持續】",
+                "◽最後的子彈命中時,若自身體力為90%以上,全體敵人",
+                "【體力恢復量78.93%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "藍蝶之夢",
+            "skill_content": [
+                "◽火力型全體隊友",
+                "【恢復相當於施展者最終最大體力的38.61%】",
+                "【攻擊力77.22%▲】【持續10秒】",
+                "◽死亡的隨機1名火力型隊友",
+                "【以99%的體力復活】【戰鬥中觸發1次】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "60.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "艾菲涅爾",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "生命補藥部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於10.12%攻擊力的傷害】",
+                "【核心傷害250%】"
+            ]
+        },
+        "skill1": {
+            "name": "超級新人",
+            "skill_content": [
+                "◽消滅敵人時,自身",
+                "【超級新人:攻擊力13.86%▲】【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "蜘蛛",
+            "skill_content": [
+                "◽最後的子彈命中時,自身",
+                "【暴擊率5.05%▲】【持續5秒】",
+                "【暴擊傷害6.4%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "SAFE 50-50",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力457.87%的傷害】",
+                "◽若自身處於超級新人最大疊加狀態,則對相同的目標敵人造成相當於",
+                "【最終攻擊力457.87%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3633"
+    },
+    {
+        "icon": "",
+        "name": "蒂亞",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Missilis",
+        "squad": "耀眼珍珠",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於204.8%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "友誼守護",
+            "skill_content": [
+                "◽進行12次普通攻擊時,全體隊友",
+                "【掩體體力恢復14.57%▲】",
+                "◽護盾生效時,全體隊友的",
+                "【核心傷害85.17%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "友誼支援",
+            "skill_content": [
+                "◽進行5次普通攻擊時,攻擊力最高的2名隊友",
+                "【核心傷害40.07%▲】【持續5秒】",
+                "◽進行5次普通攻擊時,剩餘的體力比例最低的2名隊友",
+                "【恢復相當於施展者最終最大體力的9.58%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "如果是和朋友們一起！",
+            "skill_content": [
+                "◽自身",
+                "【穿透特化】【持續10秒】",
+                "◽對全體隊友",
+                "【以施展者為基準的攻擊力16.18%▲】【持續10秒】",
+                "◽如果自己正處於護盾生效狀態,全體隊友",
+                "【以施展者為基準的攻擊力31.02%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4420"
+    },
+    {
+        "icon": "",
+        "name": "米哈拉",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Water",
+        "company": "Missilis",
+        "squad": "警備衛士部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於15.07%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "忍耐",
+            "skill_content": [
+                "◽最後的子彈命中時,自身",
+                "【暴擊傷害18.7%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "苦難之路",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【不同的使用次數,不同的追加效果】",
+                "【低階效果重複生效】",
+                "1次:【苦難之路1:攻擊力15.56%▲】【持續45秒】",
+                "2次:【苦難之路2:暴擊率11.28%▲】【持續45秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "意識共享",
+            "skill_content": [
+                "◽全體隊友",
+                "【全爆裂持續時間5秒▼】",
+                "◽對所有敵人造成",
+                "【相當於最終攻擊力399.6%的傷害】",
+                "◽若自身處於苦難之路2的狀態,則對所有敵人造成",
+                "【相當於最終攻擊力266.4%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "252742",
+        "atk": "12982",
+        "def": "2122"
+    },
+    {
+        "icon": "",
+        "name": "N102",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Water",
+        "company": "Missilis",
+        "squad": "召回釋放部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1.5秒",
+                "全蓄力傷害:350%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "紀錄中的回憶",
+            "skill_content": [
+                "◽全蓄力攻擊時,攻擊力最高的1名隊友",
+                "【最大裝彈數3發▲】【持續10秒】",
+                "【暴擊傷害10.34%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "復甦的記憶",
+            "skill_content": [
+                "◽攻擊力最高的1名隊友",
+                "【蓄力傷害25.84%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "藍蝶之憶",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊力25.86%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "280314",
+        "atk": "10824",
+        "def": "2286"
+    },
+    {
+        "icon": "",
+        "name": "艾瑟兒",
+        "rarity": "SR",
+        "class": "D",
+        "code": "Electric",
+        "company": "Missilis",
+        "squad": "M.M.R.",
+        "burst": "I",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於214.3%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "腐蝕物質搭載彈",
+            "skill_content": [
+                "◽剩餘的體力最低的1名隊友",
+                "【所受傷害52.5%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill2": {
+            "name": "前兆反應實驗",
+            "skill_content": [
+                "◽對防禦力最高的3名敵人造成",
+                "【相當於最終攻擊力56.32%的傷害】",
+                "◽在全爆裂時間持續期間發動時,同一敵人",
+                "【防禦力9.38%▼】【持續6秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "13.0"
+        },
+        "skill3": {
+            "name": "超大單細胞",
+            "skill_content": [
+                "◽剩餘的體力最低的3名隊友",
+                "【生成相當於施展者最終最大體力的96%的護盾】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "307885",
+        "atk": "8666",
+        "def": "2459"
+    },
+    {
+        "icon": "",
+        "name": "產品08",
+        "rarity": "R",
+        "class": "S",
+        "code": "Electric",
+        "company": "Missilis",
+        "squad": "替代者具部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "戰術:裝甲強化",
+            "skill_content": [
+                "◽普通攻擊命中時,以20%的機率使剩餘的體力數值最低的1名隊友",
+                "【防禦力9.09%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "戰術:精準射擊",
+            "skill_content": [
+                "◽攻擊力最高的1名隊友",
+                "【暴擊率22.99%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill3": {
+            "name": "戰術:功率提升",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊力19.39%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "83463",
+        "atk": "2903",
+        "def": "487"
+    },
+    {
+        "icon": "",
+        "name": "產品12",
+        "rarity": "R",
+        "class": "A",
+        "code": "Fire",
+        "company": "Missilis",
+        "squad": "替代者具部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.67%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "行動:攻擊提升",
+            "skill_content": [
+                "◽進行200次普通攻擊時,自身",
+                "【攻擊力8.28%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "行動:火力集中",
+            "skill_content": [
+                "◽對剩餘的體力最低的1名敵人造成相當於",
+                "【最終攻擊力109.09%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill3": {
+            "name": "行動:精準打擊",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力720%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "75117",
+        "atk": "3484",
+        "def": "437"
+    },
+    {
+        "icon": "",
+        "name": "產品23",
+        "rarity": "R",
+        "class": "S",
+        "code": "Wind",
+        "company": "Missilis",
+        "squad": "替代者具部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.03",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於231.6%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "指令:功率強化",
+            "skill_content": [
+                "◽最後的子彈命中時,自身",
+                "【防禦力8.1%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "指令:緊急措施",
+            "skill_content": [
+                "◽自身",
+                "【恢復相當於攻擊傷害16.15%的體力】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "指令:特殊子彈",
+            "skill_content": [
+                "◽攻擊力最高的2名敵人",
+                "【防禦力48.75%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "83463",
+        "atk": "2903",
+        "def": "557"
+    },
+    {
+        "icon": "",
         "name": "艾瑪",
         "rarity": "SSR",
         "class": "A",
@@ -2109,67 +3388,6 @@
         "hp": "583734",
         "atk": "25554",
         "def": "4164"
-    },
-    {
-        "icon": "",
-        "name": "麗塔",
-        "rarity": "SSR",
-        "class": "S",
-        "code": "Iron",
-        "company": "Missilis",
-        "squad": "非凡工具部隊",
-        "burst": "I",
-        "weapon": {
-            "type": "SMG",
-            "ammo_capacity": "120",
-            "reload_time": "1.50",
-            "control_mode": "N",
-            "weapon_content": [
-                "◽對目標造成",
-                "【相當於8.73%攻擊力的傷害】",
-                "【核心傷害200%】"
-            ]
-        },
-        "skill1": {
-            "name": "麗塔推動",
-            "skill_content": [
-                "◽全爆裂時間開始時,全體隊友",
-                "【不同起始次數不同效果】",
-                "【低階效果重複生效】",
-                "1次:【爆裂技能冷卻時間2.34秒▼】",
-                "2次:【爆裂技能冷卻時間2.7秒▼】",
-                "3次:【爆裂技能冷卻時間3.17秒▼】",
-                "◽使用爆裂技能時,全體隊友",
-                "【不同起始次數不同效果】",
-                "【低階效果重複生效】",
-                "1次:【最大裝彈數45.17%▲】【持續5秒】",
-                "2次:【爆擊傷害12.46%▲】【持續5秒】",
-                "3次:【攻擊力14.42%▲】【持續5秒】"
-            ],
-            "skill_type": "P",
-            "skill_cooldown": "0"
-        },
-        "skill2": {
-            "name": "伏特推動",
-            "skill_content": [
-                "◽掩體體力最低的2名隊友",
-                "【掩體體力恢復52·5%】"
-            ],
-            "skill_type": "A",
-            "skill_cooldown": "15.0"
-        },
-        "skill3": {
-            "name": "雙推動",
-            "skill_content": [
-                "◽全體隊友",
-                "【攻擊力66%▲】【持續5秒】"
-            ],
-            "skill_type": "A",
-            "skill_cooldown": "20.0"
-        },
-        "hp": "647453",
-        "atk": "21307",
-        "def": "3999"
     },
     {
         "icon": "",
