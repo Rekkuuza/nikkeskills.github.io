@@ -30,13 +30,10 @@
 
             <div class="collapse show" id="rarity_collapse">
                 <hr class="text-light">
-                <button id="rarity_all" class="btn btn-success">All</button>
-                <input id="rarity_r" type="checkbox" data-toggle="toggle" checked data-on="R" data-off="R"
-                    data-onstyle="success" data-offstyle="secondary" />
-                <input id="rarity_sr" type="checkbox" data-toggle="toggle" checked data-on="SR" data-off="SR"
-                    data-onstyle="success" data-offstyle="secondary" />
-                <input id="rarity_ssr" type="checkbox" data-toggle="toggle" checked data-on="SSR" data-off="SSR"
-                    data-onstyle="success" data-offstyle="secondary" />
+                <button id="rarity_all" class="btn btn-primary">ALL</button>
+                <button id="rarity_r" class="btn btn-secondary">R</button>
+                <button id="rarity_sr" class="btn btn-secondary">SR</button>
+                <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
             </div>
             <br />
             <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#class_collapse">+職業</button>
@@ -205,9 +202,10 @@
 
 
         var jsonData = [];
-        var rarity_r = true;
-        var rarity_sr = true;
-        var rarity_ssr = true;
+        var rarity_all = true;
+        var rarity_r = false;
+        var rarity_sr = false;
+        var rarity_ssr = false;
         var class_atk = true;
         var class_def = true;
         var class_sup = true;
@@ -269,24 +267,71 @@
 
             // 稀有度
             $('#rarity_all').click(function () {
-                if (!rarity_r) $('#rarity_r').bootstrapToggle('on');
-                if (!rarity_sr) $('#rarity_sr').bootstrapToggle('on');
-                if (!rarity_ssr) $('#rarity_ssr').bootstrapToggle('on');
+                if (rarity_all) return;
+
+                rarity_r = false;
+                rarity_sr = false;
+                rarity_ssr = false;
+                check_rarity_all();
             });
 
-            $('#rarity_r').change(function () {
+            $('#rarity_r').click(function () {
+
                 rarity_r = !rarity_r;
-                reloadTable();
-            });
-            $('#rarity_sr').change(function () {
-                rarity_sr = !rarity_sr;
-                reloadTable();
+                rarity_r ? $('#rarity_r').btn_on() : $('#rarity_r').btn_off();
+                check_rarity_all();
             });
 
-            $('#rarity_ssr').change(function () {
-                rarity_ssr = !rarity_ssr;
-                reloadTable();
+            $('#rarity_sr').click(function () {
+
+                rarity_sr = !rarity_sr;
+                rarity_sr ? $('#rarity_sr').btn_on() : $('#rarity_sr').btn_off();
+                check_rarity_all();
             });
+
+
+            $('#rarity_ssr').click(function () {
+
+                rarity_ssr = !rarity_ssr;
+                rarity_ssr ? $('#rarity_ssr').btn_on() : $('#rarity_ssr').btn_off();
+                check_rarity_all();
+            });
+
+
+            function check_rarity_all() {
+
+                if (rarity_all) {
+                    rarity_all = false;
+                    $('#rarity_all').btn_off();
+                }
+
+                if (rarity_r == false && rarity_sr == false && rarity_ssr == false) {
+
+                    rarity_all = true;
+                    $('#rarity_all').btn_on();
+                    $('#rarity_r').btn_off();
+                    $('#rarity_sr').btn_off();
+                    $('#rarity_ssr').btn_off();
+                }
+
+                if (rarity_r == true && rarity_sr == true && rarity_ssr == true) {
+
+                    rarity_all = true;
+                    rarity_r = false;
+                    rarity_sr = false;
+                    rarity_ssr = false;
+                    $('#rarity_all').btn_on();
+                    $('#rarity_r').btn_off();
+                    $('#rarity_sr').btn_off();
+                    $('#rarity_ssr').btn_off();
+                }
+
+                reloadTable();
+            }
+
+
+
+
 
             // 職業
 
@@ -491,9 +536,18 @@
         function reloadTable() {
 
             var filterRarity = [];
-            if (rarity_r) filterRarity.push('R');
-            if (rarity_sr) filterRarity.push('SR');
-            if (rarity_ssr) filterRarity.push('SSR');
+
+            if (rarity_all) {
+                filterRarity.push('R');
+                filterRarity.push('SR');
+                filterRarity.push('SSR');
+            } else {
+                if (rarity_r) filterRarity.push('R');
+                if (rarity_sr) filterRarity.push('SR');
+                if (rarity_ssr) filterRarity.push('SSR');
+            }
+
+
 
             var filterClass = [];
             if (class_atk) filterClass.push('A');
@@ -644,6 +698,20 @@
 
 
 
+        $.fn.btn_on = function () {
+
+            $(this).removeClass("btn-secondary");
+            $(this).addClass("btn-primary");
+
+        }
+
+
+
+        $.fn.btn_off = function () {
+
+            $(this).removeClass("btn-primary");
+            $(this).addClass("btn-secondary");
+        }
 
 
     </script>
