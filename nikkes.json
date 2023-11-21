@@ -1,6 +1,346 @@
 [
     {
         "icon": "",
+        "name": "真紀真",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Water",
+        "company": "Abnormal",
+        "squad": "惡魔獵人",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "可否讓我見識你的能耐？",
+            "skill_content": [
+                "◽被攻擊20次時,全體隊友",
+                "【換彈速度36.96%▲】【持續10秒】",
+                "【防禦力14.78%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "好像發現了啊。",
+            "skill_content": [
+                "◽進行120次普通攻擊後,自身",
+                "【注目:挑釁所有敵人】【3秒】",
+                "◽被可造成無法戰鬥狀態的攻擊擊中時,自身",
+                "【不屈】【持續7秒】【戰鬥中觸發1次】",
+                "【爆裂技能冷卻時間11.58秒▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "能不能安靜一點？",
+            "skill_content": [
+                "◽自身",
+                "【穿透特化】【持續10秒】",
+                "【恢復相當於攻擊傷害的34.02%】【持續10秒】",
+                "◽若自身處於不屈的狀態,則自身",
+                "【體力恢復量41.02%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "帕瓦",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Abnormal",
+        "squad": "惡魔獵人",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "血之魔印",
+            "skill_content": [
+                "◽全蓄力攻擊時,自身",
+                "【血之魔印:攻擊力6.4%▲】",
+                "【疊加5次】【持續3秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "血之爆炸",
+            "skill_content": [
+                "◽進行18次普通攻擊後,自身若處於血之魔印的最大疊加狀態,則自身",
+                "【爆炸範圍38.61%▲】【持續10秒】",
+                "【子彈補充100%】【戰鬥中觸發1次】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "血之鐵鎚",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力1584%的傷害】",
+                "◽自身若處於血之魔印的最大疊加狀態,則對同一敵人造成",
+                "【相當於最終攻擊力1584%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4071"
+    },
+    {
+        "icon": "",
+        "name": "2B",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Abnormal",
+        "squad": "寄葉",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "90",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.99%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "生存行動",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【不同起始次數不同效果】【低階效果重複生效】",
+                "1次:【最大體力10.03%▲】【持續】",
+                "2次:【最大體力20.06%▲】【持續】",
+                "3次:【最大體力57.76%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "集束炸彈",
+            "skill_content": [
+                "◽射擊300次時,對全體敵人造成相當於",
+                "【最終攻擊力167.45%的傷害】",
+                "◽戰鬥開始時,自身",
+                "【相當於施展者的最終最大體力6.16%的攻擊力▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "連續攻擊",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力2439.36%的分攤傷害】",
+                "◽對最大體力最高的1名敵人造成相當於",
+                "【最終攻擊力792%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "5015"
+    },
+    {
+        "icon": "",
+        "name": "A2",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Abnormal",
+        "squad": "寄葉",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "1.50",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於67.65%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "功率提升",
+            "skill_content": [
+                "◽使用爆裂技能時,自身",
+                "【蓄力傷害110.44%▲】【持續15秒】",
+                "【爆炸範圍100.74%▲】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "緩衝攻擊",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,對目標造成相當於",
+                "【最終攻擊力30.1%的額外傷害】",
+                "◽全蓄力攻擊命中時,自身",
+                "【零件傷害40.88%▲】【持續3秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "B模式",
+            "skill_content": [
+                "◽自身",
+                "【B模式】:",
+                "功能:每秒降低自身體力,同時提升攻擊力與蓄力速度。若自身體力為40%以下,則解除B模式。",
+                "效果1:【目前體力3.99%▼】【間隔1秒】",
+                "效果2:【攻擊力15.19%▲】",
+                "效果3:【蓄力速度35.88%▲】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4071"
+    },
+    {
+        "icon": "",
+        "name": "姬野",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Abnormal",
+        "squad": "惡魔獵人",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.30",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於70.89%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "弱點擊破",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,目標",
+                "【防禦力6.94%▼】【持續3秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "看不見的手",
+            "skill_content": [
+                "◽持有狙擊步槍的全體隊友",
+                "【攻擊力10.98%▲】【持續10秒】",
+                "【最大裝彈數2發▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "幽靈",
+            "skill_content": [
+                "◽除自身以外的攻擊力最高的1名隊友",
+                "【蓄力傷害23.76%▲】【持續10秒】",
+                "【暴擊率16.35%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "280314",
+        "atk": "10824",
+        "def": "1992"
+    },
+    {
+        "icon": "",
+        "name": "帕斯卡",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Abnormal",
+        "squad": "機械生命體",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於75%攻擊力的傷害】",
+                "【核心傷害200%】",
+                "【無法蓄力攻擊的武器】"
+            ]
+        },
+        "skill1": {
+            "name": "小心！",
+            "skill_content": [
+                "◽射擊10次時,防禦力最高的1名隊友",
+                "【恢復相當於施展者最終最大體力的6.28%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "我會盡全力的。",
+            "skill_content": [
+                "◽進入爆裂1階時,目前體力最低的3名隊友",
+                "【體力恢復量38.4%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "要記住,安全第一喔！",
+            "skill_content": [
+                "◽目前體力最低的3名隊友",
+                "【恢復相當於施展者最終最大體力的55.29%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "280314",
+        "atk": "10824",
+        "def": "2286"
+    },
+    {
+        "icon": "",
         "name": "舒格",
         "rarity": "SSR",
         "class": "A",
