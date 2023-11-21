@@ -1,6 +1,1976 @@
 [
     {
         "icon": "",
+        "name": "舒格",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "咖啡廳甜心部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "2.03",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於231.6%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "黑色颱風",
+            "skill_content": [
+                "◽掩體被攻擊時,以20%的機率自身",
+                "【暴擊傷害16.39%▲】【持續10秒】",
+                "【換彈速度12.12%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "暗感測器",
+            "skill_content": [
+                "◽全爆裂時間開始時,自身",
+                "【暴擊率13.02%▲】【持續10秒】",
+                "◽全爆裂時間開始時,持有霰彈槍的全體隊友",
+                "【最大裝彈數83.8%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "麻煩終結者",
+            "skill_content": [
+                "◽自身",
+                "【攻擊速度66%▲】【持續15秒】",
+                "【命中率33%▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "艾可希雅",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "協議部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "入侵",
+            "skill_content": [
+                "◽最後的子彈命中時,自身若處於收集駭客攻擊代碼的狀態,則目標",
+                "【攻擊力13.77%▼】【持續5秒】",
+                "【防禦力13.77%▼】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "密碼",
+            "skill_content": [
+                "◽最後的子彈命中時,自身",
+                "【收集駭客攻擊代碼:攻擊力16.8%▲】【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "單方協議",
+            "skill_content": [
+                "◽對防禦力最高的10名敵人造成",
+                "【相當於最終攻擊力122.32%的傷害】",
+                "【防禦力2.71%▼】【持續5秒】",
+                "◽自身若處於收集駭客攻擊代碼的最大疊加狀態,則對同一敵人造成",
+                "【相當於最終攻擊力122.32%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "愛麗絲",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "無極限部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1.5秒",
+                "全蓄力傷害:350%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "力量紅蘿蔔",
+            "skill_content": [
+                "◽全爆裂時間開始時,攻擊力最高的2名隊友",
+                "【蓄力速度11.67%▲】【持續10秒】",
+                "【蓄力傷害7%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "健康紅蘿蔔",
+            "skill_content": [
+                "◽自身體力為80%以上時,自身",
+                "【持續】【穿透特化】",
+                "◽自身體力為80%以下時,自身",
+                "【恢復相當於攻擊傷害的8.12%】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "奇異國度",
+            "skill_content": [
+                "◽自身",
+                "【蓄力速度80.15%▲】【持續10秒】",
+                "【攻擊力55.12%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "布蘭兒",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Wind",
+        "company": "Tetra",
+        "squad": "777部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "幸運守護",
+            "skill_content": [
+                "◽進行120次普通攻擊時",
+                "【生成相當於施展者最終最大體力11.8%的隊友共享護盾】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "雙子兔W",
+            "skill_content": [
+                "◽全爆裂時間結束時,全體隊友",
+                "【持續恢復相當於施展者最終最大體力的3.68%】【間隔1秒】【持續5秒】",
+                "◽全爆裂時間結束時,若有同一部隊的隊友,則自身",
+                "【爆裂技能冷卻時間40.76秒▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "ShowTime",
+            "skill_content": [
+                "◽全體隊友",
+                "【持續恢復施展者最終最大體力的3.84%】【間隔1秒】【持續8秒】",
+                "◽除自身以外的剩餘的體力數值最低的1名隊友",
+                "【不屈】【持續10秒】",
+                "【最大體力31.68%▲】【持續10秒】",
+                "◽全體敵人",
+                "【所受傷害39.26%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "60.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "5015"
+    },
+    {
+        "icon": "",
+        "name": "諾亞爾",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Tetra",
+        "squad": "777部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "0.70",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於204.6%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "幸運符",
+            "skill_content": [
+                "◽若自身體力在70%以上,則全體隊友",
+                "【攻擊力以施放者為基準14.08%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "雙子兔B",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【最大裝彈數5發▲】【持續10秒】",
+                "【子彈補充39.88%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "謝幕",
+            "skill_content": [
+                "◽對全體敵人造成",
+                "【相當於最終攻擊力351.64%的傷害】",
+                "◽持有霰彈槍的全體隊友",
+                "【命中率13.93%▲】【持續10秒】",
+                "【阻擋部位攻擊傷害23.23%▲】【持續10秒】",
+                "◽若有同一部隊的隊友,則全體隊友",
+                "【命中率11.61%▲】【持續30秒】",
+                "【阻擋部位攻擊傷害19.36%▲】【持續30秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "普琳瑪",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "咖啡廳甜心部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於65.95%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "…好想睡覺",
+            "skill_content": [
+                "◽普通攻擊命中4次時,目標",
+                "【防禦力15.84%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "……啊",
+            "skill_content": [
+                "◽全蓄力攻擊時,全體隊友",
+                "【最大體力6.09%▲】【持續4秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "……好煩",
+            "skill_content": [
+                "◽對防禦力最高的10名敵人造成",
+                "【相當於最終攻擊力101.66%的傷害】",
+                "【防禦力9.86%▼】【持續10秒】",
+                "◽全體隊友",
+                "【最大體力30.26%▲】【持續4秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "梅里",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "六翼天使部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於201.5%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "CPR",
+            "skill_content": [
+                "◽最後的子彈命中時,剩餘的體力比例最低的1名隊友",
+                "【恢復相當於施展者最終最大體力的8.4%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "護理",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【體力恢復量23.78%▲】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "白衣天使",
+            "skill_content": [
+                "◽自身體力為50%以上時,全體隊友",
+                "【防禦力19.8%▲】【持續10秒】",
+                "◽全體隊友",
+                "【恢復相當於施展者最終最大體力的39.6%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4420"
+    },
+    {
+        "icon": "",
+        "name": "米爾克",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "咖啡廳甜心部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "勝負慾",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【攻擊力31.83%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill2": {
+            "name": "米爾克禁藥",
+            "skill_content": [
+                "◽僅限自身體力為80%以上時,全體隊友",
+                "【暴擊傷害11.13%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "衝向勝利",
+            "skill_content": [
+                "◽對防禦力最高的1名敵人造成",
+                "【相當於最終攻擊力367.34%的傷害】",
+                "◽全體隊友",
+                "【恢復相當於攻擊傷害的16.16%】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "尤爾夏",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "達蘭特部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "1.87",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於68.23%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "啃咬領導力",
+            "skill_content": [
+                "◽被攻擊30次時,自身",
+                "【平常心:暴擊率24.53%▲】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "軟弱製作者",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊力90.75%▲】【持續5秒】",
+                "【分攤被擊傷害】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "30.0"
+        },
+        "skill3": {
+            "name": "亢奮勞動者",
+            "skill_content": [
+                "◽對全體敵人造成相當於",
+                "【最終攻擊力457.87%的傷害】",
+                "◽若自身處於平常心狀態,則對相同的目標敵人造成相當於",
+                "【最終攻擊力457.87%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3552"
+    },
+    {
+        "icon": "",
+        "name": "魯德米拉",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "無極限部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "2.76",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於10.32%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "位高權重",
+            "skill_content": [
+                "◽最後的子彈命中時,目標",
+                "【防禦力8.4%▼】【持續10秒】",
+                "【攻擊力8.4%▼】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "女王的品格",
+            "skill_content": [
+                "◽全爆裂時間開始時,對全體敵人",
+                "【注目:挑釁全體敵人】【持續15.09秒】",
+                "◽爆裂時間開始時,自身",
+                "【所受傷害57.86%▼】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "冰雪女王",
+            "skill_content": [
+                "◽對攻擊力最高的10名敵人造成",
+                "【相當於最終攻擊力163.1%的傷害】",
+                "◽自身體力為50%以上時,全體隊友",
+                "【防禦力12.93%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "露菲",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "達蘭特部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "獎賞",
+            "skill_content": [
+                "◽普通攻擊命中100次時,鐵甲代碼全體隊友",
+                "【可疊加的增益效果疊加量1個▲】",
+                "【暴擊率2.24%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "積分",
+            "skill_content": [
+                "◽攻擊30次時,自身",
+                "【積分:攻擊力13.8%▲】【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "一次性支付",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力274.28%的傷害】",
+                "◽若自身處於積分最大疊加狀態,則全體隊友",
+                "【攻擊力19.8%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4164"
+    },
+    {
+        "icon": "",
+        "name": "楊",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "達蘭特部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1.5秒",
+                "全蓄力傷害:350%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "支離破碎",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【蓄力傷害21.55%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "多多益善",
+            "skill_content": [
+                "◽全蓄力攻擊時,全體隊友",
+                "【攻擊力2.77%▲】【持續5秒】",
+                "【暴擊率1.33%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "一攫千金",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力348.73%的傷害】",
+                "【強制移動至攻擊範圍中心】【持續2秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "朵拉",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Tetra",
+        "squad": "達蘭特部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "企業家精神",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊力16.16%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill2": {
+            "name": "風險共享",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【不同起始次數不同效果】【低階效果重複生效】:",
+                "1次:【爆裂技能冷卻時間1.82秒▼】",
+                "2次:【爆裂技能冷卻時間2.2秒▼】",
+                "3次:【爆裂技能冷卻時間2.6秒▼】",
+                "使用爆裂技能時,全體隊友",
+                "【不同使用次數不同效果】【低階效果重複生效】:",
+                "1次:【攻擊力7.72%▲】【持續5秒】",
+                "2次:【暴擊率4.21%▲】【持續5秒】",
+                "3次:【暴擊傷害13.22%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "R&D射擊",
+            "skill_content": [
+                "◽對防禦力最高的1名敵人造成相當於",
+                "【最終攻擊力734.69%的傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "諾薇兒",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "協議部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.1%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "可疑！",
+            "skill_content": [
+                "◽對防禦力最高的3名敵人造成相當於",
+                "【最終攻擊力52.36%的傷害】",
+                "【防禦力7.05%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "10.0"
+        },
+        "skill2": {
+            "name": "偵探工具！",
+            "skill_content": [
+                "◽普通攻擊命中100次時,自身",
+                "【證物收集:防禦力13.5%▲】",
+                "【疊加5次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "案件解決！",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人造成",
+                "【相當於最終攻擊力330.61%的傷害】",
+                "◽若自身處於證物收集的最大疊加狀態,則額外使1名敵人",
+                "【所受傷害67.5%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "富克旺",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "生命補藥部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.30",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於14.29%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "開場哨",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友生成",
+                "【相當於施展者最終最大體力13.71%的護盾】【持續10秒】",
+                "【體力恢復量45.7%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "30.0"
+        },
+        "skill2": {
+            "name": "壓迫",
+            "skill_content": [
+                "◽對攻擊力最高的1名敵人進行",
+                "【挑釁】【持續5秒】",
+                "◽自身",
+                "【最大體力44.96%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "夾板",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友生成",
+                "【相當於施展者最終最大體力32.9%的護盾】【持續10秒】",
+                "【恢復相當於攻擊傷害的65.81%】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "5015"
+    },
+    {
+        "icon": "",
+        "name": "櫻花",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "黑道女王部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "1.67",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於67%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "櫻花茶",
+            "skill_content": [
+                "◽進行3次普通攻擊後,全體隊友",
+                "【櫻花茶:防禦力8.15%】【疊加10次】【持續15秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "落櫻繽紛",
+            "skill_content": [
+                "◽全體隊友",
+                "【攻擊敵人發射體時,對該發射體造成的傷害7.74%▲】【持續】",
+                "◽全爆裂時間開始時,對全體隊友",
+                "【爆裂技能冷卻時間4.84秒▼】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "櫻花爛漫",
+            "skill_content": [
+                "◽全體隊友",
+                "【受風壓代碼敵人傷害90.72%▼】【持續30秒】",
+                "【戰鬥中觸發1次】",
+                "【等於施展者攻擊力23.76%的攻擊力▲】【持續10秒】",
+                "◽若自身處於櫻花茶最大疊加狀態,全體隊友",
+                "【阻擋部位攻擊傷害23.54%▲】【持續30秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "毒蛇",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "外來者部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.70",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於220.4%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "蛇形判斷",
+            "skill_content": [
+                "◽若目標出現,則全體隊友",
+                "【攻擊力25.98%▲】【持續10秒】",
+                "【命中率11.13%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "蛇鱗",
+            "skill_content": [
+                "◽自身",
+                "【命中率3.43%▲】【持續】",
+                "全爆裂時間開始時,自身",
+                "【撒嬌:從單體攻擊目標中排除,直接被攻擊時解除】【持續10秒】",
+                "【無敵】【持續1秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "蛇傷",
+            "skill_content": [
+                "◽對指定的1名目標敵人造成",
+                "【相當於最終攻擊力462.85%的傷害】",
+                "◽若對象為目標,則使同一敵人",
+                "【防禦力19.83%▼】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "4012"
+    },
+    {
+        "icon": "",
+        "name": "可可",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "專屬女僕部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於69.04%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "專業摺紙",
+            "skill_content": [
+                "◽全體隊友",
+                "【掩體體力恢復17.76%】",
+                "◽對隨機2名受到減益效果的隊友",
+                "【解除減益效果1個】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "專業番茄醬",
+            "skill_content": [
+                "◽全蓄力攻擊時,自身",
+                "【專業番茄醬:被擊傷害4.37%▼】【疊加15次】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "專業女傭",
+            "skill_content": [
+                "◽全體隊友",
+                "【減益效果解除1個】",
+                "◽若自身處於專業番茄醬最大疊加狀態,則全體敵人",
+                "【攻擊力13.59%▼】【10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "索達",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "專屬女僕部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.57%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "座位清潔女僕",
+            "skill_content": [
+                "◽施展180次普通攻擊後,自身",
+                "【女僕精神:最大體力13%▲】",
+                "【疊加5次】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "地面清潔女僕",
+            "skill_content": [
+                "◽全體隊友",
+                "【恢復等同於施展者最終最大體力的3.23%】",
+                "◽若自身處於女僕精神最大疊加狀態,則全體隊友",
+                "【恢復等同於施展者最終最大體力的12.71%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "12.0"
+        },
+        "skill3": {
+            "name": "大掃除女僕",
+            "skill_content": [
+                "◽對隨機2名敵人造成",
+                "【相當於最終攻擊力321.28%的傷害】",
+                "【昏迷】【持續1秒】",
+                "◽燃燒代碼全體隊友",
+                "【可疊加的增益效果疊加量1個▲】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3894"
+    },
+    {
+        "icon": "",
+        "name": "餅乾",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "快樂動物園部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "快樂帕比",
+            "skill_content": [
+                "◽全爆裂時間結束時,火力型全體隊友",
+                "【普通攻擊暴擊率5.77%▲】【持續10秒】",
+                "【持續恢復相當於施展者最終最大體力的1.53%】【間隔1秒】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "拔河遊戲",
+            "skill_content": [
+                "◽某位防禦型隊友的體力達到50%以下時,使其",
+                "【無敵】【持續5秒】【戰鬥中觸發2次】",
+                "【恢復等同於施展者最終最大體力的23.26%】【戰鬥中觸發2次】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "散步訓練",
+            "skill_content": [
+                "◽對隨機2名掩體遭到破壞的隊友",
+                "【以掩體體力93.6%的狀態復活掩體】",
+                "◽輔助型全體隊友",
+                "【攻擊力43.08%▲】【持續10秒】",
+                "【恢復相當於攻擊傷害的55.44%】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "萊伊",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "校園社團",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.83",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於9.15%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "前輩的助威",
+            "skill_content": [
+                "◽進行60次普通攻擊後,全體隊友",
+                "【爆裂進度補充2.47%】",
+                "◽若有誘餌,則誘餌",
+                "【恢復相當於施展者最終最大體力的2.1%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "前輩的氣勢",
+            "skill_content": [
+                "◽戰鬥開始時,自身",
+                "【誘餌:生成相當於施展者最終最大體力96%的分身】【持續240秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "前輩的榜樣",
+            "skill_content": [
+                "◽自身",
+                "【注目】【持續5秒】",
+                "【所受傷害14.4%▼】【持續10秒】",
+                "◽若有誘餌,則誘餌",
+                "【持續恢復等同於施展者最終最大體力的2.27%】【間隔1秒】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "阿莉亞",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "首席女歌手",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "2.33",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.47%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "快板",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【暴擊傷害26.99%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "安魂曲",
+            "skill_content": [
+                "◽最後的子彈命中時,全體隊友",
+                "【暴擊率7.03%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "阿莉亞領域",
+            "skill_content": [
+                "◽全體隊友",
+                "【生成相當於施展者最終最大體力37.86%的護盾】【持續10秒】",
+                "◽自身",
+                "【命中率30.37%▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
+        "icon": "",
+        "name": "諾伊斯",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "首席女歌手",
+        "burst": "I",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "合聲",
+            "skill_content": [
+                "◽被攻擊20次後,全體隊友",
+                "【所受傷害10.66%▼】【持續20秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "合唱",
+            "skill_content": [
+                "◽全蓄力攻擊時,對目標進行",
+                "【挑釁】【持續2秒】",
+                "◽自身",
+                "【最大體力24.86%▲】【持續1.8秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "高能噪音",
+            "skill_content": [
+                "◽全體隊友",
+                "【持續恢復施展者最終最大體力的2.47%】【間隔1秒】【持續10秒】",
+                "【最大體力49.5%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "4485"
+    },
+    {
+        "icon": "",
+        "name": "沃綸姆",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Wind",
+        "company": "Tetra",
+        "squad": "首席女歌手",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "FreeStyle",
+            "skill_content": [
+                "◽消滅敵人時,自身",
+                "【攻擊力12.6%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "DroptheBeat",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【不同起始次數不同效果】【低階效果重複生效】:",
+                "1次:【爆裂技能冷卻時間2.34秒▼】",
+                "2次:【爆裂技能冷卻時間2.7秒▼】",
+                "3次:【爆裂技能冷卻時間3.17秒▼】",
+                "◽使用爆裂技能時,全體隊友",
+                "【不同使用次數不同效果】【低階效果重複生效】:",
+                "1次:【暴擊傷害10.77%▲】【持續5秒】",
+                "2次:【暴擊傷害12.46%▲】【持續5秒】",
+                "3次:【暴擊傷害14.42%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "大聲點我聽不見！",
+            "skill_content": [
+                "◽全體隊友",
+                "【暴擊率31.9%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3633"
+    },
+    {
+        "icon": "",
+        "name": "露菲：冬日購物狂",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "達蘭特部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於13.65%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "冬季特惠",
+            "skill_content": [
+                "◽最後的子彈命中時,全體隊友",
+                "【防禦力19.02%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "VIP禮物",
+            "skill_content": [
+                "◽隊友使用爆裂技能時,全體隊友",
+                "【購物:防禦力1.33%▲】",
+                "【疊加4次】【持續20秒】",
+                "◽全爆裂時間結束時,若自身處於購物最大疊加狀態,則全體隊友",
+                "【爆裂進度補充速度7.9%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "購物狂約會",
+            "skill_content": [
+                "◽自身",
+                "【注目:挑釁所有敵人】【持續5秒】",
+                "【恢復相當於攻擊傷害的50.47%】【持續10秒】",
+                "◽全體隊友",
+                "【換彈速度63.17%▲】【持續10秒】",
+                "【重新進入爆裂1階】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "5015"
+    },
+    {
+        "icon": "",
+        "name": "羅珊娜",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "黑道女王部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "1.67",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.1%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "高歌離席",
+            "skill_content": [
+                "◽普通攻擊命中120次時,自身",
+                "【隱身:從單體攻擊目標中排除。直接被攻擊時解除】【持續10秒】",
+                "【暴擊率19.34%▲】【持續3秒】",
+                "◽普通攻擊命中10次時,對攻擊力最高的2名敵人",
+                "【解除增益效果5個】【戰鬥中發動1次】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "教父",
+            "skill_content": [
+                "◽戰鬥開始時,自身",
+                "【隱身:從單體攻擊目標中排除。直接被攻擊時解除】【持續5秒】",
+                "◽當某位妮姬處於無法戰鬥狀態時,自身",
+                "【瘋狂:攻擊力22.61%▲】【疊加10次】【持續30秒】",
+                "【爆裂進度補充36.54%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "復仇",
+            "skill_content": [
+                "◽優先對火力型的2名敵人造成等於",
+                "【最終攻擊力1310.4%的傷害】",
+                "◽若自身處於隱身狀態,則對相同目標敵人造成等於",
+                "【最終攻擊力561.6%的額外傷害】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
+        "icon": "",
+        "name": "梅里：海灣女神",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "六翼天使部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SR",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於65.95%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "海邊的陽光",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體隊友",
+                "【不同起始次數不同效果】【低階效果重複生效】",
+                "1次:【恢復施展者最終最大體力的1.05%】【間隔1秒】【持續5秒】",
+                "2次:【恢復施展者最終最大體力的3.69%】【間隔1秒】【持續5秒】",
+                "3次:【恢復施展者最終最大體力的6.86%】【間隔1秒】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "浸濕雙腳的海浪",
+            "skill_content": [
+                "◽使用爆裂技能時,水冷代碼全體隊友",
+                "【不同起始次數不同效果】【低階效果重複生效】",
+                "1次:【優越代碼攻擊傷害20.85%▲】【持續3秒】",
+                "2次:【優越代碼攻擊傷害13.88%▲】【持續5秒】",
+                "3次:【優越代碼攻擊傷害8.36%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "平靜的水面",
+            "skill_content": [
+                "◽水冷代碼全體隊友",
+                "【攻擊力23.23%▲】【持續3秒】",
+                "◽全體隊友",
+                "【最大體力以施展者最終最大體力為基準27.87%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3909"
+    },
+    {
+        "icon": "",
+        "name": "尼羅",
+        "rarity": "SSR",
+        "class": "D",
+        "code": "Fire",
+        "company": "Tetra",
+        "squad": "快樂動物園部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "1.30",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.39%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "貓的報恩",
+            "skill_content": [
+                "◽恢復效果生效時,使目標",
+                "【所受傷害14.14%▼】【持續5秒】",
+                "◽恢復效果生效時,使自身",
+                "【貓的報恩:所受傷害8.43%▼】",
+                "【疊加5次】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "貓爪",
+            "skill_content": [
+                "◽被攻擊時,有30%的機率使目標",
+                "【所受傷害8.26%▲】【持續5秒】",
+                "◽被攻擊時,若正處於野蠻大貓狀態,則有30%的機率對目標造成相當於",
+                "【最終攻擊力158.05%的傷害】",
+                "◽戰鬥開始時,自身",
+                "【最大體力60.28%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "野蠻大貓",
+            "skill_content": [
+                "◽對體力最高的1名敵人造成相當於",
+                "【最終攻擊力1104.91%的傷害】",
+                "◽自身",
+                "【注目:挑釁全體敵人】【持續15秒】",
+                "◽若自身處於貓的報恩最大疊加狀態,則使自身",
+                "【野蠻大貓:體力恢復量60.08%▲】【持續15秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "阿妮斯：閃耀夏日",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "反擊部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "5",
+            "reload_time": "2.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於259.2%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "陣型D.H閃耀推進器",
+            "skill_content": [
+                "◽全爆裂時間開始時,全體電擊代碼的隊友",
+                "【相當於施展者攻擊力55.31%的攻擊力▲】【持續10秒】",
+                "換彈速度49.28%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "閃耀飛彈",
+            "skill_content": [
+                "◽最後的子彈發射時,對攻擊力最高的2名敵人造成相當於",
+                "【最終攻擊力382.42%的傷害】",
+                "◽最後的子彈發射時,自身",
+                "【阻擋部位攻擊傷害6.91%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "閃耀波浪",
+            "skill_content": [
+                "◽自身",
+                "【最大裝彈數73.92%▼】【持續10秒】",
+                "【換彈速度27.72%▲】【持續10秒】",
+                "【優越代碼攻擊傷害42.24%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "711171",
+        "atk": "17059",
+        "def": "4364"
+    },
+    {
+        "icon": "",
+        "name": "阿妮斯",
+        "rarity": "SR",
+        "class": "A",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "反擊部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.03",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於65.02%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "陣型D.H",
+            "skill_content": [
+                "◽被攻擊40次時,自身",
+                "【防禦力120%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "陣型C.H",
+            "skill_content": [
+                "◽自身與除自身以外攻擊力最高的2名隊友",
+                "【防禦力80%▲】【持續5秒】",
+                "【分攤被擊傷害】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "30.0"
+        },
+        "skill3": {
+            "name": "針點飛彈",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【相當於最終攻擊力156.73%的傷害】",
+                "【防禦力32%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "307885",
+        "atk": "8666",
+        "def": "2497"
+    },
+    {
+        "icon": "",
+        "name": "貝洛塔",
+        "rarity": "SR",
+        "class": "A",
+        "code": "Electric",
+        "company": "Tetra",
+        "squad": "小加農炮部隊",
+        "burst": "Ⅱ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1.5秒",
+                "全蓄力傷害:350%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "驚喜",
+            "skill_content": [
+                "◽全蓄力攻擊命中時,自身",
+                "【爆炸範圍9.55%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "貪婪",
+            "skill_content": [
+                "◽同時命中4名以上目標時,對目標造成",
+                "【防禦力3.52%▼】【持續5秒】",
+                "【相當於最終攻擊力14.96%的額外傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "狡猾投彈",
+            "skill_content": [
+                "◽對攻擊範圍內的敵人造成相當於",
+                "【最終攻擊力192%的傷害】",
+                "◽全體隊友",
+                "【蓄力速度2.82%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "252742",
+        "atk": "12982",
+        "def": "2075"
+    },
+    {
+        "icon": "",
+        "name": "米卡",
+        "rarity": "SR",
+        "class": "S",
+        "code": "Wind",
+        "company": "Tetra",
+        "squad": "小加農炮部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "RL",
+            "ammo_capacity": "6",
+            "reload_time": "2.00",
+            "control_mode": "C",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於61.3%攻擊力的傷害】",
+                "蓄力時間:1秒",
+                "全蓄力傷害:250%傷害",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "美味之星",
+            "skill_content": [
+                "◽被攻擊20次時,自身",
+                "【防禦力39.18%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "勇敢之星",
+            "skill_content": [
+                "◽攻擊力最高的2名隊友",
+                "【最大裝彈數2發▲】【持續10秒】",
+                "【防禦力19.89%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "skill3": {
+            "name": "閃爍之星",
+            "skill_content": [
+                "◽對全體敵人造成",
+                "【相當於最終攻擊力152.22%的傷害】",
+                "【防禦力13.32%▼】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "280314",
+        "atk": "10824",
+        "def": "2286"
+    },
+    {
+        "icon": "",
+        "name": "尼夫",
+        "rarity": "SR",
+        "class": "A",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "無極限部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "SG",
+            "ammo_capacity": "9",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於201.5%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "北極熊之力量",
+            "skill_content": [
+                "◽對剩餘的體力比例最低的1名敵人造成相當於",
+                "【最終攻擊力145.45%的傷害】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "北極熊之冬眠",
+            "skill_content": [
+                "◽全爆裂時間開始時,自身發動",
+                "【穿透特化】【持續2發】",
+                "【攻擊力124.8%▲】【持續2發】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "北極熊之咆哮",
+            "skill_content": [
+                "◽自身",
+                "【暴擊率31.95%▲】【持續20秒】",
+                "【命中率22.04%▲】【持續20秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "252742",
+        "atk": "12982",
+        "def": "2045"
+    },
+    {
+        "icon": "",
+        "name": "iDoll海",
+        "rarity": "R",
+        "class": "S",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "替代者具部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "120",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於8.73%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "海之淋浴",
+            "skill_content": [
+                "◽最後的子彈命中時,剩餘的體力比例最低的1名隊友",
+                "【恢復相當於施展者最終最大體力的4.86%】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "海之清洗",
+            "skill_content": [
+                "◽剩餘的體力比例最低的1名隊友",
+                "【恢復相當於施展者最終最大體力的9.69%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "15.0"
+        },
+        "skill3": {
+            "name": "海之潛躍",
+            "skill_content": [
+                "◽全體隊友",
+                "【恢復相當於施展者最終最大體力的29.7%】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "83463",
+        "atk": "2903",
+        "def": "499"
+    },
+    {
+        "icon": "",
+        "name": "iDoll太陽",
+        "rarity": "R",
+        "class": "S",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "替代者具部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "AR",
+            "ammo_capacity": "60",
+            "reload_time": "1.50",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於14.71攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "日照",
+            "skill_content": [
+                "◽普通攻擊命中10次時,自身",
+                "【防禦力7.56%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "日光",
+            "skill_content": [
+                "◽被攻擊時,自身以20%的機率",
+                "【攻擊力9.09%▲】【持續5秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "日落",
+            "skill_content": [
+                "◽自身",
+                "【最大裝彈數787.5%▲】【持續10秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "83463",
+        "atk": "2903",
+        "def": "580"
+    },
+    {
+        "icon": "",
         "name": "麥斯威爾",
         "rarity": "SSR",
         "class": "A",
@@ -2998,7 +4968,7 @@
             "name": "捕食",
             "skill_content": [
                 "◽全蓄力攻擊時,自身",
-                "【穿透特化】【持續1發】】",
+                "【穿透特化】【持續1發】",
                 "【暴擊率2.95%▲】【持續1發】",
                 "◽消滅敵人時,自身",
                 "【攻擊力3·02%▲】【疊加15次】【持續10秒】"
