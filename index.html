@@ -40,13 +40,10 @@
 
             <div class="collapse show" id="class_collapse">
                 <hr class="text-light">
-                <button id="class_all" class="btn btn-success">All</button>
-                <input id="class_atk" type="checkbox" data-toggle="toggle" checked data-on="火力型" data-off="火力型"
-                    data-onstyle="success" data-offstyle="secondary" />
-                <input id="class_def" type="checkbox" data-toggle="toggle" checked data-on="防禦型" data-off="防禦型"
-                    data-onstyle="success" data-offstyle="secondary" />
-                <input id="class_sup" type="checkbox" data-toggle="toggle" checked data-on="輔助型	" data-off="輔助型"
-                    data-onstyle="success" data-offstyle="secondary" />
+                <button id="class_all" class="btn btn-primary">ALL</button>
+                <button id="class_atk" class="btn btn-secondary">火力型</button>
+                <button id="class_def" class="btn btn-secondary">防禦型</button>
+                <button id="class_sup" class="btn btn-secondary">輔助型</button>
             </div>
 
             <br />
@@ -206,9 +203,10 @@
         var rarity_r = false;
         var rarity_sr = false;
         var rarity_ssr = false;
-        var class_atk = true;
-        var class_def = true;
-        var class_sup = true;
+        var class_all = true;
+        var class_atk = false;
+        var class_def = false;
+        var class_sup = false;
         var code_fire = true;
         var code_wind = true;
         var code_iron = true;
@@ -236,6 +234,8 @@
         var burst_cd_60 = true;
 
         $(document).ready(function () {
+
+            //#region  取得json資料
             var xmlhttp = new XMLHttpRequest();
 
             var jsonPath =
@@ -262,10 +262,10 @@
                 });
             }
 
+            //#endregion
 
 
-
-            // 稀有度
+            //#region 選擇稀有度
             $('#rarity_all').click(function () {
                 if (rarity_all) return;
 
@@ -329,32 +329,76 @@
                 reloadTable();
             }
 
+            //#endregion
 
 
 
-
-            // 職業
+            //#region 選擇職業
 
             $('#class_all').click(function () {
-                if (!class_atk) $('#class_atk').bootstrapToggle('on');
-                if (!class_def) $('#class_def').bootstrapToggle('on');
-                if (!class_sup) $('#class_sup').bootstrapToggle('on');
+                if (class_all) return;
+
+                class_atk = false;
+                class_def = false;
+                class_sup = false;
+                check_class_all();
             });
 
-            $('#class_atk').change(function () {
+            $('#class_atk').click(function () {
+
                 class_atk = !class_atk;
-                reloadTable();
+                class_atk ? $('#class_atk').btn_on() : $('#class_atk').btn_off();
+                check_class_all();
             });
-            $('#class_def').change(function () {
+
+            $('#class_def').click(function () {
+
                 class_def = !class_def;
-                reloadTable();
+                class_def ? $('#class_def').btn_on() : $('#class_def').btn_off();
+                check_class_all();
             });
 
-            $('#class_sup').change(function () {
+
+            $('#class_sup').click(function () {
+
                 class_sup = !class_sup;
-                reloadTable();
+                class_sup ? $('#class_sup').btn_on() : $('#class_sup').btn_off();
+                check_class_all();
             });
 
+
+            function check_class_all() {
+
+                if (class_all) {
+                    class_all = false;
+                    $('#class_all').btn_off();
+                }
+
+                if (class_atk == false && class_def == false && class_sup == false) {
+
+                    class_all = true;
+                    $('#class_all').btn_on();
+                    $('#class_atk').btn_off();
+                    $('#class_def').btn_off();
+                    $('#class_sup').btn_off();
+                }
+
+                if (class_atk == true && class_def == true && class_sup == true) {
+
+                    class_all = true;
+                    class_atk = false;
+                    class_def = false;
+                    class_sup = false;
+                    $('#class_all').btn_on();
+                    $('#class_atk').btn_off();
+                    $('#class_def').btn_off();
+                    $('#class_sup').btn_off();
+                }
+
+                reloadTable();
+            }
+
+            //#endregion
 
             // 代碼
             $('#code_all').click(function () {
@@ -550,9 +594,17 @@
 
 
             var filterClass = [];
-            if (class_atk) filterClass.push('A');
-            if (class_def) filterClass.push('D');
-            if (class_sup) filterClass.push('S');
+
+            if (class_all) {
+                filterClass.push('A');
+                filterClass.push('D');
+                filterClass.push('S');
+            } else {
+                if (class_atk) filterClass.push('A');
+                if (class_def) filterClass.push('D');
+                if (class_sup) filterClass.push('S');
+            }
+
 
             var filterCode = [];
             if (code_fire) filterCode.push('Fire');
