@@ -13,6 +13,641 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+
+
+    <style>
+        :root {
+            --img_url: url('https://raw.githubusercontent.com/Rekkuuza/nikkeskills.github.io/main/nikkes_canvas.webp');
+        }
+
+        /*#region 角色圖片*/
+        .img_000 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px 0px;
+        }
+
+        .img_001 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px 0px;
+        }
+
+        .img_002 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px 0px;
+        }
+
+        .img_003 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px 0px;
+        }
+
+        .img_004 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px 0px;
+        }
+
+        .img_005 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px 0px;
+        }
+
+        .img_006 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px 0px;
+        }
+
+        .img_007 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px 0px;
+        }
+
+        .img_008 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px 0px;
+        }
+
+        .img_009 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px 0px;
+        }
+
+        .img_010 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -490px;
+        }
+
+        .img_011 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -490px;
+        }
+
+        .img_012 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -490px;
+        }
+
+        .img_013 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -490px;
+        }
+
+        .img_014 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -490px;
+        }
+
+        .img_015 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -490px;
+        }
+
+        .img_016 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -490px;
+        }
+
+        .img_017 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -490px;
+        }
+
+        .img_018 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -490px;
+        }
+
+        .img_019 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -490px;
+        }
+
+        .img_020 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -980px;
+        }
+
+        .img_021 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -980px;
+        }
+
+        .img_022 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -980px;
+        }
+
+        .img_023 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -980px;
+        }
+
+        .img_024 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -980px;
+        }
+
+        .img_025 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -980px;
+        }
+
+        .img_026 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -980px;
+        }
+
+        .img_027 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -980px;
+        }
+
+        .img_028 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -980px;
+        }
+
+        .img_029 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -980px;
+        }
+
+        .img_030 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -1470px;
+        }
+
+        .img_031 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -1470px;
+        }
+
+        .img_032 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -1470px;
+        }
+
+        .img_033 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -1470px;
+        }
+
+        .img_034 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -1470px;
+        }
+
+        .img_035 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -1470px;
+        }
+
+        .img_036 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -1470px;
+        }
+
+        .img_037 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -1470px;
+        }
+
+        .img_038 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -1470px;
+        }
+
+        .img_039 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -1470px;
+        }
+
+        .img_040 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -1960px;
+        }
+
+        .img_041 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -1960px;
+        }
+
+        .img_042 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -1960px;
+        }
+
+        .img_043 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -1960px;
+        }
+
+        .img_044 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -1960px;
+        }
+
+        .img_045 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -1960px;
+        }
+
+        .img_046 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -1960px;
+        }
+
+        .img_047 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -1960px;
+        }
+
+        .img_048 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -1960px;
+        }
+
+        .img_049 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -1960px;
+        }
+
+        .img_050 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -2450px;
+        }
+
+        .img_051 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -2450px;
+        }
+
+        .img_052 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -2450px;
+        }
+
+        .img_053 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -2450px;
+        }
+
+        .img_054 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -2450px;
+        }
+
+        .img_055 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -2450px;
+        }
+
+        .img_056 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -2450px;
+        }
+
+        .img_057 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -2450px;
+        }
+
+        .img_058 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -2450px;
+        }
+
+        .img_059 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -2450px;
+        }
+
+        .img_060 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -2940px;
+        }
+
+        .img_061 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -2940px;
+        }
+
+        .img_062 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -2940px;
+        }
+
+        .img_063 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -2940px;
+        }
+
+        .img_064 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -2940px;
+        }
+
+        .img_065 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -2940px;
+        }
+
+        .img_066 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -2940px;
+        }
+
+        .img_067 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -2940px;
+        }
+
+        .img_068 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -2940px;
+        }
+
+        .img_069 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -2940px;
+        }
+
+        .img_070 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -3430px;
+        }
+
+        .img_071 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -3430px;
+        }
+
+        .img_072 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -3430px;
+        }
+
+        .img_073 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -3430px;
+        }
+
+        .img_074 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -3430px;
+        }
+
+        .img_075 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -3430px;
+        }
+
+        .img_076 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -3430px;
+        }
+
+        .img_077 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -3430px;
+        }
+
+        .img_078 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -3430px;
+        }
+
+        .img_079 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -3430px;
+        }
+
+        .img_080 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -3920px;
+        }
+
+        .img_081 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -3920px;
+        }
+
+        .img_082 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -3920px;
+        }
+
+        .img_083 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -3920px;
+        }
+
+        .img_084 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -3920px;
+        }
+
+        .img_085 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -3920px;
+        }
+
+        .img_086 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -3920px;
+        }
+
+        .img_087 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -3920px;
+        }
+
+        .img_088 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -3920px;
+        }
+
+        .img_089 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -3920px;
+        }
+
+        .img_090 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -4410px;
+        }
+
+        .img_091 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -4410px;
+        }
+
+        .img_092 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -4410px;
+        }
+
+        .img_093 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -4410px;
+        }
+
+        .img_094 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1024px -4410px;
+        }
+
+        .img_095 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1280px -4410px;
+        }
+
+        .img_096 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1536px -4410px;
+        }
+
+        .img_097 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -1792px -4410px;
+        }
+
+        .img_098 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2048px -4410px;
+        }
+
+        .img_099 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -2304px -4410px;
+        }
+
+        .img_100 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) 0px -4900px;
+        }
+
+        .img_101 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -256px -4900px;
+        }
+
+        .img_102 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -512px -4900px;
+        }
+
+        .img_103 {
+            width: 256px;
+            height: 490px;
+            background: var(--img_url) -768px -4900px;
+        }
+
+
+        /*#endregion */
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -117,7 +752,7 @@
         <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
             <thead>
                 <tr>
-                    <th data-field="icon"></th>
+                    <th data-field="icon" data-formatter="iconFormatter"></th>
                     <th class="text-center" data-field="name">
                         名稱
                     </th>
@@ -916,6 +1551,19 @@
             );
         }
 
+        function iconFormatter(index, row, element) {
+
+            var icon = '';
+            icon += '<div class="bg-dark">'
+            icon += '<img class="';
+            icon += row.icon;
+            icon += '"';
+            icon += 'width="256" ';
+            icon += 'height="470" ';
+            icon += '>';
+            icon += '</div>';
+            return icon
+        }
 
 
         function skillFormatter(index, row, element) {
@@ -930,7 +1578,7 @@
             if (index.skill_cooldown != '0' & index.skill_cooldown != '') {
                 skill += '<div class="col">';
                 skill += '<i class="bi bi-clock"></i>    ' + index.skill_cooldown + '秒';
-                skill += '</div>'
+                skill += '</div>';
             }
             skill += '</div>'
             for (var i = 0; i < index.skill_content.length; i++) {
