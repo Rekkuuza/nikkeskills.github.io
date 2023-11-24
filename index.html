@@ -1554,14 +1554,11 @@
         function iconFormatter(index, row, element) {
 
             var icon = '';
-            icon += '<div class="bg-dark">'
-            icon += '<img class="';
-            icon += row.icon;
-            icon += '"';
-            icon += 'width="256" ';
-            icon += 'height="470" ';
+
+            icon += '<img class="' + row.icon + '" ';
+            icon += 'id="' + row.icon + '" ';
             icon += '>';
-            icon += '</div>';
+
             return icon
         }
 
