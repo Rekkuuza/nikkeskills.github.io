@@ -716,7 +716,7 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container">
+    <div class="container-fluid">
         <br />
         <h1 class="text-light">Nikke Skills</h1>
         <br />
@@ -812,12 +812,37 @@
                 <button id="burst_cd_60" class="btn btn-secondary">60</button>
             </div>
 
+
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#skills_collapse">+技能</button>
+
+            <div class="collapse show" id="skills_collapse">
+                <hr class="text-light">
+                <button id="skill_all" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-recycle" viewBox="0 0 16 16">
+                        <path
+                            d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                    </svg>
+                </button>
+                <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
+                <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
+                <button id="skill_stun" class="btn btn-secondary">昏迷</button>
+                <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
+                <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
+                <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
+                <button id="skill_shield" class="btn btn-secondary">護盾</button>
+                <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
+                <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
+
+            </div>
+
+
         </div>
 
         <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
             <thead>
                 <tr>
-                    <th data-field="icon" data-formatter="iconFormatter"></th>
+                    <th data-field="icon" class="col-1" data-formatter="iconFormatter"></th>
                     <th class="text-center" data-visible="false" data-field="name">
                         名稱
                     </th>
@@ -831,7 +856,8 @@
                         data-sortable="true">
                         代碼
                     </th>
-                    <th class="text-center" data-field="company" data-formatter="companyFormatter" data-sortable="true">
+                    <th class="text-center" data-field="company" data-formatter="companyFormatter" data-sortable="true"
+                        data-visible="false">
                         企業
                     </th>
                     <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
@@ -840,16 +866,16 @@
                     <th class="text-center" data-field="burst" data-visible="false" data-sortable="true">
                         爆裂
                     </th>
-                    <th class="text-center" data-field="weapon" data-formatter="weaponFormatter" data-visible="false">
+                    <th class="text-center" data-field="weapon" data-formatter="weaponFormatter">
                         武器
                     </th>
-                    <th class="align-text-top" data-field="skill1" data-formatter="skillFormatter">
+                    <th class="align-text-top col-3" data-field="skill1" data-formatter="skillFormatter">
                         技能1
                     </th>
-                    <th class="align-text-top" data-field="skill2" data-formatter="skillFormatter">
+                    <th class="align-text-top col-3" data-field="skill2" data-formatter="skillFormatter">
                         技能2
                     </th>
-                    <th class="align-text-top" data-field="skill3" data-formatter="skillFormatter">
+                    <th class="align-text-top col-3" data-field="skill3" data-formatter="skillFormatter">
                         技能3
                     </th>
                 </tr>
@@ -907,6 +933,16 @@
         var burst_cd_20 = false;
         var burst_cd_40 = false;
         var burst_cd_60 = false;
+        var skill_all = true;
+        var skill_last_bullet = false;
+        var skill_pierce = false;
+        var skill_stun = false;
+        var skill_cover_recovers = false;
+        var skill_taunt = false;
+        var skill_invulnerable = false;
+        var skill_shield = false;
+        var skill_burst_cooldown = false;
+        var skill_reload_speed = false;
 
         $(document).ready(function () {
 
@@ -1507,6 +1543,139 @@
 
             //#endregion
 
+            //#region 選擇技能
+            $('#skill_all').click(function () {
+                if (skill_all) return;
+
+                skill_last_bullet = false;
+                skill_pierce = false;
+                skill_stun = false;
+                skill_cover_recovers = false;
+                skill_taunt = false;
+                skill_invulnerable = false;
+                skill_shield = false;
+                skill_burst_cooldown = false;
+                skill_reload_speed = false;
+
+                check_skill_all();
+            });
+
+            $('#skill_last_bullet').click(function () {
+
+                skill_last_bullet = !skill_last_bullet;
+                skill_last_bullet ? $('#skill_last_bullet').btn_on() : $('#skill_last_bullet').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_pierce').click(function () {
+
+                skill_pierce = !skill_pierce;
+                skill_pierce ? $('#skill_pierce').btn_on() : $('#skill_pierce').btn_off();
+                check_skill_all();
+            });
+
+
+            $('#skill_stun').click(function () {
+
+                skill_stun = !skill_stun;
+                skill_stun ? $('#skill_stun').btn_on() : $('#skill_stun').btn_off();
+                check_skill_all();
+            });
+
+
+            $('#skill_cover_recovers').click(function () {
+
+                skill_cover_recovers = !skill_cover_recovers;
+                skill_cover_recovers ? $('#skill_cover_recovers').btn_on() : $('#skill_cover_recovers').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_taunt').click(function () {
+
+                skill_taunt = !skill_taunt;
+                skill_taunt ? $('#skill_taunt').btn_on() : $('#skill_taunt').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_invulnerable').click(function () {
+
+                skill_invulnerable = !skill_invulnerable;
+                skill_invulnerable ? $('#skill_invulnerable').btn_on() : $('#skill_invulnerable').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_shield').click(function () {
+
+                skill_shield = !skill_shield;
+                skill_shield ? $('#skill_shield').btn_on() : $('#skill_shield').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_burst_cooldown').click(function () {
+
+                skill_burst_cooldown = !skill_burst_cooldown;
+                skill_burst_cooldown ? $('#skill_burst_cooldown').btn_on() : $('#skill_burst_cooldown').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_reload_speed').click(function () {
+
+                skill_reload_speed = !skill_reload_speed;
+                skill_reload_speed ? $('#skill_reload_speed').btn_on() : $('#skill_reload_speed').btn_off();
+                check_skill_all();
+            });
+
+
+            function check_skill_all() {
+
+                if (skill_all) {
+                    skill_all = false;
+                    $('#skill_all').btn_off();
+                }
+
+                if (!skill_last_bullet && !skill_pierce && !skill_stun && !skill_cover_recovers && !skill_taunt && !skill_invulnerable && !skill_shield && !skill_burst_cooldown && !skill_reload_speed) {
+
+                    skill_all = true;
+                    $('#skill_all').btn_on();
+                    $('#skill_last_bullet').btn_off();
+                    $('#skill_pierce').btn_off();
+                    $('#skill_stun').btn_off();
+                    $('#skill_cover_recovers').btn_off();
+                    $('#skill_taunt').btn_off();
+                    $('#skill_invulnerable').btn_off();
+                    $('#skill_shield').btn_off();
+                    $('#skill_burst_cooldown').btn_off();
+                    $('#skill_reload_speed').btn_off();
+                }
+
+                if (skill_last_bullet && skill_pierce && skill_stun && skill_cover_recovers && skill_taunt && skill_invulnerable && skill_shield && skill_burst_cooldown && skill_reload_speed) {
+
+                    skill_all = true;
+                    skill_last_bullet = false;
+                    skill_pierce = false;
+                    skill_stun = false;
+                    skill_cover_recovers = false;
+                    skill_taunt = false;
+                    skill_invulnerable = false;
+                    skill_shield = false;
+                    skill_burst_cooldown = false;
+                    skill_reload_speed = false;
+                    $('#skill_all').btn_on();
+                    $('#skill_last_bullet').btn_off();
+                    $('#skill_pierce').btn_off();
+                    $('#skill_stun').btn_off();
+                    $('#skill_cover_recovers').btn_off();
+                    $('#skill_taunt').btn_off();
+                    $('#skill_invulnerable').btn_off();
+                    $('#skill_shield').btn_off();
+                    $('#skill_burst_cooldown').btn_off();
+                    $('#skill_reload_speed').btn_off();
+                }
+
+                reloadTable();
+            }
+
+
             // get ready end
         });
 
@@ -1598,6 +1767,43 @@
                 if (burst_cd_60) filterBurstCd.push('60.0');
             }
 
+            var filterSkills = [];
+
+            if (skill_all) {
+                filterSkills.push('');
+
+            } else {
+                if (skill_last_bullet) {
+
+                    filterSkills.push('最後的子彈');
+                    filterSkills.push('最終的子彈');
+                }
+                if (skill_pierce) {
+                    filterSkills.push('穿透特化');
+                }
+                if (skill_stun) {
+                    filterSkills.push('【昏迷】');
+                }
+                if (skill_cover_recovers) {
+                    filterSkills.push('掩體體力');
+                }
+                if (skill_taunt) {
+                    filterSkills.push('挑釁');
+                }
+                if (skill_invulnerable) {
+                    filterSkills.push('無敵');
+                }
+                if (skill_shield) {
+                    filterSkills.push('護盾');
+                }
+                if (skill_burst_cooldown) {
+                    filterSkills.push('爆裂技能冷卻時間');
+                }
+                if (skill_reload_speed) {
+                    filterSkills.push('換彈速度');
+                }
+            }
+
 
 
             $("#nikkesTable").bootstrapTable('filterBy',
@@ -1619,7 +1825,14 @@
                         var _weapon = filterWeapon.includes(row.weapon.type);
                         var _cd = filterBurstCd.includes(row.skill3.skill_cooldown);
 
-                        return _rarity & _class & _code & _company & _burst & _weapon & _cd;
+                        var s1 = row.skill1.skill_content.join("");
+                        var s2 = row.skill2.skill_content.join("");
+                        var s3 = row.skill3.skill_content.join("");
+                        var _skill1 = filterSkills.some(s => s1.includes(s));
+                        var _skill2 = filterSkills.some(s => s2.includes(s));
+                        var _skill3 = filterSkills.some(s => s3.includes(s));
+
+                        return _rarity & _class & _code & _company & _burst & _weapon & _cd & (_skill1 | _skill2 | _skill3);
                     }
                 }
             );
@@ -1718,15 +1931,35 @@
 
             var weapon = '';
             if (row.weapon.type != '') {
-                weapon += '<div>';
-                weapon += '<p>' + row.weapon.type + '</p>';
+
+                weapon += '<p>';
+                switch (row.weapon.type) {
+                    case 'SG': weapon += '霰彈槍'; break;
+                    case 'SMG': weapon += '衝鋒槍'; break;
+                    case 'AR': weapon += '步槍'; break;
+                    case 'MG': weapon += '機槍'; break;
+                    case 'SR': weapon += '狙擊步槍'; break;
+                    case 'RL': weapon += '發射器'; break;
+                    default: weapon += ''
+                }
+                weapon += '</p>';
+
                 weapon += '<p>' + row.weapon.ammo_capacity + '發</p>';
                 weapon += '<p>' + row.weapon.reload_time + '秒</p>';
+
                 weapon += '<p>'
                 if (row.weapon.control_mode == 'N') weapon += '普通型'
                 if (row.weapon.control_mode == 'C') weapon += '蓄力型'
                 weapon += '</p>';
-                weapon += '</div>';
+
+                for (var i = 0; i < row.weapon.weapon_content.length; i++) {
+                    if (row.weapon.weapon_content[i][0] == "◽") {
+                        weapon += "<p>" + row.weapon.weapon_content[i] + "</p>";
+                    } else {
+                        weapon += '<p  class="text-info">' + row.weapon.weapon_content[i] + "</p>";
+                    }
+                }
+
             }
             return weapon;
         }
