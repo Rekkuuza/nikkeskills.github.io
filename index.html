@@ -720,7 +720,16 @@
 
     <div class="container">
 
-        <button class="btn btn-primary  btn-lg m-5 position-fixed bottom-0 end-0" onclick="topFunction()" id="btn_top"
+
+        <br />
+        <h1 class="text-light">Nikke Skills</h1>
+        <br />
+        <br />
+        <br />
+
+
+
+        <button class="btn btn-primary btn-lg m-5 position-fixed bottom-0 end-0" onclick="topFunction()" id="btn_top"
             title="top" style="display: none;">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -731,127 +740,158 @@
         </button>
 
 
-        <br />
-        <h1 class="text-light">Nikke Skills</h1>
-        <br />
-        <br />
-        <br />
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg m-5 position-fixed top-0 end-0" data-bs-toggle="modal"
+            title="search" data-bs-target="#serch_condition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="serch_condition" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title text-light" id="staticBackdropLabel">屬性查詢</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <div>
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#rarity_collapse">+稀有度</button>
+
+                            <div class="collapse show" id="rarity_collapse">
+                                <hr class="text-light">
+                                <button id="rarity_all" class="btn btn-primary">ALL</button>
+                                <button id="rarity_r" class="btn btn-secondary">R</button>
+                                <button id="rarity_sr" class="btn btn-secondary">SR</button>
+                                <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
+                            </div>
+                            <br />
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#class_collapse">+職業</button>
+
+                            <div class="collapse show" id="class_collapse">
+                                <hr class="text-light">
+                                <button id="class_all" class="btn btn-primary">ALL</button>
+                                <button id="class_atk" class="btn btn-secondary">火力型</button>
+                                <button id="class_def" class="btn btn-secondary">防禦型</button>
+                                <button id="class_sup" class="btn btn-secondary">輔助型</button>
+                            </div>
+
+                            <br />
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#code_collapse">+代碼</button>
+
+                            <div class="collapse show" id="code_collapse">
+                                <hr class="text-light">
+                                <button id="code_all" class="btn btn-primary">ALL</button>
+                                <button id="code_fire" class="btn btn-secondary">燃燒</button>
+                                <button id="code_water" class="btn btn-secondary">水冷</button>
+                                <button id="code_wind" class="btn btn-secondary">風壓</button>
+                                <button id="code_electric" class="btn btn-secondary">電擊</button>
+                                <button id="code_iron" class="btn btn-secondary">鐵甲</button>
+                            </div>
+
+                            <br />
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#company_collapse">+企業</button>
+
+                            <div class="collapse show" id="company_collapse">
+                                <hr class="text-light">
+                                <button id="company_all" class="btn btn-primary">ALL</button>
+                                <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
+                                <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
+                                <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
+                                <button id="company_pilifrim" class="btn btn-secondary">朝聖者</button>
+                                <button id="company_abnormal" class="btn btn-secondary">反常</button>
+                            </div>
+
+                            <br />
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#burst_collapse">+爆裂</button>
+
+                            <div class="collapse show" id="burst_collapse">
+                                <hr class="text-light">
+                                <button id="burst_all" class="btn btn-primary">ALL</button>
+                                <button id="burst_1" class="btn btn-secondary">I</button>
+                                <button id="burst_2" class="btn btn-secondary">Ⅱ</button>
+                                <button id="burst_3" class="btn btn-secondary">Ⅲ</button>
+                                <button id="burst_na" class="btn btn-secondary">⊼</button>
+                            </div>
+
+                            <br />
+
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#weapon_collapse">+武器</button>
+
+                            <div class="collapse show" id="weapon_collapse">
+                                <hr class="text-light">
+                                <button id="weapon_all" class="btn btn-primary">ALL</button>
+                                <button id="weapon_sg" class="btn btn-secondary">SG</button>
+                                <button id="weapon_smg" class="btn btn-secondary">SMG</button>
+                                <button id="weapon_ar" class="btn btn-secondary">AR</button>
+                                <button id="weapon_mg" class="btn btn-secondary">MG</button>
+                                <button id="weapon_sr" class="btn btn-secondary">SR</button>
+                                <button id="weapon_rl" class="btn btn-secondary">RL</button>
+                            </div>
 
 
-        <div>
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#rarity_collapse">+稀有度</button>
+                            <br />
 
-            <div class="collapse show" id="rarity_collapse">
-                <hr class="text-light">
-                <button id="rarity_all" class="btn btn-primary">ALL</button>
-                <button id="rarity_r" class="btn btn-secondary">R</button>
-                <button id="rarity_sr" class="btn btn-secondary">SR</button>
-                <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
+
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#burst_cd_collapse">+爆裂技能冷卻時間</button>
+
+                            <div class="collapse show" id="burst_cd_collapse">
+                                <hr class="text-light">
+                                <button id="burst_cd_all" class="btn btn-primary">All</button>
+                                <button id="burst_cd_20" class="btn btn-secondary">20</button>
+                                <button id="burst_cd_40" class="btn btn-secondary">40</button>
+                                <button id="burst_cd_60" class="btn btn-secondary">60</button>
+                            </div>
+
+                            <br />
+
+                            <button class="btn btn-dark" data-bs-toggle="collapse"
+                                data-bs-target="#skills_collapse">+技能</button>
+
+                            <div class="collapse show" id="skills_collapse">
+                                <hr class="text-light">
+                                <div class="d-flex flex-wrap gap-1">
+                                    <button id="skill_all" class="btn btn-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                                        </svg>
+                                    </button>
+                                    <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
+                                    <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
+                                    <button id="skill_stun" class="btn btn-secondary">昏迷</button>
+                                    <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
+                                    <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
+                                    <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
+                                    <button id="skill_shield" class="btn btn-secondary">護盾</button>
+                                    <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
+                                    <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-            <br />
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#class_collapse">+職業</button>
-
-            <div class="collapse show" id="class_collapse">
-                <hr class="text-light">
-                <button id="class_all" class="btn btn-primary">ALL</button>
-                <button id="class_atk" class="btn btn-secondary">火力型</button>
-                <button id="class_def" class="btn btn-secondary">防禦型</button>
-                <button id="class_sup" class="btn btn-secondary">輔助型</button>
-            </div>
-
-            <br />
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#code_collapse">+代碼</button>
-
-            <div class="collapse show" id="code_collapse">
-                <hr class="text-light">
-                <button id="code_all" class="btn btn-primary">ALL</button>
-                <button id="code_fire" class="btn btn-secondary">燃燒</button>
-                <button id="code_water" class="btn btn-secondary">水冷</button>
-                <button id="code_wind" class="btn btn-secondary">風壓</button>
-                <button id="code_electric" class="btn btn-secondary">電擊</button>
-                <button id="code_iron" class="btn btn-secondary">鐵甲</button>
-            </div>
-
-            <br />
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#company_collapse">+企業</button>
-
-            <div class="collapse show" id="company_collapse">
-                <hr class="text-light">
-                <button id="company_all" class="btn btn-primary">ALL</button>
-                <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
-                <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
-                <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
-                <button id="company_pilifrim" class="btn btn-secondary">朝聖者</button>
-                <button id="company_abnormal" class="btn btn-secondary">反常</button>
-            </div>
-
-            <br />
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#burst_collapse">+爆裂</button>
-
-            <div class="collapse show" id="burst_collapse">
-                <hr class="text-light">
-                <button id="burst_all" class="btn btn-primary">ALL</button>
-                <button id="burst_1" class="btn btn-secondary">I</button>
-                <button id="burst_2" class="btn btn-secondary">Ⅱ</button>
-                <button id="burst_3" class="btn btn-secondary">Ⅲ</button>
-                <button id="burst_na" class="btn btn-secondary">⊼</button>
-            </div>
-
-            <br />
-
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#weapon_collapse">+武器</button>
-
-            <div class="collapse show" id="weapon_collapse">
-                <hr class="text-light">
-                <button id="weapon_all" class="btn btn-primary">ALL</button>
-                <button id="weapon_sg" class="btn btn-secondary">SG</button>
-                <button id="weapon_smg" class="btn btn-secondary">SMG</button>
-                <button id="weapon_ar" class="btn btn-secondary">AR</button>
-                <button id="weapon_mg" class="btn btn-secondary">MG</button>
-                <button id="weapon_sr" class="btn btn-secondary">SR</button>
-                <button id="weapon_rl" class="btn btn-secondary">RL</button>
-            </div>
-
-
-            <br />
-
-            <button class="btn btn-dark" data-bs-toggle="collapse"
-                data-bs-target="#burst_cd_collapse">+爆裂技能冷卻時間</button>
-
-            <div class="collapse show" id="burst_cd_collapse">
-                <hr class="text-light">
-                <button id="burst_cd_all" class="btn btn-primary">All</button>
-                <button id="burst_cd_20" class="btn btn-secondary">20</button>
-                <button id="burst_cd_40" class="btn btn-secondary">40</button>
-                <button id="burst_cd_60" class="btn btn-secondary">60</button>
-            </div>
-
-
-            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#skills_collapse">+技能</button>
-
-            <div class="collapse show" id="skills_collapse">
-                <hr class="text-light">
-                <button id="skill_all" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-recycle" viewBox="0 0 16 16">
-                        <path
-                            d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
-                    </svg>
-                </button>
-                <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
-                <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
-                <button id="skill_stun" class="btn btn-secondary">昏迷</button>
-                <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
-                <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
-                <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
-                <button id="skill_shield" class="btn btn-secondary">護盾</button>
-                <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
-                <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
-
-            </div>
-
-
         </div>
+
 
         <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
             <thead>
