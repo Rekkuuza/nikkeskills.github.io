@@ -1878,7 +1878,13 @@
 
             icon += '</div>';
             icon += '<div class="position-absolute bottom-0 start-50 translate-middle-x col-12">';
-            icon += '<h1 class="';
+
+            if (row.name.length < 6) {
+                icon += '<h1 class="';
+            } else {
+                icon += '<h3 class="';
+            }
+
 
             if (row.rarity == 'SSR') icon += 'ssr_txt"';
             if (row.rarity == 'SR') icon += 'ssr_txt"';
@@ -1887,7 +1893,14 @@
 
             icon += '">';
             icon += row.name;
-            icon += '</h1>';
+
+            if (row.name.length < 6) {
+                icon += '</h1>';
+            } else {
+
+                icon += '</h3>';
+            }
+
             icon += '<div class="';
             if (row.rarity == 'SSR') icon += 'ssr_backgournd"';
             if (row.rarity == 'SR') icon += 'sr_backgournd"';
