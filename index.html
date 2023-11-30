@@ -1845,36 +1845,51 @@
             icon += '<div  class="position-relative">';
 
             icon += '<img class="' + row.icon + '  border border-4';
-            if (row.rarity == 'SSR') icon += ' ssr_border"';
-            if (row.rarity == 'SR') icon += ' sr_border"';
-            if (row.rarity == 'R') icon += ' r_border"';
+
+            switch (row.rarity) {
+                case 'SSR': icon += ' ssr_border"'; break;
+                case 'SR': icon += ' sr_border"'; break;
+                case 'R': icon += ' r_border"'; break;
+                default: icon += '';
+            }
 
             icon += 'id="' + row.icon + '" ';
             icon += '>';
 
 
             icon += '<div class="position-absolute top-0 mt-1">';
-            if (row.code == 'Fire') icon += fire_svg;
-            if (row.code == 'Wind') icon += wind_svg;
-            if (row.code == 'Iron') icon += iron_svg;
-            if (row.code == 'Electric') icon += electric_svg;
-            if (row.code == 'Water') icon += water_svg;
+            switch (row.code) {
+                case 'Fire': icon += fire_svg; break;
+                case 'Wind': icon += wind_svg; break;
+                case 'Iron': icon += iron_svg; break;
+                case 'Electric': icon += electric_svg; break;
+                case 'Water': icon += water_svg; break;
+                default: icon += '';
+            }
+
+
 
             icon += '<br>';
 
-            if (row.weapon.type == 'SG') icon += sg_svg;
-            if (row.weapon.type == 'SMG') icon += smg_svg;
-            if (row.weapon.type == 'AR') icon += ar_svg;
-            if (row.weapon.type == 'MG') icon += mg_svg;
-            if (row.weapon.type == 'SR') icon += sr_svg;
-            if (row.weapon.type == 'RL') icon += rl_svg;
+            switch (row.weapon.type) {
+                case 'SG': icon += sg_svg; break;
+                case 'SMG': icon += smg_svg; break;
+                case 'AR': icon += ar_svg; break;
+                case 'MG': icon += mg_svg; break;
+                case 'SR': icon += sr_svg; break;
+                case 'RL': icon += rl_svg; break;
+                default: icon += '';
+            }
 
             icon += '<br>';
 
-            if (row.burst == 'I') icon += b1_svg;
-            if (row.burst == 'Ⅱ') icon += b2_svg;
-            if (row.burst == 'Ⅲ') icon += b3_svg;
-            if (row.burst == '⊼') icon += bna_svg;
+            switch (row.burst) {
+                case 'I': icon += b1_svg; break;
+                case 'Ⅱ': icon += b2_svg; break;
+                case 'Ⅲ': icon += b3_svg; break;
+                case '⊼': icon += bna_svg; break;
+                default: icon += '';
+            }
 
             icon += '</div>';
             icon += '<div class="position-absolute bottom-0 start-50 translate-middle-x col-12">';
@@ -1980,11 +1995,16 @@
         function codeFormatter(index, row, element) {
 
             var code = '';
-            if (row.code == 'Fire') code += '燃燒';
-            if (row.code == 'Wind') code += '風壓';
-            if (row.code == 'Iron') code += '鐵甲';
-            if (row.code == 'Electric') code += '電擊';
-            if (row.code == 'Water') code += '水冷';
+
+            switch (row.code) {
+                case 'Fire': code += '燃燒'; break;
+                case 'Wind': code += '風壓'; break;
+                case 'Iron': code += '鐵甲'; break;
+                case 'Electric': code += '電擊'; break;
+                case 'Water': code += '水冷'; break;
+                default: code += '';
+            }
+
             return code;
         }
 
@@ -1993,20 +2013,29 @@
 
         function classFormatter(index, row, element) {
             var _class = '';
-            if (row.class == 'A') _class += '火力型';
-            if (row.class == 'D') _class += '防禦型';
-            if (row.class == 'S') _class += '輔助型';
+            switch (row.class) {
+                case 'A': _class += '火力型'; break;
+                case 'D': _class += '防禦型'; break;
+                case 'S': _class += '輔助型'; break;
+                default: _class += '';
+            }
+
             return _class;
         }
 
 
         function companyFormatter(index, row, element) {
             var _company = '';
-            if (row.company == 'Elysion') _company += '極樂淨土';
-            if (row.company == 'Missilis') _company += '米西利斯';
-            if (row.company == 'Tetra') _company += '泰特拉';
-            if (row.company == 'Pilifrim') _company += '朝聖者';
-            if (row.company == 'Abnormal') _company += '反常';
+
+            switch (row.company) {
+                case 'Elysion': _company += '極樂淨土'; break;
+                case 'Missilis': _company += '米西利斯'; break;
+                case 'Tetra': _company += '泰特拉'; break;
+                case 'Pilifrim': _company += '朝聖者'; break;
+                case 'Abnormal': _company += '反常'; break;
+                default: _company += '';
+            }
+
             return _company;
         }
 
