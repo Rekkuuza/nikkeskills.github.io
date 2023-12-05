@@ -116,11 +116,25 @@
                 ctx.drawImage(img, x, y, wh[0], wh[1]);
 
                 // css sprite
+                // var _n = i.toString().padStart(3, '0');
+                // var _x = -x + 'px';
+                // var _y = -y + 'px';
+                // var _content = '.img_' + _n + ' {width:' + wh[0] + 'px;height:' + wh[1] + 'px;background: var(--img_url) ' + _x + ' ' + _y + ';}';
+                // _content += '\n'
+
                 var _n = i.toString().padStart(3, '0');
-                var _x = -x + 'px';
-                var _y = -y + 'px';
-                var _content = '.img_' + _n + ' {width:' + wh[0] + 'px;height:' + wh[1] + 'px;background: var(--img_url) ' + _x + ' ' + _y + ';}';
+
+                var _f = Math.floor(i / 10);
+                var _e = i % 10;
+
+                var _x = _f * 100;
+                var _y = _e * 100;
+
+
+                var _content = '.img_' + _n + ' {background-position: -' + _x + '%  -' + _y + '%;}';
                 _content += '\n'
+
+
 
                 $('#text_css').val(function () {
 
