@@ -822,61 +822,65 @@
 
             <div>
 
-                <button class="btn btn-primary"> <i class="bi bi-grid-3x3-gap-fill"></i></button>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_flex_nikkes">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </button>
 
-                <button class="btn btn-primary"><i class="bi bi-list"></i></button>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_list_nikkes"><i
+                        class="bi bi-list"></i></button>
             </div>
 
-            <div id="nikkeFlexWrap" class="d-flex flex-wrap">
-
-
+            <div id="collapse_flex_nikkes" class="collapse show">
+                <div id="flex_nikkes" class="d-flex flex-wrap"></div>
             </div>
 
-            <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
-                <thead>
-                    <tr>
-                        <th data-field="icon" class="col-2" data-formatter="iconFormatter"
-                            data-events='window.operateEvents'>
-                        </th>
-                        <th class="text-center" data-visible="false" data-field="name">
-                            名稱
-                        </th>
-                        <th class="text-center" data-field="rarity" data-visible="false" data-sortable="true">
-                            稀有度
-                        </th>
-                        <th class="text-center" data-field="class" data-visible="false" data-formatter="classFormatter"
-                            data-sortable="true">
-                            職業
-                        </th>
-                        <th class="text-center" data-field="code" data-visible="false" data-formatter="codeFormatter"
-                            data-sortable="true">
-                            代碼
-                        </th>
-                        <th class="text-center" data-field="company" data-formatter="companyFormatter"
-                            data-sortable="true" data-visible="false">
-                            企業
-                        </th>
-                        <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
-                            部隊
-                        </th>
-                        <th class="text-center" data-field="burst" data-visible="false" data-sortable="true">
-                            爆裂
-                        </th>
-                        <th class="text-center col-2" data-field="weapon" data-formatter="weaponFormatter">
-                            武器
-                        </th>
-                        <th class="align-text-top col-2" data-field="skill1" data-formatter="skillFormatter">
-                            技能1
-                        </th>
-                        <th class="align-text-top col-2" data-field="skill2" data-formatter="skillFormatter">
-                            技能2
-                        </th>
-                        <th class="align-text-top col-2" data-field="skill3" data-formatter="skillFormatter">
-                            技能3
-                        </th>
-                    </tr>
-                </thead>
-            </table>
+            <div id="collapse_list_nikkes" class="collapse">
+                <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
+                    <thead>
+                        <tr>
+                            <th data-field="icon" class="col-2" data-formatter="iconFormatter"
+                                data-events='window.operateEvents'>
+                            </th>
+                            <th class="text-center" data-visible="false" data-field="name">
+                                名稱
+                            </th>
+                            <th class="text-center" data-field="rarity" data-visible="false" data-sortable="true">
+                                稀有度
+                            </th>
+                            <th class="text-center" data-field="class" data-visible="false"
+                                data-formatter="classFormatter" data-sortable="true">
+                                職業
+                            </th>
+                            <th class="text-center" data-field="code" data-visible="false"
+                                data-formatter="codeFormatter" data-sortable="true">
+                                代碼
+                            </th>
+                            <th class="text-center" data-field="company" data-formatter="companyFormatter"
+                                data-sortable="true" data-visible="false">
+                                企業
+                            </th>
+                            <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
+                                部隊
+                            </th>
+                            <th class="text-center" data-field="burst" data-visible="false" data-sortable="true">
+                                爆裂
+                            </th>
+                            <th class="text-center col-2" data-field="weapon" data-formatter="weaponFormatter">
+                                武器
+                            </th>
+                            <th class="align-text-top col-2" data-field="skill1" data-formatter="skillFormatter">
+                                技能1
+                            </th>
+                            <th class="align-text-top col-2" data-field="skill2" data-formatter="skillFormatter">
+                                技能2
+                            </th>
+                            <th class="align-text-top col-2" data-field="skill3" data-formatter="skillFormatter">
+                                技能3
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -1700,7 +1704,7 @@
         });
 
 
-        $("#nikkeFlexWrap").on("click", 'a', function () {
+        $("#flex_nikkes").on("click", 'a', function () {
 
             setGroup(oJsonData.filter(n => n.name == this.title)[0]);
 
@@ -2350,8 +2354,6 @@
 
         $('#nikke_group').on('shown.bs.modal', function () {
 
-            // $('.modal-backdrop.in').css('opacity', '');
-
             $('#nikkes_group_table').empty();
             var nikkes = '';
 
@@ -2414,7 +2416,7 @@
                 _n += '<div class="p-2">';
                 _n += setFlexIcon(nikke);
                 _n += '</div>';
-                $('#nikkeFlexWrap').append(_n);
+                $('#flex_nikkes').append(_n);
 
             })
         }
