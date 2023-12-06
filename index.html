@@ -947,6 +947,7 @@
         var skill_burst_cooldown = false;
         var skill_reload_speed = false;
         var oJsonData = [];
+        var filterJsonData = [];
 
         $(document).ready(function () {
 
@@ -984,7 +985,7 @@
                     data: filtJson
                 });
 
-                setFlextWrap();
+                setFlextWrap(oJsonData);
             }
 
             //#endregion
@@ -1720,6 +1721,8 @@
 
         function reloadTable() {
 
+            filterJsonData = oJsonData;
+
             var filterRarity = [];
 
             if (rarity_all) {
@@ -1842,6 +1845,29 @@
             }
 
 
+
+
+            filterJsonData = filterJsonData.filter(nikke => {
+
+                var _rarity = filterRarity.includes(nikke.rarity);
+                var _class = filterClass.includes(nikke.class);
+                var _code = filterCode.includes(nikke.code);
+                var _company = filterCompany.includes(nikke.company);
+                var _burst = filterBurst.includes(nikke.burst);
+                var _weapon = filterWeapon.includes(nikke.weapon.type);
+                var _cd = filterBurstCd.includes(nikke.skill3.skill_cooldown);
+
+                var s1 = nikke.skill1.skill_content.join("");
+                var s2 = nikke.skill2.skill_content.join("");
+                var s3 = nikke.skill3.skill_content.join("");
+                var _skill1 = filterSkills.some(s => s1.includes(s));
+                var _skill2 = filterSkills.some(s => s2.includes(s));
+                var _skill3 = filterSkills.some(s => s3.includes(s));
+
+                return _rarity & _class & _code & _company & _burst & _weapon & _cd & (_skill1 | _skill2 | _skill3);
+            })
+
+            setFlextWrap(filterJsonData);
 
             $("#nikkesTable").bootstrapTable('filterBy',
                 {
@@ -2407,10 +2433,11 @@
         }
 
 
-        function setFlextWrap() {
+        function setFlextWrap(json) {
 
+            $('#flex_nikkes').empty();
 
-            oJsonData.forEach(function (nikke, i) {
+            json.forEach(function (nikke, i) {
 
                 var _n = '';
                 _n += '<div class="p-2">';
