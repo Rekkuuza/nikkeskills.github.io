@@ -515,13 +515,6 @@
             height: 100px;
         }
 
-        /* .icon_sm {
-            clip-path: inset(0% 0% 40% 0%);
-            width: 50px;
-            height: 98px;
-
-        } */
-
         .icon_sm {
             clip-path: inset(0% 0% 40% 0%);
             width: 75%;
@@ -825,52 +818,66 @@
             </div>
         </div>
         <!-- 編組 end -->
+        <div>
 
-        <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
-            <thead>
-                <tr>
-                    <th data-field="icon" class="col-2" data-formatter="iconFormatter"
-                        data-events='window.operateEvents'>
-                    </th>
-                    <th class="text-center" data-visible="false" data-field="name">
-                        名稱
-                    </th>
-                    <th class="text-center" data-field="rarity" data-visible="false" data-sortable="true">
-                        稀有度
-                    </th>
-                    <th class="text-center" data-field="class" data-visible="false" data-formatter="classFormatter"
-                        data-sortable="true">
-                        職業
-                    </th>
-                    <th class="text-center" data-field="code" data-visible="false" data-formatter="codeFormatter"
-                        data-sortable="true">
-                        代碼
-                    </th>
-                    <th class="text-center" data-field="company" data-formatter="companyFormatter" data-sortable="true"
-                        data-visible="false">
-                        企業
-                    </th>
-                    <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
-                        部隊
-                    </th>
-                    <th class="text-center" data-field="burst" data-visible="false" data-sortable="true">
-                        爆裂
-                    </th>
-                    <th class="text-center col-2" data-field="weapon" data-formatter="weaponFormatter">
-                        武器
-                    </th>
-                    <th class="align-text-top col-2" data-field="skill1" data-formatter="skillFormatter">
-                        技能1
-                    </th>
-                    <th class="align-text-top col-2" data-field="skill2" data-formatter="skillFormatter">
-                        技能2
-                    </th>
-                    <th class="align-text-top col-2" data-field="skill3" data-formatter="skillFormatter">
-                        技能3
-                    </th>
-                </tr>
-            </thead>
-        </table>
+            <div>
+
+                <button class="btn btn-primary"> <i class="bi bi-grid-3x3-gap-fill"></i></button>
+
+                <button class="btn btn-primary"><i class="bi bi-list"></i></button>
+            </div>
+
+            <div id="nikkeFlexWrap" class="d-flex flex-wrap">
+
+
+            </div>
+
+            <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
+                <thead>
+                    <tr>
+                        <th data-field="icon" class="col-2" data-formatter="iconFormatter"
+                            data-events='window.operateEvents'>
+                        </th>
+                        <th class="text-center" data-visible="false" data-field="name">
+                            名稱
+                        </th>
+                        <th class="text-center" data-field="rarity" data-visible="false" data-sortable="true">
+                            稀有度
+                        </th>
+                        <th class="text-center" data-field="class" data-visible="false" data-formatter="classFormatter"
+                            data-sortable="true">
+                            職業
+                        </th>
+                        <th class="text-center" data-field="code" data-visible="false" data-formatter="codeFormatter"
+                            data-sortable="true">
+                            代碼
+                        </th>
+                        <th class="text-center" data-field="company" data-formatter="companyFormatter"
+                            data-sortable="true" data-visible="false">
+                            企業
+                        </th>
+                        <th class="text-center" data-field="squad" data-visible="false" data-sortable="true">
+                            部隊
+                        </th>
+                        <th class="text-center" data-field="burst" data-visible="false" data-sortable="true">
+                            爆裂
+                        </th>
+                        <th class="text-center col-2" data-field="weapon" data-formatter="weaponFormatter">
+                            武器
+                        </th>
+                        <th class="align-text-top col-2" data-field="skill1" data-formatter="skillFormatter">
+                            技能1
+                        </th>
+                        <th class="align-text-top col-2" data-field="skill2" data-formatter="skillFormatter">
+                            技能2
+                        </th>
+                        <th class="align-text-top col-2" data-field="skill3" data-formatter="skillFormatter">
+                            技能3
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -935,6 +942,7 @@
         var skill_shield = false;
         var skill_burst_cooldown = false;
         var skill_reload_speed = false;
+        var oJsonData = [];
 
         $(document).ready(function () {
 
@@ -965,12 +973,14 @@
                     if (a.icon < b.icon) return -1;
                 });
 
-
+                oJsonData = filtJson;
 
 
                 $("#nikkesTable").bootstrapTable({
                     data: filtJson
                 });
+
+                setFlextWrap();
             }
 
             //#endregion
@@ -1678,10 +1688,23 @@
                 }
             }
 
+            window.operateEvents = {
+                'click .like': function (e, value, row, index) {
+
+                    setGroup(row);
+                }
+            }
+
 
             // get ready end
         });
 
+
+        $("#nikkeFlexWrap").on("click", 'a', function () {
+
+            setGroup(oJsonData.filter(n => n.name == this.title)[0]);
+
+        });
 
 
 
@@ -1850,12 +1873,6 @@
 
 
 
-
-        window.operateEvents = {
-            'click .like': function (e, value, row, index) {
-                setGroup(row);
-            }
-        }
 
         // 圖片點選
 
@@ -2035,7 +2052,7 @@
         function setIcon(nikke) {
 
 
-            console.log(nikke);
+
 
             var _img = '<div class="sprite ' + nikke.icon + ' icon_sm position-relative">';
             _img += '<div class="position-absolute top-0 mt-1">';
@@ -2102,7 +2119,7 @@
                 default: icon += '';
             }
 
-            icon += 'id="' + row.icon + '" ';
+            // icon += 'id="' + row.icon + '" ';
             icon += ' style="width: 250px; height:490px"';
             icon += '>';
 
@@ -2386,6 +2403,131 @@
 
             return section;
         }
+
+
+        function setFlextWrap() {
+
+
+            oJsonData.forEach(function (nikke, i) {
+
+                var _n = '';
+                _n += '<div class="p-2">';
+                _n += setFlexIcon(nikke);
+                _n += '</div>';
+                $('#nikkeFlexWrap').append(_n);
+
+            })
+        }
+
+        function setFlexIcon(row) {
+
+            var icon = '';
+
+
+            icon += '<a class="like" href="javascript:void(0)"  title="' + row.name + '">';
+            icon += '<div class="sprite ' + row.icon + ' border border-4 position-relative';
+
+            switch (row.rarity) {
+                case 'SSR': icon += ' ssr_border"'; break;
+                case 'SR': icon += ' sr_border"'; break;
+                case 'R': icon += ' r_border"'; break;
+                default: icon += '';
+            }
+
+            // icon += 'id="' + row.icon + '" ';
+            icon += ' style="width: 125px; height:245px"';
+            icon += '>';
+
+
+
+            // // att
+            icon += '<div class="position-absolute top-0 mt-1">';
+            var svg = '<svg width="30" height="30" ';
+
+            switch (row.code) {
+                case 'Fire': icon += svg + fire_svg; break;
+                case 'Wind': icon += svg + wind_svg; break;
+                case 'Iron': icon += svg + iron_svg; break;
+                case 'Electric': icon += svg + electric_svg; break;
+                case 'Water': icon += svg + water_svg; break;
+                default: icon += '';
+            }
+
+            icon += '<br>';
+
+
+            switch (row.weapon.type) {
+                case 'SG': icon += svg + sg_svg; break;
+                case 'SMG': icon += svg + smg_svg; break;
+                case 'AR': icon += svg + ar_svg; break;
+                case 'MG': icon += svg + mg_svg; break;
+                case 'SR': icon += svg + sr_svg; break;
+                case 'RL': icon += svg + rl_svg; break;
+                default: icon += '';
+            }
+
+            icon += '<br>';
+
+            switch (row.burst) {
+                case 'I': icon += svg + b1_svg; break;
+                case 'Ⅱ': icon += svg + b2_svg; break;
+                case 'Ⅲ': icon += svg + b3_svg; break;
+                case '⊼': icon += svg + bna_svg; break;
+                default: icon += '';
+            }
+
+            icon += '</div>';  // att
+
+
+            // name
+            icon += '<div class="position-absolute bottom-0 start-50 translate-middle-x col-12">';
+
+            if (row.name.length < 6) {
+                icon += '<h4 class="';
+            } else {
+                icon += '<h6 class="';
+            }
+
+
+            if (row.rarity == 'SSR') icon += 'ssr_txt"';
+            if (row.rarity == 'SR') icon += 'ssr_txt"';
+            if (row.rarity == 'R') icon += 'r_txt"';
+
+
+            icon += '">';
+            icon += row.name;
+
+            if (row.name.length < 6) {
+                icon += '</h4>';
+            } else {
+
+                icon += '</h6>';
+            }
+
+
+            icon += '<div class="';
+            if (row.rarity == 'SSR') icon += 'ssr_backgournd"';
+            if (row.rarity == 'SR') icon += 'sr_backgournd"';
+            if (row.rarity == 'R') icon += 'r_backgournd"';
+
+            icon += '"></div>';
+            icon += '</div>'; // name
+
+            // class
+            icon += '<div class="position-absolute bottom-0 end-0">';
+            switch (row.class) {
+                case 'A': icon += atk_svg; break;
+                case 'D': icon += def_svg; break;
+                case 'S': icon += sup_svg; break;
+                default: icon += '';
+            }
+            icon += '</div>'; // class
+            icon += '</div>';// image   
+            icon += '</a>  ';
+
+            return icon
+        }
+
 
 
         var fire_svg = ' viewBox="0 0 100 100"><g><g><path d="m49.95,97.59l-41.08,-20.25l0,-54l41.08,-20.25l41.08,20.25l0,54l-41.08,20.25z" fill="#2e0002" stroke="#ff000a" stroke-width="4" /><path d="m54.55,19.35c0,0 -3.73,6.9 0,12.27c6.66,9.57 14.82,15.16 15.15,20.65c0.42,7.29 -1.34,8.81 -3.78,11.68c-2.44,2.87 -8.45,7.78 -8.45,7.78c0,0 3.29,-4.46 3.2,-8.98c-0.08,-4.52 -1.71,-7.05 -4.07,-9.58c-2.37,-2.52 -4.65,-6.5 -5.53,-8.98c-0.89,-2.47 -1.74,-5.09 -1.74,-5.09c0,0 -6.32,4.61 -6.12,12.27c0.22,7.66 2.55,7.95 4.07,9.88c1.53,1.93 4.95,5.21 4.95,9.29c0,4.07 -3.5,10.78 -3.5,10.78c0,0 0.42,-3.54 -2.33,-7.48c-2.76,-3.94 -15.15,-11.04 -15.15,-22.75c0,-11.71 13.56,-23.73 17.17,-26.93c3.63,-3.21 6.12,-4.79 6.12,-4.79l0,-0.01l0.01,0.01z" fill="#ff0000" /></g></g></svg>';
