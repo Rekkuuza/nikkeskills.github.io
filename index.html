@@ -559,15 +559,7 @@
         </button>
 
 
-        <!-- 查詢 search modal -->
-        <button type="button" class="btn btn-primary btn-lg m-5 position-fixed top-0 end-0" data-bs-toggle="modal"
-            title="search" data-bs-target="#serch_condition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg>
-        </button>
+
 
         <!-- Modal -->
         <div class="modal" id="serch_condition" data-bs-keyboard="false" tabindex="-1"
@@ -820,7 +812,7 @@
         <!-- 編組 end -->
         <div>
 
-            <div>
+            <div class="sticky-top">
 
                 <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_flex_nikkes">
                     <i class="bi bi-grid-3x3-gap-fill"></i>
@@ -828,6 +820,12 @@
 
                 <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_list_nikkes"><i
                         class="bi bi-list"></i></button>
+
+                <!-- 查詢 search -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" title="search"
+                    data-bs-target="#serch_condition">
+                    <i class="bi bi-search"></i>
+                </button>
             </div>
 
             <div id="collapse_flex_nikkes" class="collapse show">
@@ -2230,10 +2228,11 @@
 
             // class
             icon += '<div class="position-absolute bottom-0 end-0">';
+            var class_svg = '<svg width="100" height="100" ';
             switch (row.class) {
-                case 'A': icon += atk_svg; break;
-                case 'D': icon += def_svg; break;
-                case 'S': icon += sup_svg; break;
+                case 'A': icon += class_svg + atk_svg; break;
+                case 'D': icon += class_svg + def_svg; break;
+                case 'S': icon += class_svg + sup_svg; break;
                 default: icon += '';
             }
             icon += '</div>'; // class
@@ -2544,10 +2543,11 @@
 
             // class
             icon += '<div class="position-absolute bottom-0 end-0">';
+            var class_svg = '<svg width="60" height="60" ';
             switch (row.class) {
-                case 'A': icon += atk_svg; break;
-                case 'D': icon += def_svg; break;
-                case 'S': icon += sup_svg; break;
+                case 'A': icon += class_svg + atk_svg; break;
+                case 'D': icon += class_svg + def_svg; break;
+                case 'S': icon += class_svg + sup_svg; break;
                 default: icon += '';
             }
             icon += '</div>'; // class
@@ -2574,9 +2574,9 @@
         var b2_svg = ' viewBox="0 0 100 100"><path d="m50.3,2.51l40.79,20.39l0,54.38l-40.79,20.39l-40.79,-20.39l0,-54.38l40.79,-20.39z" fill="#444548" stroke="#ffffff" stroke-width="4" transform="matrix(1 0 0 1 0 0)" /><text x="50" y="65" font-size="40" fill="white" text-anchor="middle" font-weight="bold">Ⅱ</text>/svg>';
         var b3_svg = '  viewBox="0 0 100 100"><path d="m50.3,2.51l40.79,20.39l0,54.38l-40.79,20.39l-40.79,-20.39l0,-54.38l40.79,-20.39z" fill="#444548" stroke="#ffffff" stroke-width="4" transform="matrix(1 0 0 1 0 0)" /><text x="50" y="65" font-size="40" fill="white" text-anchor="middle" font-weight="bold">Ⅲ</text>/svg>';
         var bna_svg = ' viewBox="0 0 100 100"><path d="m50.3,2.51l40.79,20.39l0,54.38l-40.79,20.39l-40.79,-20.39l0,-54.38l40.79,-20.39z" fill="#444548" stroke="#ffffff" stroke-width="4" transform="matrix(1 0 0 1 0 0)" /><text x="50" y="65" font-size="70" fill="white" text-anchor="middle" font-weight="bold">⊼</text>/svg>';
-        var atk_svg = '<svg width="100" height="100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m50.3,0.78l43.82,41.99l-2.74,8.21c0,0 -2.3,-5.98 -3.65,-7.3c-1.35,-1.32 -37.43,-35.6 -37.43,-35.6c0,0 -36.08,34.28 -37.43,35.6c-1.35,1.32 -3.65,7.3 -3.65,7.3l-2.74,-8.21l43.82,-41.99z" /><path d="m23.83,75.63l13.69,-6.39l4.56,29.21l-18.26,-22.83z" /><path d="m76.77,75.63l-13.69,-6.39l-4.56,29.21l18.25,-22.83z" /><path d="m50.3,15.38l41.08,41.08l-26.47,-5.48l14.61,19.17l-21.91,-10.04l-7.31,39.25l-7.3,-39.25l-21.91,10.04l14.61,-19.17l-26.48,5.48l41.08,-41.08zm4.56,17.34l-9.13,0l0,3.87c0,1.24 -1.83,2.74 -1.83,3.78l0,12.43l12.78,0l0,-12.43c0,-1.04 -1.83,-2.54 -1.83,-3.78l0,-3.87zm-0.91,-1.83l0,-1.83c0,-2.04 -3.65,-8.21 -3.65,-8.21c0,0 -3.65,6.17 -3.65,8.21l0,1.83l7.3,0zm2.74,23.73l-12.78,0l0,1.83l12.78,0l0,-1.83z" /></g></svg>';
-        var def_svg = '<svg width="100" height="100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m51.65,11.43l6.75,5.4l-6.75,3.6l-6.75,-3.6l6.75,-5.4z" /><path d="m51.65,86.16l-25.66,-19.81l-1.8,-38.71l7.2,-2.7l0.47,-0.08l1.62,34.67l18.17,14.03l18.18,-14.03l1.61,-34.67l0.47,0.08l7.2,2.7l-1.8,38.71l-25.66,19.81z" /><path d="m51.65,99.66l-34.67,-27.91l-1.8,-52.23l17.11,-5.4l19.35,-13.51l19.36,13.51l17.11,5.4l-1.8,52.23l-34.67,27.91zm0,-92.74l-17.07,11.91l-15.09,4.76l1.59,46.05l30.57,24.61l30.57,-24.61l1.59,-46.05l-15.08,-4.76l-17.07,-11.91z" /><path d="m51.65,68.15l-14.85,-11.7l-1.8,-35.12l13.28,2.71l3.38,7.2l3.38,-7.2l13.28,-2.71l-1.8,35.12l-14.86,11.7zm0,-22.51c2.2,0.08 4.46,0.44 6.75,0.9c-3.35,-3.27 -5.41,-7.28 -6.75,-11.71c-1.34,4.43 -3.4,8.44 -6.75,11.71c2.3,-0.46 4.56,-0.82 6.75,-0.9z" /></g></svg>';
-        var sup_svg = '<svg width="100" height="100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m50.12,18.72l7.96,23.46l23.45,7.96l-23.45,7.96l-7.96,23.45l-7.96,-23.45l-23.46,-7.96l23.46,-7.96l7.96,-23.46z" /><path d="m13.15,13.16l23.6,16.37l0.22,7.45l-7.45,-0.22l-16.37,-23.6z" /><path d="m11.87,88.38l16.36,-23.59l7.46,-0.22l-0.22,7.45l-23.6,16.36z" /><path d="m89.65,89.66l-23.6,-16.37l-0.22,-7.45l7.45,0.22l16.37,23.6z" />            <path d="m88.37,11.88l-16.36,23.6l-7.45,0.22l0.22,-7.46l23.59,-16.36z" />            <path                d="m64.24,22.65l-14.11,-14.11l-14.34,14.34l-4.51,-3.13l18.85,-18.85l18.62,18.62l-4.51,3.13zm16.5,8.86l18.62,18.62l-18.39,18.39l-3.31,-4.76l13.84,-13.84l-13.89,-13.89l3.13,-4.51zm-12.22,49.46l-18.39,18.39l-18.62,-18.62l4.77,-3.31l13.85,13.85l13.62,-13.62l4.76,3.31zm-48.99,-12.22l-18.62,-18.62l18.85,-18.85l3.13,4.51l-14.12,14.12l14.07,14.07l-3.31,4.76z" /></g></svg>';
+        var atk_svg = ' viewBox="0 0 100 100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m50.3,0.78l43.82,41.99l-2.74,8.21c0,0 -2.3,-5.98 -3.65,-7.3c-1.35,-1.32 -37.43,-35.6 -37.43,-35.6c0,0 -36.08,34.28 -37.43,35.6c-1.35,1.32 -3.65,7.3 -3.65,7.3l-2.74,-8.21l43.82,-41.99z" /><path d="m23.83,75.63l13.69,-6.39l4.56,29.21l-18.26,-22.83z" /><path d="m76.77,75.63l-13.69,-6.39l-4.56,29.21l18.25,-22.83z" /><path d="m50.3,15.38l41.08,41.08l-26.47,-5.48l14.61,19.17l-21.91,-10.04l-7.31,39.25l-7.3,-39.25l-21.91,10.04l14.61,-19.17l-26.48,5.48l41.08,-41.08zm4.56,17.34l-9.13,0l0,3.87c0,1.24 -1.83,2.74 -1.83,3.78l0,12.43l12.78,0l0,-12.43c0,-1.04 -1.83,-2.54 -1.83,-3.78l0,-3.87zm-0.91,-1.83l0,-1.83c0,-2.04 -3.65,-8.21 -3.65,-8.21c0,0 -3.65,6.17 -3.65,8.21l0,1.83l7.3,0zm2.74,23.73l-12.78,0l0,1.83l12.78,0l0,-1.83z" /></g></svg>';
+        var def_svg = ' viewBox="0 0 100 100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m51.65,11.43l6.75,5.4l-6.75,3.6l-6.75,-3.6l6.75,-5.4z" /><path d="m51.65,86.16l-25.66,-19.81l-1.8,-38.71l7.2,-2.7l0.47,-0.08l1.62,34.67l18.17,14.03l18.18,-14.03l1.61,-34.67l0.47,0.08l7.2,2.7l-1.8,38.71l-25.66,19.81z" /><path d="m51.65,99.66l-34.67,-27.91l-1.8,-52.23l17.11,-5.4l19.35,-13.51l19.36,13.51l17.11,5.4l-1.8,52.23l-34.67,27.91zm0,-92.74l-17.07,11.91l-15.09,4.76l1.59,46.05l30.57,24.61l30.57,-24.61l1.59,-46.05l-15.08,-4.76l-17.07,-11.91z" /><path d="m51.65,68.15l-14.85,-11.7l-1.8,-35.12l13.28,2.71l3.38,7.2l3.38,-7.2l13.28,-2.71l-1.8,35.12l-14.86,11.7zm0,-22.51c2.2,0.08 4.46,0.44 6.75,0.9c-3.35,-3.27 -5.41,-7.28 -6.75,-11.71c-1.34,4.43 -3.4,8.44 -6.75,11.71c2.3,-0.46 4.56,-0.82 6.75,-0.9z" /></g></svg>';
+        var sup_svg = ' viewBox="0 0 100 100" style="fill:#f4ae2b;opacity:0.5"><g><path d="m50.12,18.72l7.96,23.46l23.45,7.96l-23.45,7.96l-7.96,23.45l-7.96,-23.45l-23.46,-7.96l23.46,-7.96l7.96,-23.46z" /><path d="m13.15,13.16l23.6,16.37l0.22,7.45l-7.45,-0.22l-16.37,-23.6z" /><path d="m11.87,88.38l16.36,-23.59l7.46,-0.22l-0.22,7.45l-23.6,16.36z" /><path d="m89.65,89.66l-23.6,-16.37l-0.22,-7.45l7.45,0.22l16.37,23.6z" />            <path d="m88.37,11.88l-16.36,23.6l-7.45,0.22l0.22,-7.46l23.59,-16.36z" />            <path                d="m64.24,22.65l-14.11,-14.11l-14.34,14.34l-4.51,-3.13l18.85,-18.85l18.62,18.62l-4.51,3.13zm16.5,8.86l18.62,18.62l-18.39,18.39l-3.31,-4.76l13.84,-13.84l-13.89,-13.89l3.13,-4.51zm-12.22,49.46l-18.39,18.39l-18.62,-18.62l4.77,-3.31l13.85,13.85l13.62,-13.62l4.76,3.31zm-48.99,-12.22l-18.62,-18.62l18.85,-18.85l3.13,4.51l-14.12,14.12l14.07,14.07l-3.31,4.76z" /></g></svg>';
 
     </script>
 </body>
