@@ -1,5 +1,118 @@
 [
     {
+        "icon": "img_104",
+        "name": "米卡:雪地夥伴",
+        "rarity": "SSR",
+        "class": "S",
+        "code": "Iron",
+        "company": "Tetra",
+        "squad": "小加農炮部隊",
+        "burst": "I",
+        "weapon": {
+            "type": "SMG",
+            "ammo_capacity": "120",
+            "reload_time": "2.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於11.7%攻擊力的傷害】",
+                "【核心傷害250%】"
+            ]
+        },
+        "skill1": {
+            "name": "整理整頓",
+            "skill_content": [
+                "◽普通攻擊命中120次時,全體隊友",
+                "【整理整頓:所受傷害2%▼】【疊加10次】【持續15秒】",
+                "◽若自身處於整理整頓最大疊加狀態，則全體隊友",
+                "【最大裝彈數40%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "助威禮炮",
+            "skill_content": [
+                "◽普通攻擊命中150次時,全體隊友",
+                "【可重疊的增益效果疊加量1個▲】",
+                "◽戰鬥開始時,自身",
+                "【爆裂進度補充速度300%▲】【持續】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "雪溫祭",
+            "skill_content": [
+                "◽全體隊友",
+                "【解除1個減益效果】",
+                "【以施展者為基準的攻擊力39.93%▲】【持續5秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "20.0"
+        },
+        "hp": "647453",
+        "atk": "21307",
+        "def": "3999"
+    },
+    {
+        "icon": "img_105",
+        "name": "魯德米拉:冬日之主",
+        "rarity": "SSR",
+        "class": "A",
+        "code": "Water",
+        "company": "Tetra",
+        "squad": "無極限部隊",
+        "burst": "Ⅲ",
+        "weapon": {
+            "type": "MG",
+            "ammo_capacity": "300",
+            "reload_time": "3.00",
+            "control_mode": "N",
+            "weapon_content": [
+                "◽對目標造成",
+                "【相當於5.86%攻擊力的傷害】",
+                "【核心傷害200%】"
+            ]
+        },
+        "skill1": {
+            "name": "女王的視線",
+            "skill_content": [
+                "◽普通攻擊命中60次時,目標",
+                "【所受傷害12.56%▲】【持續3秒】",
+                "【造成相當於最終攻擊力158.43%的額外傷害】",
+                "◽普通攻擊命中60次時,自身",
+                "【子彈補充20發】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill2": {
+            "name": "暴風雪",
+            "skill_content": [
+                "◽命中核心60次時,對目標造成",
+                "【最終攻擊力109.64%的額外傷害】",
+                "◽全爆裂時間開始時,自身",
+                "【暴擊率14.6%▲】【持續10秒】"
+            ],
+            "skill_type": "P",
+            "skill_cooldown": "0"
+        },
+        "skill3": {
+            "name": "引路明燈",
+            "skill_content": [
+                "◽自身",
+                "【攻擊力62.54%▲】【持續10秒】",
+                "【換彈速度67.2%▲】【持續20秒】"
+            ],
+            "skill_type": "A",
+            "skill_cooldown": "40.0"
+        },
+        "hp": "583734",
+        "atk": "25554",
+        "def": "3539"
+    },
+    {
         "icon": "img_078",
         "name": "真紀真",
         "rarity": "SSR",
