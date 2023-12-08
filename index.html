@@ -575,130 +575,170 @@
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-dark">
+                    <!-- <div class="modal-header bg-dark">
                         <h5 class="modal-title text-light" id="staticBackdropLabel">屬性查詢</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    </div> -->
+
+
                     <div class="modal-body bg-dark">
                         <div>
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#rarity_collapse">+稀有度</button>
-
-                            <div class="collapse show" id="rarity_collapse">
-                                <hr class="text-light">
-                                <button id="rarity_all" class="btn btn-primary">ALL</button>
-                                <button id="rarity_r" class="btn btn-secondary">R</button>
-                                <button id="rarity_sr" class="btn btn-secondary">SR</button>
-                                <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
+                            <div class="position-relative">
+                                <button id="btn_clean_all_seatch"
+                                    class="btn btn-primary position-absolute bottom-0 end-0"><i
+                                        class="bi bi-arrow-repeat"></i>
+                                    清空</button>
                             </div>
-                            <br />
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#class_collapse">+職業</button>
+                            <p class="text-light">排序</p>
+                            <hr class="text-light">
 
-                            <div class="collapse show" id="class_collapse">
-                                <hr class="text-light">
-                                <button id="class_all" class="btn btn-primary">ALL</button>
-                                <button id="class_atk" class="btn btn-secondary">火力型</button>
-                                <button id="class_def" class="btn btn-secondary">防禦型</button>
-                                <button id="class_sup" class="btn btn-secondary">輔助型</button>
+                            <div>
+                                <button id="burst_sort" class="btn btn-secondary">爆裂</button>
+                                <button id="rarity_sort" class="btn btn-secondary">稀有度</button>
+                                <button id="class_sort" class="btn btn-secondary">職業</button>
                             </div>
 
-                            <br />
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#code_collapse">+代碼</button>
+                            <p class="text-light">篩選</p>
+                            <hr class="text-light">
 
-                            <div class="collapse show" id="code_collapse">
-                                <hr class="text-light">
-                                <button id="code_all" class="btn btn-primary">ALL</button>
-                                <button id="code_fire" class="btn btn-secondary">燃燒</button>
-                                <button id="code_water" class="btn btn-secondary">水冷</button>
-                                <button id="code_wind" class="btn btn-secondary">風壓</button>
-                                <button id="code_electric" class="btn btn-secondary">電擊</button>
-                                <button id="code_iron" class="btn btn-secondary">鐵甲</button>
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#rarity_collapse">+稀有度</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="rarity_collapse">
+                                    <button id="rarity_all" class="btn btn-primary">ALL</button>
+                                    <button id="rarity_r" class="btn btn-secondary">R</button>
+                                    <button id="rarity_sr" class="btn btn-secondary">SR</button>
+                                    <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
+                                </div>
                             </div>
-
                             <br />
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#company_collapse">+企業</button>
-
-                            <div class="collapse show" id="company_collapse">
-                                <hr class="text-light">
-                                <button id="company_all" class="btn btn-primary">ALL</button>
-                                <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
-                                <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
-                                <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
-                                <button id="company_pilifrim" class="btn btn-secondary">朝聖者</button>
-                                <button id="company_abnormal" class="btn btn-secondary">反常</button>
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#class_collapse">+職業</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="class_collapse">
+                                    <button id="class_all" class="btn btn-primary">ALL</button>
+                                    <button id="class_atk" class="btn btn-secondary">火力型</button>
+                                    <button id="class_def" class="btn btn-secondary">防禦型</button>
+                                    <button id="class_sup" class="btn btn-secondary">輔助型</button>
+                                </div>
                             </div>
-
                             <br />
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#burst_collapse">+爆裂</button>
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#code_collapse">+代碼</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="code_collapse">
 
-                            <div class="collapse show" id="burst_collapse">
-                                <hr class="text-light">
-                                <button id="burst_all" class="btn btn-primary">ALL</button>
-                                <button id="burst_1" class="btn btn-secondary">I</button>
-                                <button id="burst_2" class="btn btn-secondary">Ⅱ</button>
-                                <button id="burst_3" class="btn btn-secondary">Ⅲ</button>
-                                <button id="burst_na" class="btn btn-secondary">⊼</button>
+                                    <button id="code_all" class="btn btn-primary">ALL</button>
+                                    <button id="code_fire" class="btn btn-secondary">燃燒</button>
+                                    <button id="code_water" class="btn btn-secondary">水冷</button>
+                                    <button id="code_wind" class="btn btn-secondary">風壓</button>
+                                    <button id="code_electric" class="btn btn-secondary">電擊</button>
+                                    <button id="code_iron" class="btn btn-secondary">鐵甲</button>
+                                </div>
                             </div>
-
                             <br />
-
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#weapon_collapse">+武器</button>
-
-                            <div class="collapse show" id="weapon_collapse">
-                                <hr class="text-light">
-                                <button id="weapon_all" class="btn btn-primary">ALL</button>
-                                <button id="weapon_sg" class="btn btn-secondary">SG</button>
-                                <button id="weapon_smg" class="btn btn-secondary">SMG</button>
-                                <button id="weapon_ar" class="btn btn-secondary">AR</button>
-                                <button id="weapon_mg" class="btn btn-secondary">MG</button>
-                                <button id="weapon_sr" class="btn btn-secondary">SR</button>
-                                <button id="weapon_rl" class="btn btn-secondary">RL</button>
-                            </div>
-
-
-                            <br />
-
-
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#burst_cd_collapse">+爆裂技能冷卻時間</button>
-
-                            <div class="collapse show" id="burst_cd_collapse">
-                                <hr class="text-light">
-                                <button id="burst_cd_all" class="btn btn-primary">All</button>
-                                <button id="burst_cd_20" class="btn btn-secondary">20</button>
-                                <button id="burst_cd_40" class="btn btn-secondary">40</button>
-                                <button id="burst_cd_60" class="btn btn-secondary">60</button>
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#company_collapse">+企業</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="company_collapse">
+                                    <button id="company_all" class="btn btn-primary">ALL</button>
+                                    <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
+                                    <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
+                                    <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
+                                    <button id="company_pilifrim" class="btn btn-secondary">朝聖者</button>
+                                    <button id="company_abnormal" class="btn btn-secondary">反常</button>
+                                </div>
                             </div>
 
                             <br />
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#burst_collapse">+爆裂</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="burst_collapse">
+                                    <button id="burst_all" class="btn btn-primary">ALL</button>
+                                    <button id="burst_1" class="btn btn-secondary">I</button>
+                                    <button id="burst_2" class="btn btn-secondary">Ⅱ</button>
+                                    <button id="burst_3" class="btn btn-secondary">Ⅲ</button>
+                                    <button id="burst_na" class="btn btn-secondary">⊼</button>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#weapon_collapse">+武器</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="weapon_collapse">
+                                    <button id="weapon_all" class="btn btn-primary">ALL</button>
+                                    <button id="weapon_sg" class="btn btn-secondary">SG</button>
+                                    <button id="weapon_smg" class="btn btn-secondary">SMG</button>
+                                    <button id="weapon_ar" class="btn btn-secondary">AR</button>
+                                    <button id="weapon_mg" class="btn btn-secondary">MG</button>
+                                    <button id="weapon_sr" class="btn btn-secondary">SR</button>
+                                    <button id="weapon_rl" class="btn btn-secondary">RL</button>
+                                </div>
 
-                            <button class="btn btn-dark" data-bs-toggle="collapse"
-                                data-bs-target="#skills_collapse">+技能</button>
+                            </div>
+                            <br />
 
-                            <div class="collapse show" id="skills_collapse">
-                                <hr class="text-light">
-                                <div class="d-flex flex-wrap gap-1">
-                                    <button id="skill_all" class="btn btn-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
-                                            <path
-                                                d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
-                                        </svg>
-                                    </button>
-                                    <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
-                                    <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
-                                    <button id="skill_stun" class="btn btn-secondary">昏迷</button>
-                                    <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
-                                    <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
-                                    <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
-                                    <button id="skill_shield" class="btn btn-secondary">護盾</button>
-                                    <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
-                                    <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#burst_cd_collapse">+爆裂技能冷卻時間</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="burst_cd_collapse">
+                                    <button id="burst_cd_all" class="btn btn-primary">ALL</button>
+                                    <button id="burst_cd_20" class="btn btn-secondary">20</button>
+                                    <button id="burst_cd_40" class="btn btn-secondary">40</button>
+                                    <button id="burst_cd_60" class="btn btn-secondary">60</button>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div>
+                                <div class="position-relative">
+                                    <button class="btn btn-dark position-absolute top-0 start-50 translate-middle-x"
+                                        data-bs-toggle="collapse" data-bs-target="#skills_collapse">+技能</button>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="collapse show" id="skills_collapse">
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <button id="skill_all" class="btn btn-primary">ALL</button>
+                                        <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
+                                        <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
+                                        <button id="skill_stun" class="btn btn-secondary">昏迷</button>
+                                        <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
+                                        <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
+                                        <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
+                                        <button id="skill_shield" class="btn btn-secondary">護盾</button>
+                                        <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
+                                        <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -948,6 +988,12 @@
         var skill_reload_speed = false;
         var oJsonData = [];
         var filterJsonData = [];
+
+        // 0不排序 1順序 2倒序
+        var burst_sort = 0;
+        var rarity_sort = 0;
+        var class_sort = 0;
+
 
         $(document).ready(function () {
 
@@ -1681,8 +1727,152 @@
 
                 reloadTable();
             }
+            //#endregion
+            //#region 排序
+            $('#burst_sort').click(function () {
+
+                switch (burst_sort) {
+                    case 0:
+                        burst_sort = 1;
+                        rarity_sort = 0;
+                        class_sort = 0;
+                        $('#rarity_sort').html('稀有度').btn_off();
+                        $('#class_sort').html('職業').btn_off();
+                        $(this).html('爆裂▼')
+                        $(this).btn_on();
+                        break;
+                    case 2:
+                        burst_sort = 1;
+                        $(this).html('爆裂▼')
+                        $(this).btn_on();
+                        break;
+
+                    case 1:
+                        burst_sort = 2;
+                        $(this).html('爆裂▲')
+                        $(this).btn_on();
+                        break;
+                    default: break;
+                }
+                reloadTable();
+            });
 
 
+            $('#rarity_sort').click(function () {
+
+                switch (rarity_sort) {
+                    case 0:
+                        burst_sort = 0;
+                        rarity_sort = 1;
+                        class_sort = 0;
+                        $('#burst_sort').html('爆裂').btn_off();
+                        $('#class_sort').html('職業').btn_off();
+                        $(this).html('稀有度▼');
+                        $(this).btn_on();
+                        break;
+                    case 2:
+                        rarity_sort = 1;
+                        $(this).html('稀有度▼');
+                        $(this).btn_on();
+                        break;
+
+                    case 1:
+                        rarity_sort = 2;
+                        $(this).html('稀有度▲');
+                        $(this).btn_on();
+                        break;
+                    default: break;
+                }
+                reloadTable();
+            });
+
+
+
+            $('#class_sort').click(function () {
+
+                switch (class_sort) {
+                    case 0:
+                        burst_sort = 0;
+                        rarity_sort = 0;
+                        class_sort = 1;
+                        $('#burst_sort').html('爆裂').btn_off();
+                        $('#rarity_sort').html('稀有度').btn_off();
+                        $(this).html('職業▼');
+                        $(this).btn_on();
+                    case 2:
+                        class_sort = 1;
+                        $(this).html('職業▼');
+                        $(this).btn_on();
+                        break;
+
+                    case 1:
+                        class_sort = 2;
+                        $(this).html('職業▲');
+                        $(this).btn_on();
+                        break;
+                    default: break;
+                }
+                reloadTable();
+            });
+
+            //#endregion
+
+
+            $('#btn_clean_all_seatch').click(function () {
+
+                rarity_all = true; $('#rarity_all').btn_on();
+                rarity_r = false; $('#rarity_r').btn_off();
+                rarity_sr = false; $('#rarity_sr').btn_off();
+                rarity_ssr = false; $('#rarity_ssr').btn_off();
+                class_all = true; $('#class_all').btn_on();
+                class_atk = false; $('#class_atk').btn_off();
+                class_def = false; $('#class_def').btn_off();
+                class_sup = false; $('#class_sup').btn_off();
+                code_all = true; $('#code_all').btn_on();
+                code_fire = false; $('#code_fire').btn_off();
+                code_wind = false; $('#code_wind').btn_off();
+                code_iron = false; $('#code_iron').btn_off();
+                code_electric = false; $('#code_electric').btn_off();
+                code_water = false; $('#code_water').btn_off();
+                company_all = true; $('#company_all').btn_on();
+                company_elysion = false; $('#company_elysion').btn_off();
+                company_missilis = false; $('#company_missilis').btn_off();
+                company_tetra = false; $('#company_tetra').btn_off();
+                company_pilifrim = false; $('#company_pilifrim').btn_off();
+                company_abnormal = false; $('#company_abnormal').btn_off();
+                burst_all = true; $('#burst_all').btn_on();
+                burst_1 = false; $('#burst_1').btn_off();
+                burst_2 = false; $('#burst_2').btn_off();
+                burst_3 = false; $('#burst_3').btn_off();
+                burst_na = false; $('#burst_na').btn_off();
+                weapon_all = true; $('#weapon_all').btn_on();
+                weapon_sg = false; $('#weapon_sg').btn_off();
+                weapon_smg = false; $('#weapon_smg').btn_off();
+                weapon_ar = false; $('#weapon_ar').btn_off();
+                weapon_mg = false; $('#weapon_mg').btn_off();
+                weapon_sr = false; $('#weapon_sr').btn_off();
+                weapon_rl = false; $('#weapon_rl').btn_off();
+                burst_cd_all = true; $('#burst_cd_all').btn_on();
+                burst_cd_20 = false; $('#burst_cd_20').btn_off();
+                burst_cd_40 = false; $('#burst_cd_40').btn_off();
+                burst_cd_60 = false; $('#burst_cd_60').btn_off();
+                skill_all = true; $('#skill_all').btn_on();
+                skill_last_bullet = false; $('#skill_last_bullet').btn_off();
+                skill_pierce = false; $('#skill_pierce').btn_off();
+                skill_stun = false; $('#skill_stun').btn_off();
+                skill_cover_recovers = false; $('#skill_cover_recovers').btn_off();
+                skill_taunt = false; $('#skill_taunt').btn_off();
+                skill_invulnerable = false; $('#skill_invulnerable').btn_off();
+                skill_shield = false; $('#skill_shield').btn_off();
+                skill_burst_cooldown = false; $('#skill_burst_cooldown').btn_off();
+                skill_reload_speed = false; $('#skill_reload_speed').btn_off();
+                burst_sort = 0; $('#burst_sort').btn_off();
+                rarity_sort = 0; $('#rarity_sort').btn_off();
+                class_sort = 0; $('#class_sort').btn_off();
+                reloadTable();
+            });
+
+            //#region 回到頁面頂部
             window.onscroll = function () { scrollFunction() };
 
             function scrollFunction() {
@@ -1692,7 +1882,9 @@
                     $('#btn_top').hide(1000);
                 }
             }
+            //#endregion
 
+            //#region 點選圖片加入隊伍
             window.operateEvents = {
                 'click .like': function (e, value, row, index) {
 
@@ -1701,15 +1893,17 @@
             }
 
 
+            $("#flex_nikkes").on("click", 'a', function () {
+
+                setGroup(oJsonData.filter(n => n.name == this.title)[0]);
+
+            });
+            //#endregion
+
+
             // get ready end
         });
 
-
-        $("#flex_nikkes").on("click", 'a', function () {
-
-            setGroup(oJsonData.filter(n => n.name == this.title)[0]);
-
-        });
 
 
 
@@ -1844,6 +2038,26 @@
                 }
             }
 
+            var sort_field = '';
+            var sortOrder = '';
+
+            if (burst_sort != 0) {
+                sort_field = 'burst';
+                sortOrder = burst_sort == 1 ? 'asc' : 'desc';
+            }
+
+            if (rarity_sort != 0) {
+                sort_field = 'rarity';
+                sortOrder = rarity_sort == 1 ? 'asc' : 'desc';
+            }
+
+
+            if (class_sort != 0) {
+                sort_field = 'class';
+                sortOrder = class_sort == 1 ? 'asc' : 'desc';
+            }
+
+
 
 
 
@@ -1865,7 +2079,48 @@
                 var _skill3 = filterSkills.some(s => s3.includes(s));
 
                 return _rarity & _class & _code & _company & _burst & _weapon & _cd & (_skill1 | _skill2 | _skill3);
-            })
+            });
+
+            filterJsonData = filterJsonData.sort(function (a, b) {
+
+                var _sort = 0;
+                switch (sort_field) {
+
+                    case 'burst':
+                        if (sortOrder == 'asc') {
+
+                            _sort = a.burst.localeCompare(b.burst);
+                        } else {
+                            _sort = b.burst.localeCompare(a.burst);
+                        }
+                        break;
+                    case 'rarity':
+                        if (sortOrder == 'asc') {
+
+                            _sort = a.rarity.localeCompare(b.rarity);
+                        } else {
+                            _sort = b.rarity.localeCompare(a.rarity);
+                        }
+                        break;
+                    case 'class':
+                        if (sortOrder == 'asc') {
+
+                            _sort = a.class.localeCompare(b.class);
+                        } else {
+                            _sort = b.class.localeCompare(a.class);
+                        }
+                        break;
+
+                    default: break;
+                }
+
+
+                return _sort;
+            });
+
+
+
+
 
             setFlextWrap(filterJsonData);
 
@@ -1896,9 +2151,11 @@
                         var _skill3 = filterSkills.some(s => s3.includes(s));
 
                         return _rarity & _class & _code & _company & _burst & _weapon & _cd & (_skill1 | _skill2 | _skill3);
-                    }
+                    },
                 }
             );
+
+            $("#nikkesTable").bootstrapTable('sortBy', { field: sort_field, sortOrder: sortOrder });
         }
 
 
