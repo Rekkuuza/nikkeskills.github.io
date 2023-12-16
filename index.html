@@ -740,6 +740,8 @@
                                         <button id="skill_shield" class="btn btn-secondary">護盾</button>
                                         <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
                                         <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
+                                        <button id="skill_reload_bullet" class="btn btn-secondary">子彈補充</button>
+                                        <button id="skill_dispels_debuff" class="btn btn-secondary">解除減益</button>
                                     </div>
                                 </div>
                             </div>
@@ -988,6 +990,8 @@
         var skill_shield = false;
         var skill_burst_cooldown = false;
         var skill_reload_speed = false;
+        var skill_reload_bullet = false;
+        var skill_dispels_debuff = false;
         var oJsonData = [];
         var filterJsonData = [];
 
@@ -1611,7 +1615,22 @@
                 skill_shield = false;
                 skill_burst_cooldown = false;
                 skill_reload_speed = false;
+                skill_reload_bullet = false;
+                skill_dispels_debuff = false;
+                check_skill_all();
+            });
 
+            $('#skill_dispels_debuff').click(function () {
+
+                skill_dispels_debuff = !skill_dispels_debuff;
+                skill_dispels_debuff ? $('#skill_dispels_debuff').btn_on() : $('#skill_dispels_debuff').btn_off();
+                check_skill_all();
+            });
+
+            $('#skill_reload_bullet').click(function () {
+
+                skill_reload_bullet = !skill_reload_bullet;
+                skill_reload_bullet ? $('#skill_reload_bullet').btn_on() : $('#skill_reload_bullet').btn_off();
                 check_skill_all();
             });
 
@@ -1688,7 +1707,7 @@
                     $('#skill_all').btn_off();
                 }
 
-                if (!skill_last_bullet && !skill_pierce && !skill_stun && !skill_cover_recovers && !skill_taunt && !skill_invulnerable && !skill_shield && !skill_burst_cooldown && !skill_reload_speed) {
+                if (!skill_last_bullet && !skill_pierce && !skill_stun && !skill_cover_recovers && !skill_taunt && !skill_invulnerable && !skill_shield && !skill_burst_cooldown && !skill_reload_speed && !skill_reload_bullet && !skill_dispels_debuff) {
 
                     skill_all = true;
                     $('#skill_all').btn_on();
@@ -1701,9 +1720,11 @@
                     $('#skill_shield').btn_off();
                     $('#skill_burst_cooldown').btn_off();
                     $('#skill_reload_speed').btn_off();
+                    $('#skill_reload_bullet').btn_off();
+                    $('#skill_dispels_debuff').btn_off();
                 }
 
-                if (skill_last_bullet && skill_pierce && skill_stun && skill_cover_recovers && skill_taunt && skill_invulnerable && skill_shield && skill_burst_cooldown && skill_reload_speed) {
+                if (skill_last_bullet && skill_pierce && skill_stun && skill_cover_recovers && skill_taunt && skill_invulnerable && skill_shield && skill_burst_cooldown && skill_reload_speed && skill_reload_bullet && skill_dispels_debuff) {
 
                     skill_all = true;
                     skill_last_bullet = false;
@@ -1715,6 +1736,8 @@
                     skill_shield = false;
                     skill_burst_cooldown = false;
                     skill_reload_speed = false;
+                    skill_reload_bullet = false;
+                    skill_dispels_debuff = false;
                     $('#skill_all').btn_on();
                     $('#skill_last_bullet').btn_off();
                     $('#skill_pierce').btn_off();
@@ -1725,6 +1748,8 @@
                     $('#skill_shield').btn_off();
                     $('#skill_burst_cooldown').btn_off();
                     $('#skill_reload_speed').btn_off();
+                    $('#skill_reload_bullet').btn_off();
+                    $('#skill_dispels_debuff').btn_off();
                 }
 
                 reloadTable();
@@ -1868,6 +1893,8 @@
                 skill_shield = false; $('#skill_shield').btn_off();
                 skill_burst_cooldown = false; $('#skill_burst_cooldown').btn_off();
                 skill_reload_speed = false; $('#skill_reload_speed').btn_off();
+                skill_reload_bullet = false; $('#skill_reload_bullet').btn_off();
+                skill_dispels_debuff = false; $('#skill_dispels_debuff').btn_off();
                 burst_sort = 0; $('#burst_sort').btn_off();
                 rarity_sort = 0; $('#rarity_sort').btn_off();
                 class_sort = 0; $('#class_sort').btn_off();
@@ -2037,6 +2064,14 @@
                 }
                 if (skill_reload_speed) {
                     filterSkills.push('換彈速度');
+                }
+                if (skill_reload_bullet) {
+                    filterSkills.push('子彈補充');
+                }
+                if (skill_dispels_debuff) {
+
+                    filterSkills.push('解除減益效果');
+                    filterSkills.push('解除1個減益效果');
                 }
             }
 
