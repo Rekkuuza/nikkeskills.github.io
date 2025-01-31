@@ -507,6 +507,111 @@
             background-position: -800% -1100%;
         }
 
+        .img_119 {
+            background-position: -900% -1100%;
+        }
+
+        .img_120 {
+            background-position: -0% -1200%;
+        }
+
+        .img_121 {
+            background-position: -100% -1200%;
+        }
+
+        .img_122 {
+            background-position: -200% -1200%;
+        }
+
+        .img_123 {
+            background-position: -300% -1200%;
+        }
+
+        .img_124 {
+            background-position: -400% -1200%;
+        }
+
+        .img_125 {
+            background-position: -500% -1200%;
+        }
+
+        .img_126 {
+            background-position: -600% -1200%;
+        }
+
+        .img_127 {
+            background-position: -700% -1200%;
+        }
+
+        .img_128 {
+            background-position: -800% -1200%;
+        }
+
+        .img_129 {
+            background-position: -900% -1200%;
+        }
+
+        .img_130 {
+            background-position: -0% -1300%;
+        }
+
+        .img_131 {
+            background-position: -100% -1300%;
+        }
+
+        .img_132 {
+            background-position: -200% -1300%;
+        }
+
+        .img_133 {
+            background-position: -300% -1300%;
+        }
+
+        .img_134 {
+            background-position: -400% -1300%;
+        }
+
+        .img_135 {
+            background-position: -500% -1300%;
+        }
+
+        .img_136 {
+            background-position: -600% -1300%;
+        }
+
+        .img_137 {
+            background-position: -700% -1300%;
+        }
+
+        .img_138 {
+            background-position: -800% -1300%;
+        }
+
+        .img_139 {
+            background-position: -900% -1300%;
+        }
+
+        .img_140 {
+            background-position: -0% -1400%;
+        }
+
+        .img_141 {
+            background-position: -100% -1400%;
+        }
+
+        .img_142 {
+            background-position: -200% -1400%;
+        }
+
+        .img_143 {
+            background-position: -300% -1400%;
+        }
+
+        .img_144 {
+            background-position: -400% -1400%;
+        }
+
+
 
         /*#endregion */
 
@@ -712,7 +817,7 @@
                                     <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
                                     <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
                                     <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
-                                    <button id="company_pilifrim" class="btn btn-secondary">朝聖者</button>
+                                    <button id="company_pilgrim" class="btn btn-secondary">朝聖者</button>
                                     <button id="company_abnormal" class="btn btn-secondary">反常</button>
                                 </div>
                             </div>
@@ -1012,7 +1117,7 @@
         var company_elysion = false;
         var company_missilis = false;
         var company_tetra = false;
-        var company_pilifrim = false;
+        var company_pilgrim = false;
         var company_abnormal = false;
         var burst_all = true;
         var burst_1 = false;
@@ -1325,7 +1430,7 @@
                 company_elysion = false;
                 company_missilis = false;
                 company_tetra = false;
-                company_pilifrim = false;
+                company_pilgrim = false;
                 company_abnormal = false;
                 check_company_all();
             });
@@ -1353,10 +1458,10 @@
             });
 
 
-            $('#company_pilifrim').click(function () {
+            $('#company_pilgrim').click(function () {
 
-                company_pilifrim = !company_pilifrim;
-                company_pilifrim ? $('#company_pilifrim').btn_on() : $('#company_pilifrim').btn_off();
+                company_pilgrim = !company_pilgrim;
+                company_pilgrim ? $('#company_pilgrim').btn_on() : $('#company_pilgrim').btn_off();
                 check_company_all();
             });
 
@@ -1375,30 +1480,30 @@
                     $('#company_all').btn_off();
                 }
 
-                if (!company_elysion && !company_missilis && !company_tetra && !company_pilifrim && !company_abnormal) {
+                if (!company_elysion && !company_missilis && !company_tetra && !company_pilgrim && !company_abnormal) {
 
                     company_all = true;
                     $('#company_all').btn_on();
                     $('#company_elysion').btn_off();
                     $('#company_missilis').btn_off();
                     $('#company_tetra').btn_off();
-                    $('#company_pilifrim').btn_off();
+                    $('#company_pilgrim').btn_off();
                     $('#company_abnormal').btn_off();
                 }
 
-                if (company_elysion && company_missilis && company_tetra && company_pilifrim && company_abnormal) {
+                if (company_elysion && company_missilis && company_tetra && company_pilgrim && company_abnormal) {
 
                     company_all = true;
                     company_elysion = false;
                     company_missilis = false;
                     company_tetra = false;
-                    company_pilifrim = false;
+                    company_pilgrim = false;
                     company_abnormal = false;
                     $('#company_all').btn_on();
                     $('#company_elysion').btn_off();
                     $('#company_missilis').btn_off();
                     $('#company_tetra').btn_off();
-                    $('#company_pilifrim').btn_off();
+                    $('#company_pilgrim').btn_off();
                     $('#company_abnormal').btn_off();
                 }
 
@@ -1928,7 +2033,7 @@
                 company_elysion = false; $('#company_elysion').btn_off();
                 company_missilis = false; $('#company_missilis').btn_off();
                 company_tetra = false; $('#company_tetra').btn_off();
-                company_pilifrim = false; $('#company_pilifrim').btn_off();
+                company_pilgrim = false; $('#company_pilgrim').btn_off();
                 company_abnormal = false; $('#company_abnormal').btn_off();
                 burst_all = true; $('#burst_all').btn_on();
                 burst_1 = false; $('#burst_1').btn_off();
@@ -2047,12 +2152,12 @@
 
             var filterCompany = [];
             if (company_all) {
-                filterCompany = ['Elysion', 'Missilis', 'Tetra', 'Pilifrim', 'Abnormal'];
+                filterCompany = ['Elysion', 'Missilis', 'Tetra', 'Piligrim', 'Abnormal'];
             } else {
                 if (company_elysion) filterCompany.push('Elysion');
                 if (company_missilis) filterCompany.push('Missilis');
                 if (company_tetra) filterCompany.push('Tetra');
-                if (company_pilifrim) filterCompany.push('Pilifrim');
+                if (company_pilgrim) filterCompany.push('Piligrim');
                 if (company_abnormal) filterCompany.push('Abnormal');
             }
 
@@ -2718,7 +2823,7 @@
                 case 'Elysion': _company += '極樂淨土'; break;
                 case 'Missilis': _company += '米西利斯'; break;
                 case 'Tetra': _company += '泰特拉'; break;
-                case 'Pilifrim': _company += '朝聖者'; break;
+                case 'Piligrim': _company += '朝聖者'; break;
                 case 'Abnormal': _company += '反常'; break;
                 default: _company += '';
             }
