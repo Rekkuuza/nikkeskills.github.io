@@ -695,6 +695,11 @@
             width: 50px;
             height: 50px;
         }
+
+        .collapse-button.collapsed {
+            color: white;
+            background: gray;
+        }
     </style>
 </head>
 
@@ -1014,13 +1019,16 @@
                     </table>
                 </div>
 
+                <!-- 顯示角色圖 -->
 
-                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_flex_nikkes">
+
+                <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_flex_nikkes">
                     <i class="bi bi-grid-3x3-gap-fill"></i>
                 </button>
-
-                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_list_nikkes"><i
-                        class="bi bi-list"></i></button>
+                <!-- 顯示角色圖和技能 -->
+                <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_list_nikkes"><i class="bi bi-list"></i></button>
 
                 <!-- 查詢 search -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" title="search"
@@ -1033,7 +1041,7 @@
                 <div id="flex_nikkes" class="d-flex flex-wrap"></div>
             </div>
 
-            <div id="collapse_list_nikkes" class="collapse">
+            <div id="collapse_list_nikkes" class="collapse show">
                 <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
                     <thead>
                         <tr>
