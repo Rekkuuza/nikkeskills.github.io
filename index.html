@@ -770,10 +770,13 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="rarity_collapse">
-                                    <button id="rarity_all" class="btn btn-primary">ALL</button>
-                                    <button id="rarity_r" class="btn btn-secondary">R</button>
-                                    <button id="rarity_sr" class="btn btn-secondary">SR</button>
-                                    <button id="rarity_ssr" class="btn btn-secondary">SSR</button>
+
+                                    <button id="rarity_r" class="btn btn-secondary"
+                                        onclick="rarity_search('r')">R</button>
+                                    <button id="rarity_sr" class="btn btn-secondary"
+                                        onclick="rarity_search('sr')">SR</button>
+                                    <button id="rarity_ssr" class="btn btn-secondary"
+                                        onclick="rarity_search('ssr')">SSR</button>
                                 </div>
                             </div>
                             <br />
@@ -1107,7 +1110,6 @@
 
 
         var jsonData = [];
-        var rarity_all = true;
         var rarity_r = false;
         var rarity_sr = false;
         var rarity_ssr = false;
@@ -1206,72 +1208,6 @@
 
             //#endregion
 
-
-            //#region 選擇稀有度
-            $('#rarity_all').click(function () {
-                if (rarity_all) return;
-
-                rarity_r = false;
-                rarity_sr = false;
-                rarity_ssr = false;
-                check_rarity_all();
-            });
-
-            $('#rarity_r').click(function () {
-
-                rarity_r = !rarity_r;
-                rarity_r ? $('#rarity_r').btn_on() : $('#rarity_r').btn_off();
-                check_rarity_all();
-            });
-
-            $('#rarity_sr').click(function () {
-
-                rarity_sr = !rarity_sr;
-                rarity_sr ? $('#rarity_sr').btn_on() : $('#rarity_sr').btn_off();
-                check_rarity_all();
-            });
-
-
-            $('#rarity_ssr').click(function () {
-
-                rarity_ssr = !rarity_ssr;
-                rarity_ssr ? $('#rarity_ssr').btn_on() : $('#rarity_ssr').btn_off();
-                check_rarity_all();
-            });
-
-
-            function check_rarity_all() {
-
-                if (rarity_all) {
-                    rarity_all = false;
-                    $('#rarity_all').btn_off();
-                }
-
-                if (!rarity_r && !rarity_sr && !rarity_ssr) {
-
-                    rarity_all = true;
-                    $('#rarity_all').btn_on();
-                    $('#rarity_r').btn_off();
-                    $('#rarity_sr').btn_off();
-                    $('#rarity_ssr').btn_off();
-                }
-
-                if (rarity_r && rarity_sr && rarity_ssr) {
-
-                    rarity_all = true;
-                    rarity_r = false;
-                    rarity_sr = false;
-                    rarity_ssr = false;
-                    $('#rarity_all').btn_on();
-                    $('#rarity_r').btn_off();
-                    $('#rarity_sr').btn_off();
-                    $('#rarity_ssr').btn_off();
-                }
-
-                reloadTable();
-            }
-
-            //#endregion
 
             //#region 選擇職業
 
@@ -2023,7 +1959,6 @@
 
             $('#btn_clean_all_seatch').click(function () {
 
-                rarity_all = true; $('#rarity_all').btn_on();
                 rarity_r = false; $('#rarity_r').btn_off();
                 rarity_sr = false; $('#rarity_sr').btn_off();
                 rarity_ssr = false; $('#rarity_ssr').btn_off();
@@ -2111,7 +2046,31 @@
         });
 
 
+        //#region 篩選稀有度
+        function rarity_search(rarity) {
 
+            switch (rarity) {
+
+                case "r":
+                    rarity_r = !rarity_r;
+                    rarity_r ? $('#rarity_r').btn_on() : $('#rarity_r').btn_off()
+                    break;
+
+                case "sr":
+                    rarity_sr = !rarity_sr;
+                    rarity_sr ? $('#rarity_sr').btn_on() : $('#rarity_sr').btn_off()
+                    break;
+
+                case "ssr":
+                    rarity_ssr = !rarity_ssr;
+                    rarity_ssr ? $('#rarity_ssr').btn_on() : $('#rarity_ssr').btn_off()
+                    break;
+            }
+
+            reloadTable();
+        }
+
+        //#endregion
 
         function topFunction() {
             document.body.scrollTop = 0;
@@ -2125,7 +2084,8 @@
 
             var filterRarity = [];
 
-            if (rarity_all) {
+
+            if ((rarity_r == rarity_sr) & (rarity_sr == rarity_ssr)) {
                 filterRarity = ['R', 'SR', 'SSR'];
             } else {
                 if (rarity_r) filterRarity.push('R');
