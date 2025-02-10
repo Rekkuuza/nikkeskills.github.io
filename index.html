@@ -771,12 +771,6 @@
                                 </div>
                                 <div class="collapse show" id="rarity_collapse">
 
-                                    <button id="rarity_r" class="btn btn-secondary"
-                                        onclick="rarity_search('r')">R</button>
-                                    <button id="rarity_sr" class="btn btn-secondary"
-                                        onclick="rarity_search('sr')">SR</button>
-                                    <button id="rarity_ssr" class="btn btn-secondary"
-                                        onclick="rarity_search('ssr')">SSR</button>
                                 </div>
                             </div>
                             <br />
@@ -937,8 +931,8 @@
                 <!-- 編組 -->
                 <div class="row">
                     <div class="col-2 position-relative">
-                        <button class="btn btn-primary position-absolute top-50 start-50 translate-middle" title="PARTY"
-                            data-bs-toggle="modal" data-bs-target="#nikke_group">PARTY</button>
+                        <button class="btn btn-primary position-absolute top-50 start-50 translate-middle"
+                            title="Compare" data-bs-toggle="modal" data-bs-target="#nikke_group">Compare</button>
                     </div>
                     <table class="col-6">
                         <tbody>
@@ -1110,9 +1104,6 @@
 
 
         var jsonData = [];
-        var rarity_r = false;
-        var rarity_sr = false;
-        var rarity_ssr = false;
         var class_all = true;
         var class_atk = false;
         var class_def = false;
@@ -2042,33 +2033,58 @@
             //#endregion
 
 
-            // get ready end
-        });
+
+        }); // get ready end
+
+
+        $.fn.btn_on = function () {
+
+            $(this).removeClass("btn-secondary");
+            $(this).addClass("btn-primary");
+
+        }
+
+
+
+        $.fn.btn_off = function () {
+
+            $(this).removeClass("btn-primary");
+            $(this).addClass("btn-secondary");
+        }
+
+
 
 
         //#region 篩選稀有度
-        function rarity_search(rarity) {
 
-            switch (rarity) {
 
-                case "r":
-                    rarity_r = !rarity_r;
-                    rarity_r ? $('#rarity_r').btn_on() : $('#rarity_r').btn_off()
-                    break;
+        const rarity_list = [
+            { id: 'rarity_r', text: 'R', search: 'r', trigger: false },
+            { id: 'rarity_sr', text: 'SR', search: 'sr', trigger: false },
+            { id: 'rarity_ssr', text: 'SSR', search: 'ssr', trigger: false }
+        ];
 
-                case "sr":
-                    rarity_sr = !rarity_sr;
-                    rarity_sr ? $('#rarity_sr').btn_on() : $('#rarity_sr').btn_off()
-                    break;
 
-                case "ssr":
-                    rarity_ssr = !rarity_ssr;
-                    rarity_ssr ? $('#rarity_ssr').btn_on() : $('#rarity_ssr').btn_off()
-                    break;
-            }
+        rarity_list.forEach(function (o) {
 
-            reloadTable();
-        }
+            var _btn = $('<button/>', {
+                id: o.id,
+                text: o.text,
+                class: 'btn btn-secondary me-1',
+                click: function () {
+
+                    o.trigger = !o.trigger;
+
+                    o.trigger ? $('#' + o.id).btn_on() : $('#' + o.id).btn_off()
+
+                    reloadTable();
+                }
+
+            });
+            _btn.appendTo('#rarity_collapse');
+
+        });
+
 
         //#endregion
 
@@ -2085,13 +2101,16 @@
             var filterRarity = [];
 
 
-            if ((rarity_r == rarity_sr) & (rarity_sr == rarity_ssr)) {
-                filterRarity = ['R', 'SR', 'SSR'];
-            } else {
-                if (rarity_r) filterRarity.push('R');
-                if (rarity_sr) filterRarity.push('SR');
-                if (rarity_ssr) filterRarity.push('SSR');
-            }
+            // 篩選稀有度
+            rarity_list.forEach(function (o) {
+
+                if (o.trigger) {
+                    filterRarity.push(o.text);
+                }
+            });
+
+
+
 
 
 
@@ -2800,21 +2819,6 @@
         }
 
 
-
-        $.fn.btn_on = function () {
-
-            $(this).removeClass("btn-secondary");
-            $(this).addClass("btn-primary");
-
-        }
-
-
-
-        $.fn.btn_off = function () {
-
-            $(this).removeClass("btn-primary");
-            $(this).addClass("btn-secondary");
-        }
 
 
         $('#nikke_group').on('shown.bs.modal', function () {
