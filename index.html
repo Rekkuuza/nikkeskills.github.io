@@ -782,10 +782,6 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="class_collapse">
-                                    <button id="class_all" class="btn btn-primary">ALL</button>
-                                    <button id="class_atk" class="btn btn-secondary">火力型</button>
-                                    <button id="class_def" class="btn btn-secondary">防禦型</button>
-                                    <button id="class_sup" class="btn btn-secondary">輔助型</button>
                                 </div>
                             </div>
                             <br />
@@ -797,13 +793,6 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="code_collapse">
-
-                                    <button id="code_all" class="btn btn-primary">ALL</button>
-                                    <button id="code_fire" class="btn btn-secondary">燃燒</button>
-                                    <button id="code_water" class="btn btn-secondary">水冷</button>
-                                    <button id="code_wind" class="btn btn-secondary">風壓</button>
-                                    <button id="code_electric" class="btn btn-secondary">電擊</button>
-                                    <button id="code_iron" class="btn btn-secondary">鐵甲</button>
                                 </div>
                             </div>
                             <br />
@@ -815,12 +804,6 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="company_collapse">
-                                    <button id="company_all" class="btn btn-primary">ALL</button>
-                                    <button id="company_elysion" class="btn btn-secondary">極樂淨土</button>
-                                    <button id="company_missilis" class="btn btn-secondary">米西利斯</button>
-                                    <button id="company_tetra" class="btn btn-secondary">泰特拉</button>
-                                    <button id="company_pilgrim" class="btn btn-secondary">朝聖者</button>
-                                    <button id="company_abnormal" class="btn btn-secondary">反常</button>
                                 </div>
                             </div>
 
@@ -833,11 +816,6 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="burst_collapse">
-                                    <button id="burst_all" class="btn btn-primary">ALL</button>
-                                    <button id="burst_1" class="btn btn-secondary">I</button>
-                                    <button id="burst_2" class="btn btn-secondary">Ⅱ</button>
-                                    <button id="burst_3" class="btn btn-secondary">Ⅲ</button>
-                                    <button id="burst_na" class="btn btn-secondary">⊼</button>
                                 </div>
                             </div>
                             <br />
@@ -849,13 +827,7 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="weapon_collapse">
-                                    <button id="weapon_all" class="btn btn-primary">ALL</button>
-                                    <button id="weapon_sg" class="btn btn-secondary">SG</button>
-                                    <button id="weapon_smg" class="btn btn-secondary">SMG</button>
-                                    <button id="weapon_ar" class="btn btn-secondary">AR</button>
-                                    <button id="weapon_mg" class="btn btn-secondary">MG</button>
-                                    <button id="weapon_sr" class="btn btn-secondary">SR</button>
-                                    <button id="weapon_rl" class="btn btn-secondary">RL</button>
+
                                 </div>
 
                             </div>
@@ -869,10 +841,6 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="burst_cd_collapse">
-                                    <button id="burst_cd_all" class="btn btn-primary">ALL</button>
-                                    <button id="burst_cd_20" class="btn btn-secondary">20</button>
-                                    <button id="burst_cd_40" class="btn btn-secondary">40</button>
-                                    <button id="burst_cd_60" class="btn btn-secondary">60</button>
                                 </div>
 
                             </div>
@@ -885,20 +853,7 @@
                                     <br />
                                 </div>
                                 <div class="collapse show" id="skills_collapse">
-                                    <div class="d-flex flex-wrap gap-1">
-                                        <button id="skill_all" class="btn btn-primary">ALL</button>
-                                        <button id="skill_last_bullet" class="btn btn-secondary">最後子彈</button>
-                                        <button id="skill_pierce" class="btn btn-secondary">穿透特化</button>
-                                        <button id="skill_stun" class="btn btn-secondary">昏迷</button>
-                                        <button id="skill_cover_recovers" class="btn btn-secondary">掩體體力恢復</button>
-                                        <button id="skill_taunt" class="btn btn-secondary">挑釁</button>
-                                        <button id="skill_invulnerable" class="btn btn-secondary">無敵</button>
-                                        <button id="skill_shield" class="btn btn-secondary">護盾</button>
-                                        <button id="skill_burst_cooldown" class="btn btn-secondary">爆裂技能冷卻時間▼</button>
-                                        <button id="skill_reload_speed" class="btn btn-secondary">換彈速度▲</button>
-                                        <button id="skill_reload_bullet" class="btn btn-secondary">子彈補充</button>
-                                        <button id="skill_dispels_debuff" class="btn btn-secondary">解除減益</button>
-                                        <button id="skill_heal" class="btn btn-secondary">恢復體力</button>
+                                    <div class="d-flex flex-wrap gap-1" id="skills_group">
                                     </div>
                                 </div>
                             </div>
@@ -1104,51 +1059,6 @@
 
 
         var jsonData = [];
-        var class_all = true;
-        var class_atk = false;
-        var class_def = false;
-        var class_sup = false;
-        var code_all = true;
-        var code_fire = false;
-        var code_wind = false;
-        var code_iron = false;
-        var code_electric = false;
-        var code_water = false;
-        var company_all = true;
-        var company_elysion = false;
-        var company_missilis = false;
-        var company_tetra = false;
-        var company_pilgrim = false;
-        var company_abnormal = false;
-        var burst_all = true;
-        var burst_1 = false;
-        var burst_2 = false;
-        var burst_3 = false;
-        var burst_na = false;
-        var weapon_all = true;
-        var weapon_sg = false;
-        var weapon_smg = false;
-        var weapon_ar = false;
-        var weapon_mg = false;
-        var weapon_sr = false;
-        var weapon_rl = false;
-        var burst_cd_all = true;
-        var burst_cd_20 = false;
-        var burst_cd_40 = false;
-        var burst_cd_60 = false;
-        var skill_all = true;
-        var skill_last_bullet = false;
-        var skill_pierce = false;
-        var skill_stun = false;
-        var skill_cover_recovers = false;
-        var skill_taunt = false;
-        var skill_invulnerable = false;
-        var skill_shield = false;
-        var skill_burst_cooldown = false;
-        var skill_reload_speed = false;
-        var skill_reload_bullet = false;
-        var skill_dispels_debuff = false;
-        var skill_heal = false;
         var oJsonData = [];
         var filterJsonData = [];
 
@@ -1200,664 +1110,7 @@
             //#endregion
 
 
-            //#region 選擇職業
 
-            $('#class_all').click(function () {
-                if (class_all) return;
-
-                class_atk = false;
-                class_def = false;
-                class_sup = false;
-                check_class_all();
-            });
-
-            $('#class_atk').click(function () {
-
-                class_atk = !class_atk;
-                class_atk ? $('#class_atk').btn_on() : $('#class_atk').btn_off();
-                check_class_all();
-            });
-
-            $('#class_def').click(function () {
-
-                class_def = !class_def;
-                class_def ? $('#class_def').btn_on() : $('#class_def').btn_off();
-                check_class_all();
-            });
-
-
-            $('#class_sup').click(function () {
-
-                class_sup = !class_sup;
-                class_sup ? $('#class_sup').btn_on() : $('#class_sup').btn_off();
-                check_class_all();
-            });
-
-
-            function check_class_all() {
-
-                if (class_all) {
-                    class_all = false;
-                    $('#class_all').btn_off();
-                }
-
-                if (!class_atk && !class_def && !class_sup) {
-
-                    class_all = true;
-                    $('#class_all').btn_on();
-                    $('#class_atk').btn_off();
-                    $('#class_def').btn_off();
-                    $('#class_sup').btn_off();
-                }
-
-                if (class_atk && class_def && class_sup) {
-
-                    class_all = true;
-                    class_atk = false;
-                    class_def = false;
-                    class_sup = false;
-                    $('#class_all').btn_on();
-                    $('#class_atk').btn_off();
-                    $('#class_def').btn_off();
-                    $('#class_sup').btn_off();
-                }
-
-                reloadTable();
-            }
-
-            //#endregion
-
-            //#region 選擇代碼
-
-
-            $('#code_all').click(function () {
-                if (code_all) return;
-
-                code_fire = false;
-                code_wind = false;
-                code_iron = false;
-                code_electric = false;
-                code_water = false;
-                check_code_all();
-            });
-
-            $('#code_fire').click(function () {
-
-                code_fire = !code_fire;
-                code_fire ? $('#code_fire').btn_on() : $('#code_fire').btn_off();
-                check_code_all();
-            });
-
-            $('#code_wind').click(function () {
-
-                code_wind = !code_wind;
-                code_wind ? $('#code_wind').btn_on() : $('#code_wind').btn_off();
-                check_code_all();
-            });
-
-
-            $('#code_iron').click(function () {
-
-                code_iron = !code_iron;
-                code_iron ? $('#code_iron').btn_on() : $('#code_iron').btn_off();
-                check_code_all();
-            });
-
-
-            $('#code_electric').click(function () {
-
-                code_electric = !code_electric;
-                code_electric ? $('#code_electric').btn_on() : $('#code_electric').btn_off();
-                check_code_all();
-            });
-
-            $('#code_water').click(function () {
-
-                code_water = !code_water;
-                code_water ? $('#code_water').btn_on() : $('#code_water').btn_off();
-                check_code_all();
-            });
-
-
-            function check_code_all() {
-
-                if (code_all) {
-                    code_all = false;
-                    $('#code_all').btn_off();
-                }
-
-                if (!code_fire && !code_wind && !code_iron && !code_electric && !code_water) {
-
-                    code_all = true;
-                    $('#code_all').btn_on();
-                    $('#code_fire').btn_off();
-                    $('#code_wind').btn_off();
-                    $('#code_iron').btn_off();
-                    $('#code_electric').btn_off();
-                    $('#code_water').btn_off();
-                }
-
-                if (code_fire && code_wind && code_iron && code_electric && code_water) {
-
-                    code_all = true;
-                    code_fire = false;
-                    code_wind = false;
-                    code_iron = false;
-                    code_electric = false;
-                    code_water = false;
-                    $('#code_all').btn_on();
-                    $('#code_fire').btn_off();
-                    $('#code_wind').btn_off();
-                    $('#code_iron').btn_off();
-                    $('#code_electric').btn_off();
-                    $('#code_water').btn_off();
-                }
-
-                reloadTable();
-            }
-            //#endregion
-
-            //#region 選擇企業
-
-            $('#company_all').click(function () {
-                if (company_all) return;
-
-                company_elysion = false;
-                company_missilis = false;
-                company_tetra = false;
-                company_pilgrim = false;
-                company_abnormal = false;
-                check_company_all();
-            });
-
-            $('#company_elysion').click(function () {
-
-                company_elysion = !company_elysion;
-                company_elysion ? $('#company_elysion').btn_on() : $('#company_elysion').btn_off();
-                check_company_all();
-            });
-
-            $('#company_missilis').click(function () {
-
-                company_missilis = !company_missilis;
-                company_missilis ? $('#company_missilis').btn_on() : $('#company_missilis').btn_off();
-                check_company_all();
-            });
-
-
-            $('#company_tetra').click(function () {
-
-                company_tetra = !company_tetra;
-                company_tetra ? $('#company_tetra').btn_on() : $('#company_tetra').btn_off();
-                check_company_all();
-            });
-
-
-            $('#company_pilgrim').click(function () {
-
-                company_pilgrim = !company_pilgrim;
-                company_pilgrim ? $('#company_pilgrim').btn_on() : $('#company_pilgrim').btn_off();
-                check_company_all();
-            });
-
-            $('#company_abnormal').click(function () {
-
-                company_abnormal = !company_abnormal;
-                company_abnormal ? $('#company_abnormal').btn_on() : $('#company_abnormal').btn_off();
-                check_company_all();
-            });
-
-
-            function check_company_all() {
-
-                if (company_all) {
-                    company_all = false;
-                    $('#company_all').btn_off();
-                }
-
-                if (!company_elysion && !company_missilis && !company_tetra && !company_pilgrim && !company_abnormal) {
-
-                    company_all = true;
-                    $('#company_all').btn_on();
-                    $('#company_elysion').btn_off();
-                    $('#company_missilis').btn_off();
-                    $('#company_tetra').btn_off();
-                    $('#company_pilgrim').btn_off();
-                    $('#company_abnormal').btn_off();
-                }
-
-                if (company_elysion && company_missilis && company_tetra && company_pilgrim && company_abnormal) {
-
-                    company_all = true;
-                    company_elysion = false;
-                    company_missilis = false;
-                    company_tetra = false;
-                    company_pilgrim = false;
-                    company_abnormal = false;
-                    $('#company_all').btn_on();
-                    $('#company_elysion').btn_off();
-                    $('#company_missilis').btn_off();
-                    $('#company_tetra').btn_off();
-                    $('#company_pilgrim').btn_off();
-                    $('#company_abnormal').btn_off();
-                }
-
-                reloadTable();
-            }
-
-
-
-            //#endregion
-
-            //#region 選擇爆裂
-            $('#burst_all').click(function () {
-                if (burst_all) return;
-
-                burst_1 = false;
-                burst_2 = false;
-                burst_3 = false;
-                burst_na = false;
-                check_burst_all();
-            });
-
-            $('#burst_1').click(function () {
-
-                burst_1 = !burst_1;
-                burst_1 ? $('#burst_1').btn_on() : $('#burst_1').btn_off();
-                check_burst_all();
-            });
-
-            $('#burst_2').click(function () {
-
-                burst_2 = !burst_2;
-                burst_2 ? $('#burst_2').btn_on() : $('#burst_2').btn_off();
-                check_burst_all();
-            });
-
-
-            $('#burst_3').click(function () {
-
-                burst_3 = !burst_3;
-                burst_3 ? $('#burst_3').btn_on() : $('#burst_3').btn_off();
-                check_burst_all();
-            });
-
-            $('#burst_na').click(function () {
-
-                burst_na = !burst_na;
-                burst_na ? $('#burst_na').btn_on() : $('#burst_na').btn_off();
-                check_burst_all();
-            });
-
-            function check_burst_all() {
-
-                if (burst_all) {
-                    burst_all = false;
-                    $('#burst_all').btn_off();
-                }
-
-                if (!burst_1 && !burst_2 && !burst_3 && !burst_na) {
-
-                    burst_all = true;
-                    $('#burst_all').btn_on();
-                    $('#burst_1').btn_off();
-                    $('#burst_2').btn_off();
-                    $('#burst_3').btn_off();
-                    $('#burst_na').btn_off();
-                }
-
-                if (burst_1 && burst_2 && burst_3 && burst_na) {
-
-                    burst_all = true;
-                    burst_1 = false;
-                    burst_2 = false;
-                    burst_3 = false;
-                    burst_na = false;
-                    $('#burst_all').btn_on();
-                    $('#burst_1').btn_off();
-                    $('#burst_2').btn_off();
-                    $('#burst_3').btn_off();
-                    $('#burst_na').btn_off();
-                }
-
-                reloadTable();
-            }
-
-            //#endregion
-
-            //#region 選擇武器
-
-            $('#weapon_all').click(function () {
-                if (weapon_all) return;
-
-                weapon_sg = false;
-                weapon_smg = false;
-                weapon_ar = false;
-                weapon_mg = false;
-                weapon_sr = false;
-                weapon_rl = false
-                check_weapon_all();
-            });
-
-            $('#weapon_sg').click(function () {
-
-                weapon_sg = !weapon_sg;
-                weapon_sg ? $('#weapon_sg').btn_on() : $('#weapon_sg').btn_off();
-                check_weapon_all();
-            });
-
-            $('#weapon_smg').click(function () {
-
-                weapon_smg = !weapon_smg;
-                weapon_smg ? $('#weapon_smg').btn_on() : $('#weapon_smg').btn_off();
-                check_weapon_all();
-            });
-
-
-            $('#weapon_ar').click(function () {
-
-                weapon_ar = !weapon_ar;
-                weapon_ar ? $('#weapon_ar').btn_on() : $('#weapon_ar').btn_off();
-                check_weapon_all();
-            });
-
-
-            $('#weapon_mg').click(function () {
-
-                weapon_mg = !weapon_mg;
-                weapon_mg ? $('#weapon_mg').btn_on() : $('#weapon_mg').btn_off();
-                check_weapon_all();
-            });
-
-            $('#weapon_sr').click(function () {
-
-                weapon_sr = !weapon_sr;
-                weapon_sr ? $('#weapon_sr').btn_on() : $('#weapon_sr').btn_off();
-                check_weapon_all();
-            });
-
-            $('#weapon_rl').click(function () {
-
-                weapon_rl = !weapon_rl;
-                weapon_rl ? $('#weapon_rl').btn_on() : $('#weapon_rl').btn_off();
-                check_weapon_all();
-            });
-
-
-
-            function check_weapon_all() {
-
-                if (weapon_all) {
-                    weapon_all = false;
-                    $('#weapon_all').btn_off();
-                }
-
-                if (!weapon_sg && !weapon_smg && !weapon_ar && !weapon_mg && !weapon_sr && !weapon_rl) {
-
-                    weapon_all = true;
-                    $('#weapon_all').btn_on();
-                    $('#weapon_sg').btn_off();
-                    $('#weapon_smg').btn_off();
-                    $('#weapon_ar').btn_off();
-                    $('#weapon_mg').btn_off();
-                    $('#weapon_sr').btn_off();
-                    $('#weapon_rl').btn_off();
-                }
-
-                if (weapon_sg && weapon_smg && weapon_ar && weapon_mg && weapon_sr && weapon_rl) {
-
-                    weapon_all = true;
-                    weapon_sg = false;
-                    weapon_smg = false;
-                    weapon_ar = false;
-                    weapon_mg = false;
-                    weapon_sr = false;
-                    weapon_rl = false;
-                    $('#weapon_all').btn_on();
-                    $('#weapon_sg').btn_off();
-                    $('#weapon_smg').btn_off();
-                    $('#weapon_ar').btn_off();
-                    $('#weapon_mg').btn_off();
-                    $('#weapon_sr').btn_off();
-                    $('#weapon_rl').btn_off();
-                }
-
-                reloadTable();
-            }
-
-            //#endregion
-
-            //#region 選擇爆裂技能冷卻時間
-            $('#burst_cd_all').click(function () {
-                if (burst_cd_all) return;
-
-                burst_cd_20 = false;
-                burst_cd_40 = false;
-                burst_cd_60 = false;
-                check_burst_cd_all();
-            });
-
-            $('#burst_cd_20').click(function () {
-
-                burst_cd_20 = !burst_cd_20;
-                burst_cd_20 ? $('#burst_cd_20').btn_on() : $('#burst_cd_20').btn_off();
-                check_burst_cd_all();
-            });
-
-            $('#burst_cd_40').click(function () {
-
-                burst_cd_40 = !burst_cd_40;
-                burst_cd_40 ? $('#burst_cd_40').btn_on() : $('#burst_cd_40').btn_off();
-                check_burst_cd_all();
-            });
-
-
-            $('#burst_cd_60').click(function () {
-
-                burst_cd_60 = !burst_cd_60;
-                burst_cd_60 ? $('#burst_cd_60').btn_on() : $('#burst_cd_60').btn_off();
-                check_burst_cd_all();
-            });
-
-
-            function check_burst_cd_all() {
-
-                if (burst_cd_all) {
-                    burst_cd_all = false;
-                    $('#burst_cd_all').btn_off();
-                }
-
-                if (!burst_cd_20 && !burst_cd_40 && !burst_cd_60) {
-
-                    burst_cd_all = true;
-                    $('#burst_cd_all').btn_on();
-                    $('#burst_cd_20').btn_off();
-                    $('#burst_cd_40').btn_off();
-                    $('#burst_cd_60').btn_off();
-                }
-
-                if (burst_cd_20 && burst_cd_40 && burst_cd_60) {
-
-                    burst_cd_all = true;
-                    burst_cd_20 = false;
-                    burst_cd_40 = false;
-                    burst_cd_60 = false;
-                    $('#burst_cd_all').btn_on();
-                    $('#burst_cd_20').btn_off();
-                    $('#burst_cd_40').btn_off();
-                    $('#burst_cd_60').btn_off();
-                }
-
-                reloadTable();
-            }
-
-            //#endregion
-
-            //#region 選擇技能
-            $('#skill_all').click(function () {
-                if (skill_all) return;
-
-                skill_last_bullet = false;
-                skill_pierce = false;
-                skill_stun = false;
-                skill_cover_recovers = false;
-                skill_taunt = false;
-                skill_invulnerable = false;
-                skill_shield = false;
-                skill_burst_cooldown = false;
-                skill_reload_speed = false;
-                skill_reload_bullet = false;
-                skill_dispels_debuff = false;
-                skill_heal = false;
-                check_skill_all();
-            });
-
-
-            $('#skill_heal').click(function () {
-
-                skill_heal = !skill_heal;
-                skill_heal ? $('#skill_heal').btn_on() : $('#skill_heal').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_dispels_debuff').click(function () {
-
-                skill_dispels_debuff = !skill_dispels_debuff;
-                skill_dispels_debuff ? $('#skill_dispels_debuff').btn_on() : $('#skill_dispels_debuff').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_reload_bullet').click(function () {
-
-                skill_reload_bullet = !skill_reload_bullet;
-                skill_reload_bullet ? $('#skill_reload_bullet').btn_on() : $('#skill_reload_bullet').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_last_bullet').click(function () {
-
-                skill_last_bullet = !skill_last_bullet;
-                skill_last_bullet ? $('#skill_last_bullet').btn_on() : $('#skill_last_bullet').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_pierce').click(function () {
-
-                skill_pierce = !skill_pierce;
-                skill_pierce ? $('#skill_pierce').btn_on() : $('#skill_pierce').btn_off();
-                check_skill_all();
-            });
-
-
-            $('#skill_stun').click(function () {
-
-                skill_stun = !skill_stun;
-                skill_stun ? $('#skill_stun').btn_on() : $('#skill_stun').btn_off();
-                check_skill_all();
-            });
-
-
-            $('#skill_cover_recovers').click(function () {
-
-                skill_cover_recovers = !skill_cover_recovers;
-                skill_cover_recovers ? $('#skill_cover_recovers').btn_on() : $('#skill_cover_recovers').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_taunt').click(function () {
-
-                skill_taunt = !skill_taunt;
-                skill_taunt ? $('#skill_taunt').btn_on() : $('#skill_taunt').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_invulnerable').click(function () {
-
-                skill_invulnerable = !skill_invulnerable;
-                skill_invulnerable ? $('#skill_invulnerable').btn_on() : $('#skill_invulnerable').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_shield').click(function () {
-
-                skill_shield = !skill_shield;
-                skill_shield ? $('#skill_shield').btn_on() : $('#skill_shield').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_burst_cooldown').click(function () {
-
-                skill_burst_cooldown = !skill_burst_cooldown;
-                skill_burst_cooldown ? $('#skill_burst_cooldown').btn_on() : $('#skill_burst_cooldown').btn_off();
-                check_skill_all();
-            });
-
-            $('#skill_reload_speed').click(function () {
-
-                skill_reload_speed = !skill_reload_speed;
-                skill_reload_speed ? $('#skill_reload_speed').btn_on() : $('#skill_reload_speed').btn_off();
-                check_skill_all();
-            });
-
-
-            function check_skill_all() {
-
-                if (skill_all) {
-                    skill_all = false;
-                    $('#skill_all').btn_off();
-                }
-
-                if (!skill_last_bullet && !skill_pierce && !skill_stun && !skill_cover_recovers && !skill_taunt && !skill_invulnerable && !skill_shield && !skill_burst_cooldown && !skill_reload_speed && !skill_reload_bullet && !skill_dispels_debuff && !skill_heal) {
-
-                    skill_all = true;
-                    $('#skill_all').btn_on();
-                    $('#skill_last_bullet').btn_off();
-                    $('#skill_pierce').btn_off();
-                    $('#skill_stun').btn_off();
-                    $('#skill_cover_recovers').btn_off();
-                    $('#skill_taunt').btn_off();
-                    $('#skill_invulnerable').btn_off();
-                    $('#skill_shield').btn_off();
-                    $('#skill_burst_cooldown').btn_off();
-                    $('#skill_reload_speed').btn_off();
-                    $('#skill_reload_bullet').btn_off();
-                    $('#skill_dispels_debuff').btn_off();
-                    $('#skill_heal').btn_off();
-                }
-
-                if (skill_last_bullet && skill_pierce && skill_stun && skill_cover_recovers && skill_taunt && skill_invulnerable && skill_shield && skill_burst_cooldown && skill_reload_speed && skill_reload_bullet && skill_dispels_debuff && skill_heal) {
-
-                    skill_all = true;
-                    skill_last_bullet = false;
-                    skill_pierce = false;
-                    skill_stun = false;
-                    skill_cover_recovers = false;
-                    skill_taunt = false;
-                    skill_invulnerable = false;
-                    skill_shield = false;
-                    skill_burst_cooldown = false;
-                    skill_reload_speed = false;
-                    skill_reload_bullet = false;
-                    skill_dispels_debuff = false;
-                    skill_heal = false;
-                    $('#skill_all').btn_on();
-                    $('#skill_last_bullet').btn_off();
-                    $('#skill_pierce').btn_off();
-                    $('#skill_stun').btn_off();
-                    $('#skill_cover_recovers').btn_off();
-                    $('#skill_taunt').btn_off();
-                    $('#skill_invulnerable').btn_off();
-                    $('#skill_shield').btn_off();
-                    $('#skill_burst_cooldown').btn_off();
-                    $('#skill_reload_speed').btn_off();
-                    $('#skill_reload_bullet').btn_off();
-                    $('#skill_dispels_debuff').btn_off();
-                    $('#skill_heal').btn_off();
-                }
-
-                reloadTable();
-            }
-            //#endregion
             //#region 排序
             $('#burst_sort').click(function () {
 
@@ -1948,61 +1201,6 @@
             //#endregion
 
 
-            $('#btn_clean_all_seatch').click(function () {
-
-                rarity_r = false; $('#rarity_r').btn_off();
-                rarity_sr = false; $('#rarity_sr').btn_off();
-                rarity_ssr = false; $('#rarity_ssr').btn_off();
-                class_all = true; $('#class_all').btn_on();
-                class_atk = false; $('#class_atk').btn_off();
-                class_def = false; $('#class_def').btn_off();
-                class_sup = false; $('#class_sup').btn_off();
-                code_all = true; $('#code_all').btn_on();
-                code_fire = false; $('#code_fire').btn_off();
-                code_wind = false; $('#code_wind').btn_off();
-                code_iron = false; $('#code_iron').btn_off();
-                code_electric = false; $('#code_electric').btn_off();
-                code_water = false; $('#code_water').btn_off();
-                company_all = true; $('#company_all').btn_on();
-                company_elysion = false; $('#company_elysion').btn_off();
-                company_missilis = false; $('#company_missilis').btn_off();
-                company_tetra = false; $('#company_tetra').btn_off();
-                company_pilgrim = false; $('#company_pilgrim').btn_off();
-                company_abnormal = false; $('#company_abnormal').btn_off();
-                burst_all = true; $('#burst_all').btn_on();
-                burst_1 = false; $('#burst_1').btn_off();
-                burst_2 = false; $('#burst_2').btn_off();
-                burst_3 = false; $('#burst_3').btn_off();
-                burst_na = false; $('#burst_na').btn_off();
-                weapon_all = true; $('#weapon_all').btn_on();
-                weapon_sg = false; $('#weapon_sg').btn_off();
-                weapon_smg = false; $('#weapon_smg').btn_off();
-                weapon_ar = false; $('#weapon_ar').btn_off();
-                weapon_mg = false; $('#weapon_mg').btn_off();
-                weapon_sr = false; $('#weapon_sr').btn_off();
-                weapon_rl = false; $('#weapon_rl').btn_off();
-                burst_cd_all = true; $('#burst_cd_all').btn_on();
-                burst_cd_20 = false; $('#burst_cd_20').btn_off();
-                burst_cd_40 = false; $('#burst_cd_40').btn_off();
-                burst_cd_60 = false; $('#burst_cd_60').btn_off();
-                skill_all = true; $('#skill_all').btn_on();
-                skill_last_bullet = false; $('#skill_last_bullet').btn_off();
-                skill_pierce = false; $('#skill_pierce').btn_off();
-                skill_stun = false; $('#skill_stun').btn_off();
-                skill_cover_recovers = false; $('#skill_cover_recovers').btn_off();
-                skill_taunt = false; $('#skill_taunt').btn_off();
-                skill_invulnerable = false; $('#skill_invulnerable').btn_off();
-                skill_shield = false; $('#skill_shield').btn_off();
-                skill_burst_cooldown = false; $('#skill_burst_cooldown').btn_off();
-                skill_reload_speed = false; $('#skill_reload_speed').btn_off();
-                skill_reload_bullet = false; $('#skill_reload_bullet').btn_off();
-                skill_dispels_debuff = false; $('#skill_dispels_debuff').btn_off();
-                skill_heal = false; $('#skill_heal').btn_off();
-                burst_sort = 0; $('#burst_sort').btn_off();
-                rarity_sort = 0; $('#rarity_sort').btn_off();
-                class_sort = 0; $('#class_sort').btn_off();
-                reloadTable();
-            });
 
             //#region 回到頁面頂部
             window.onscroll = function () { scrollFunction() };
@@ -2055,38 +1253,170 @@
 
 
 
-        //#region 篩選稀有度
-
-
-        const rarity_list = [
-            { id: 'rarity_r', text: 'R', search: 'r', trigger: false },
-            { id: 'rarity_sr', text: 'SR', search: 'sr', trigger: false },
-            { id: 'rarity_ssr', text: 'SSR', search: 'ssr', trigger: false }
+        // 篩選稀有度
+        var rarity_list = [
+            { id: 'rarity_r', text: 'R', search: ['R'], trigger: false, appendTo: '#rarity_collapse' },
+            { id: 'rarity_sr', text: 'SR', search: ['SR'], trigger: false, appendTo: '#rarity_collapse' },
+            { id: 'rarity_ssr', text: 'SSR', search: ['SSR'], trigger: false, appendTo: '#rarity_collapse' }
         ];
 
+        appendSearchButton(rarity_list);
 
-        rarity_list.forEach(function (o) {
 
-            var _btn = $('<button/>', {
-                id: o.id,
-                text: o.text,
-                class: 'btn btn-secondary me-1',
-                click: function () {
 
-                    o.trigger = !o.trigger;
 
-                    o.trigger ? $('#' + o.id).btn_on() : $('#' + o.id).btn_off()
+        // 篩選職業
+        var class_list = [
+            { id: 'class_atk', text: '火力型', search: ['A'], trigger: false, appendTo: '#class_collapse' },
+            { id: 'class_def', text: '防禦型', search: ['D'], trigger: false, appendTo: '#class_collapse' },
+            { id: 'class_sup', text: '輔助型', search: ['S'], trigger: false, appendTo: '#class_collapse' }
+        ];
 
-                    reloadTable();
-                }
+        appendSearchButton(class_list);
+
+
+
+        // 篩選屬性代碼
+        var code_list = [
+            { id: 'code_fire', text: '燃燒', search: ['Fire'], trigger: false, appendTo: '#code_collapse' },
+            { id: 'code_wind', text: '風壓', search: ['Wind'], trigger: false, appendTo: '#code_collapse' },
+            { id: 'code_iron', text: '鐵甲', search: ['Iron'], trigger: false, appendTo: '#code_collapse' },
+            { id: 'code_electric', text: '電擊', search: ['Electric'], trigger: false, appendTo: '#code_collapse' },
+            { id: 'code_water', text: '水冷', search: ['Water'], trigger: false, appendTo: '#code_collapse' },
+        ];
+
+        appendSearchButton(code_list);
+
+
+        // 篩選企業
+        var company_list = [
+            { id: 'company_elysion', text: '極樂淨土', search: ['Elysion'], trigger: false, appendTo: '#company_collapse' },
+            { id: 'company_missilis', text: '米西利斯', search: ['Missilis'], trigger: false, appendTo: '#company_collapse' },
+            { id: 'company_tetra', text: '泰特拉', search: ['Tetra'], trigger: false, appendTo: '#company_collapse' },
+            { id: 'company_pilgrim', text: '朝聖者', search: ['Pilgrim'], trigger: false, appendTo: '#company_collapse' },
+            { id: 'company_abnormal', text: '反常', search: ['Abnormal'], Abnormal: false, appendTo: '#company_collapse' },
+        ];
+
+        appendSearchButton(company_list);
+
+
+
+        // 篩選爆裂
+        var burst_list = [
+            { id: 'burst_1', text: 'I', search: ['I'], trigger: false, appendTo: '#burst_collapse' },
+            { id: 'burst_2', text: 'Ⅱ', search: ['Ⅱ'], trigger: false, appendTo: '#burst_collapse' },
+            { id: 'burst_3', text: 'Ⅲ', search: ['Ⅲ'], trigger: false, appendTo: '#burst_collapse' },
+            { id: 'burst_na', text: '⊼', search: ['⊼'], trigger: false, appendTo: '#burst_collapse' }
+        ];
+
+        appendSearchButton(burst_list);
+
+
+
+        // 篩選武器
+        var weapon_list = [
+            { id: 'weapon_sg', text: 'SG', search: ['SG'], trigger: false, appendTo: '#weapon_collapse' },
+            { id: 'weapon_smg', text: 'SMG', search: ['SMG'], trigger: false, appendTo: '#weapon_collapse' },
+            { id: 'weapon_ar', text: 'AR', search: ['AR'], trigger: false, appendTo: '#weapon_collapse' },
+            { id: 'weapon_mg', text: 'MG', search: ['MG'], trigger: false, appendTo: '#weapon_collapse' },
+            { id: 'weapon_sr', text: 'SR', search: ['SR'], trigger: false, appendTo: '#weapon_collapse' },
+            { id: 'weapon_rl', text: 'RL', search: ['RL'], trigger: false, appendTo: '#weapon_collapse' }
+        ];
+
+        appendSearchButton(weapon_list);
+
+
+        // 篩選爆裂技能冷卻時間
+        var burst_cd_list = [
+            { id: 'burst_cd_20', text: '20', search: ['20.0'], trigger: false, appendTo: '#burst_cd_collapse' },
+            { id: 'burst_cd_40', text: '40', search: ['40.0'], trigger: false, appendTo: '#burst_cd_collapse' },
+            { id: 'burst_cd_60', text: '60', search: ['60.0'], trigger: false, appendTo: '#burst_cd_collapse' }
+        ];
+
+        appendSearchButton(burst_cd_list);
+
+
+        // 篩選技能
+        var skill_list = [
+            { id: 'skill_heal', text: '恢復體力', search: ['恢復相當於施展者最終最大體力', '體力恢復平均分攤', '恢復相當於攻擊傷害的'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_stun', text: '昏迷', search: ['【昏迷】'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_taunt', text: '挑釁', search: ['挑釁'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_shield', text: '護盾', search: ['護盾'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_pierce', text: '穿透特化', search: ['穿透特化'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_last_bullet', text: '最後子彈', search: ['最後子彈', '最終的子彈'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_reload_speed', text: '換彈速度▲', search: ['換彈速度▲'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_invulnerable', text: '無敵', search: ['無敵'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_reload_bullet', text: '子彈補充', search: ['子彈補充'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_cover_recovers', text: '掩體體力恢復', search: ['掩體體力恢復'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_burst_cooldown', text: '爆裂技能冷卻時間▼', search: ['爆裂技能冷卻時間▼'], trigger: false, appendTo: '#skills_group' },
+            { id: 'skill_dispels_debuff', text: '解除減益', search: ['解除減益', '解除1個減益效果'], trigger: false, appendTo: '#skills_group' }
+        ];
+
+        appendSearchButton(skill_list);
+
+
+
+
+
+        function appendSearchButton(_list) {
+
+            _list.forEach(function (o) {
+
+                var _btn = $('<button/>', {
+                    id: o.id,
+                    text: o.text,
+                    class: 'btn btn-secondary me-1',
+                    click: function () {
+
+                        o.trigger = !o.trigger;
+
+                        o.trigger ? $('#' + o.id).btn_on() : $('#' + o.id).btn_off()
+
+                        reloadTable();
+                    }
+                });
+                _btn.appendTo(o.appendTo);
 
             });
-            _btn.appendTo('#rarity_collapse');
+        }
 
+
+
+        $('#btn_clean_all_seatch').click(function () {
+
+
+            console.log('clean all');
+
+            rarity_list = clean(rarity_list);
+            class_list = clean(class_list);
+            code_list = clean(code_list);
+            company_list = clean(company_list);
+            burst_list = clean(burst_list);
+            weapon_list = clean(weapon_list);
+            burst_cd_list = clean(burst_cd_list);
+            skill_list = clean(skill_list);
+
+            function clean(list) {
+
+                list.forEach(function (o) {
+
+                    o.trigger = false;
+
+                    $('#' + o.id).btn_off();
+
+                });
+                return list;
+            }
+
+
+
+            burst_sort = 0; $('#burst_sort').btn_off();
+            rarity_sort = 0; $('#rarity_sort').btn_off();
+            class_sort = 0; $('#class_sort').btn_off();
+            reloadTable();
         });
 
 
-        //#endregion
 
         function topFunction() {
             document.body.scrollTop = 0;
@@ -2098,145 +1428,70 @@
 
             filterJsonData = oJsonData;
 
-            var filterRarity = [];
+
+            // 篩選稀有度     
+            var filterRarity = filter_mapping(rarity_list);
+
+            // 篩選職業
+            var filterClass = filter_mapping(class_list);
+
+            // 篩選屬性代碼
+            var filterCode = filter_mapping(code_list);
+
+            // 篩選企業
+            var filterCompany = filter_mapping(company_list);
+
+            // 篩選爆裂
+            var filterBurst = filter_mapping(burst_list);
+
+            // 篩選武器
+            var filterWeapon = filter_mapping(weapon_list);
 
 
-            // 篩選稀有度
-            rarity_list.forEach(function (o) {
+            // 篩選爆裂技能冷卻時間
+            var filterBurstCd = filter_mapping(burst_cd_list);
 
-                if (o.trigger) {
-                    filterRarity.push(o.text);
+            // 篩選技能
+            var filterSkills = filter_mapping(skill_list);
+
+
+
+
+
+            function filter_mapping(searchList) {
+
+
+                var _filterArray = [];
+                var _all = [];
+                searchList.forEach(function (o) {
+
+                    if (o.trigger) {
+
+                        _filterArray = _filterArray.concat(o.search);
+                    }
+
+                    _all = _all.concat(o.search);
+                });
+
+
+
+
+                if (_filterArray.length <= 0) {
+
+                    if (searchList[0].appendTo == '#skills_group') {
+
+                        _filterArray = [''];
+                        return _filterArray;
+                    }
+
+                    _filterArray = _all;
                 }
-            });
 
 
-
-
-
-
-            var filterClass = [];
-            if (class_all) {
-                filterClass = ['A', 'D', 'S'];
-            } else {
-                if (class_atk) filterClass.push('A');
-                if (class_def) filterClass.push('D');
-                if (class_sup) filterClass.push('S');
+                return _filterArray;
             }
 
 
-            var filterCode = [];
-            if (code_all) {
-                filterCode = ['Fire', 'Wind', 'Iron', 'Electric', 'Water'];
-            } else {
-
-                if (code_fire) filterCode.push('Fire');
-                if (code_wind) filterCode.push('Wind');
-                if (code_iron) filterCode.push('Iron');
-                if (code_electric) filterCode.push('Electric');
-                if (code_water) filterCode.push('Water');
-            }
-
-
-            var filterCompany = [];
-            if (company_all) {
-                filterCompany = ['Elysion', 'Missilis', 'Tetra', 'Pilgrim', 'Abnormal'];
-            } else {
-                if (company_elysion) filterCompany.push('Elysion');
-                if (company_missilis) filterCompany.push('Missilis');
-                if (company_tetra) filterCompany.push('Tetra');
-                if (company_pilgrim) filterCompany.push('Pilgrim');
-                if (company_abnormal) filterCompany.push('Abnormal');
-            }
-
-
-            var filterBurst = [];
-            if (burst_all) {
-                filterBurst = ['I', 'Ⅱ', 'Ⅲ', '⊼'];
-            } else {
-                if (burst_1) filterBurst.push('I');
-                if (burst_2) filterBurst.push('Ⅱ');
-                if (burst_3) filterBurst.push('Ⅲ');
-                if (burst_na) filterBurst.push('⊼');
-            }
-
-
-            var filterWeapon = [];
-            if (weapon_all) {
-                filterWeapon = ['SG', 'SMG', 'AR', 'MG', 'SR', 'RL'];
-            } else {
-                if (weapon_sg) filterWeapon.push('SG');
-                if (weapon_smg) filterWeapon.push('SMG');
-                if (weapon_ar) filterWeapon.push('AR');
-                if (weapon_mg) filterWeapon.push('MG');
-                if (weapon_sr) filterWeapon.push('SR');
-                if (weapon_rl) filterWeapon.push('RL');
-            }
-
-
-
-
-            var filterBurstCd = [];
-
-            if (burst_cd_all) {
-
-                filterBurstCd = ['20.0', '40.0', '60.0'];
-            } else {
-                if (burst_cd_20) filterBurstCd.push('20.0');
-                if (burst_cd_40) filterBurstCd.push('40.0');
-                if (burst_cd_60) filterBurstCd.push('60.0');
-            }
-
-            var filterSkills = [];
-
-            if (skill_all) {
-                filterSkills.push('');
-
-            } else {
-                if (skill_last_bullet) {
-
-                    filterSkills.push('最後的子彈');
-                    filterSkills.push('最終的子彈');
-                }
-                if (skill_pierce) {
-                    filterSkills.push('穿透特化');
-                }
-                if (skill_stun) {
-                    filterSkills.push('【昏迷】');
-                }
-                if (skill_cover_recovers) {
-                    filterSkills.push('掩體體力');
-                }
-                if (skill_taunt) {
-                    filterSkills.push('挑釁');
-                }
-                if (skill_invulnerable) {
-                    filterSkills.push('無敵');
-                }
-                if (skill_shield) {
-                    filterSkills.push('護盾');
-                }
-                if (skill_burst_cooldown) {
-                    filterSkills.push('爆裂技能冷卻時間');
-                }
-                if (skill_reload_speed) {
-                    filterSkills.push('換彈速度');
-                }
-                if (skill_reload_bullet) {
-                    filterSkills.push('子彈補充');
-                }
-                if (skill_dispels_debuff) {
-
-                    filterSkills.push('解除減益效果');
-                    filterSkills.push('解除1個減益效果');
-                }
-
-                if (skill_heal) {
-
-                    filterSkills.push('恢復相當於施展者最終最大體力');
-                    filterSkills.push('體力恢復平均分攤');
-                    filterSkills.push('恢復相當於攻擊傷害的');
-                }
-            }
 
             var sort_field = '';
             var sortOrder = '';
