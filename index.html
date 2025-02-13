@@ -673,32 +673,65 @@
         }
 
 
-
-        .fire_svg {
-            background: url('data:image/svg+xml,<svg><g><g><path d="m49.95,97.59l-41.08,-20.25l0,-54l41.08,-20.25l41.08,20.25l0,54l-41.08,20.25z" fill="#2e0002" stroke="#ff000a" stroke-width="4" /><path d="m54.55,19.35c0,0 -3.73,6.9 0,12.27c6.66,9.57 14.82,15.16 15.15,20.65c0.42,7.29 -1.34,8.81 -3.78,11.68c-2.44,2.87 -8.45,7.78 -8.45,7.78c0,0 3.29,-4.46 3.2,-8.98c-0.08,-4.52 -1.71,-7.05 -4.07,-9.58c-2.37,-2.52 -4.65,-6.5 -5.53,-8.98c-0.89,-2.47 -1.74,-5.09 -1.74,-5.09c0,0 -6.32,4.61 -6.12,12.27c0.22,7.66 2.55,7.95 4.07,9.88c1.53,1.93 4.95,5.21 4.95,9.29c0,4.07 -3.5,10.78 -3.5,10.78c0,0 0.42,-3.54 -2.33,-7.48c-2.76,-3.94 -15.15,-11.04 -15.15,-22.75c0,-11.71 13.56,-23.73 17.17,-26.93c3.63,-3.21 6.12,-4.79 6.12,-4.79l0,-0.01l0.01,0.01z" fill="#ff0000" /></g></g></svg>');
-            width: 100px;
-            height: 100px;
-        }
-
         .icon_sm {
-            clip-path: inset(0% 0% 40% 0%);
-            width: 75%;
-            height: 150%;
+            clip-path: inset(0% 0% 20% 0%);
+            width: 100%;
+            height: 165%;
         }
 
         .small_icon {
+            background-color: lightgray;
+            box-shadow: 3px 3px 2px black;
             width: 100px;
             height: 100px;
+
+
+
         }
 
-        .small_arrow {
-            width: 50px;
-            height: 50px;
+        .small_icon {
+            background-image:
+                linear-gradient(black 50%, transparent 50%),
+                linear-gradient(to right, black 50%, transparent 50%);
+            background-size: 50% 10px, 10px 50%;
+            background-position: center;
+            background-repeat: no-repeat;
         }
+
+
+
 
         .collapse-button.collapsed {
             color: white;
             background: gray;
+        }
+
+        .nikke_selected {
+            border-color: #3399ff !important;
+        }
+
+        .nikke_selected:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(36, 169, 241, 0.3);
+        }
+
+        .nikke_selected:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233399ff"  ><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+
         }
     </style>
 </head>
@@ -884,109 +917,33 @@
 
             <div class="sticky-top bg-dark p-3">
                 <!-- 編組 -->
-                <div class="row">
-                    <div class="col-2 position-relative">
-                        <button class="btn btn-primary position-absolute top-50 start-50 translate-middle"
-                            title="Compare" data-bs-toggle="modal" data-bs-target="#nikke_group">Compare</button>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <button class="btn btn-primary" title="Compare" data-bs-toggle="modal"
+                            data-bs-target="#nikke_group">Compare</button>
                     </div>
-                    <table class="col-6">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="group_arrow_1" class="small_arrow d-none">
-                                        <svg fill="white" viewBox="0 0 16 16" transform="rotate(90)">
-                                            <path
-                                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                        </svg>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div id="group_arrow_2" class="small_arrow d-none">
-                                        <svg fill="white" viewBox="0 0 16 16" transform="rotate(90)">
-                                            <path
-                                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                        </svg>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div id="group_arrow_3" class="small_arrow d-none">
-                                        <svg fill="white" viewBox="0 0 16 16" transform="rotate(90)">
-                                            <path
-                                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                        </svg>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div id="group_arrow_4" class="small_arrow d-none">
-                                        <svg fill="white" viewBox="0 0 16 16" transform="rotate(90)">
-                                            <path
-                                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                        </svg>
-                                    </div>
-                                </td>
+                    <div id="group_section" class="row col-6">
 
-                                <td>
-                                    <div id="group_arrow_5" class="small_arrow d-none">
-                                        <svg fill="white" viewBox="0 0 16 16" transform="rotate(90)">
-                                            <path
-                                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                        </svg>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-
-                                    <div id="group_icon_1" class="small_icon">
-                                    </div>
-
-                                </td>
-                                <td>
-
-                                    <div id="group_icon_2" class="small_icon">
-                                    </div>
-
-                                </td>
-                                <td>
-
-                                    <div id="group_icon_3" class="small_icon">
-                                    </div>
-
-                                </td>
-                                <td>
-
-                                    <div id="group_icon_4" class="small_icon">
-                                    </div>
-
-                                </td>
-                                <td>
-
-                                    <div id="group_icon_5" class="small_icon">
-                                    </div>
-
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
+                    </div>
                 </div>
 
                 <!-- 顯示角色圖 -->
 
+                <div>
+                    <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_flex_nikkes">
+                        <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </button>
+                    <!-- 顯示角色圖和技能 -->
+                    <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_list_nikkes"><i class="bi bi-list"></i></button>
 
-                <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_flex_nikkes">
-                    <i class="bi bi-grid-3x3-gap-fill"></i>
-                </button>
-                <!-- 顯示角色圖和技能 -->
-                <button class="btn btn-primary collapse-button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_list_nikkes"><i class="bi bi-list"></i></button>
-
-                <!-- 查詢 search -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" title="search"
-                    data-bs-target="#serch_condition">
-                    <i class="bi bi-search"></i>
-                </button>
+                    <!-- 查詢 search -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" title="search"
+                        data-bs-target="#serch_condition">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
             </div>
 
             <div id="collapse_flex_nikkes" class="collapse show">
@@ -997,8 +954,7 @@
                 <table class="table-dark" data-show-columns="true" id="nikkesTable" data-resizable="true">
                     <thead>
                         <tr>
-                            <th data-field="icon" class="col-2" data-formatter="iconFormatter"
-                                data-events='window.operateEvents'>
+                            <th data-field="icon" class="col-2" data-formatter="iconFormatter">
                             </th>
                             <th class="text-center" data-visible="false" data-field="name">
                                 名稱
@@ -1058,6 +1014,7 @@
     <script type="text/javascript">
 
 
+
         var jsonData = [];
         var oJsonData = [];
         var filterJsonData = [];
@@ -1066,7 +1023,7 @@
         var burst_sort = 0;
         var rarity_sort = 0;
         var class_sort = 0;
-
+        const group_number = 5;
 
         $(document).ready(function () {
 
@@ -1215,24 +1172,40 @@
             //#endregion
 
             //#region 點選圖片加入隊伍
-            window.operateEvents = {
-                'click .like': function (e, value, row, index) {
-
-                    setGroup(row);
-                }
-            }
-
 
             $("#flex_nikkes").on("click", 'a', function () {
 
-                setGroup(oJsonData.filter(n => n.name == this.title)[0]);
+
+                var nikke = oJsonData.filter(n => n.icon == this.title)[0];
+
+                setGroup(nikke);
 
             });
             //#endregion
 
 
+            // 點隊伍小圖
+            $('#group_section>div').click(function () {
+
+
+                var nikke_id = $(this).children('div').data('nikke');
+
+                if (nikke_id == undefined) return;
+
+                var nikke = oJsonData.filter(n => n.icon == nikke_id)[0];
+
+                var target = $('#' + 'nikke_' + nikke.icon);
+
+                target.nikke_cancel_selected(nikke.rarity);
+
+                $(this).empty();
+            })
+
 
         }); // get ready end
+
+
+
 
 
         $.fn.btn_on = function () {
@@ -1362,7 +1335,7 @@
 
             _list.forEach(function (o) {
 
-                var _btn = $('<button/>', {
+                var _btn = $('<button>', {
                     id: o.id,
                     text: o.text,
                     class: 'btn btn-secondary me-1',
@@ -1612,179 +1585,96 @@
 
 
 
+        // 建立隊伍區域
+
+
+        for (var i = 0; i < group_number; i++) {
+
+            var _div_group = $('<div>', {
+
+                id: 'group_icon_' + i,
+                class: 'small_icon d-flex justify-content-center align-items-center me-3 p-0'
+
+            });
+
+            _div_group.appendTo('#group_section');
+
+        }
+
+
+
 
         // 圖片點選
 
-        var nikke_group = {
-            group1: '',
-            group2: '',
-            group3: '',
-            group4: '',
-            group5: ''
-        }
+        var nikke_group_array = [];
 
+
+
+
+        // 點圖片加入隊伍
         function setGroup(nikke) {
 
+            var target = $('#' + 'nikke_' + nikke.icon);
 
-            if (nikke_group.group1 == nikke) return;
-            if (nikke_group.group2 == nikke) return;
-            if (nikke_group.group3 == nikke) return;
-            if (nikke_group.group4 == nikke) return;
-            if (nikke_group.group5 == nikke) return;
 
-            if (nikke_group.group1 == '') {
-                nikke_group.group1 = nikke; setIcons(); return;
-            }
+            const index = nikke_group_array.indexOf(nikke);
 
-            if (nikke_group.group2 == '') {
-                nikke_group.group2 = nikke; setIcons(); return;
-            }
+            if (index > -1) {
+                nikke_group_array.splice(index, 1);
 
-            if (nikke_group.group3 == '') {
-                nikke_group.group3 = nikke; setIcons(); return;
-            }
+                target.nikke_cancel_selected(nikke.rarity);
 
-            if (nikke_group.group4 == '') {
-                nikke_group.group4 = nikke; setIcons(); return;
-            }
-
-            if (nikke_group.group5 == '') {
-                nikke_group.group5 = nikke; setIcons(); return;
+                setIcons(nikke_group_array);
+                return;
             }
 
 
-            $("#group_arrow_1").removeClass('d-none');
-            $("#group_arrow_2").removeClass('d-none');
-            $("#group_arrow_3").removeClass('d-none');
-            $("#group_arrow_4").removeClass('d-none');
-            $("#group_arrow_5").removeClass('d-none');
 
+            if (nikke_group_array.length >= group_number) {
 
-            tmp_nikke = nikke;
-
-        }
-
-        var tmp_nikke = '';
-
-        $('#group_arrow_1').click(function () {
-
-            nikke_group.group1 = tmp_nikke;
-            setIcons();
-            hideArrow();
-        });
-
-        $('#group_icon_1').click(function () {
-            if (nikke_group.group1 != '') {
-                nikke_group.group1 = '';
-                $('#group_icon_1').empty();
+                return;
             }
-        });
 
-        $('#group_arrow_2').click(function () {
-
-            nikke_group.group2 = tmp_nikke;
-            setIcons();
-            hideArrow();
-        });
-
-        $('#group_icon_2').click(function () {
-            if (nikke_group.group2 != '') {
-                nikke_group.group2 = '';
-                $('#group_icon_2').empty();
-            }
-        });
-
-
-        $('#group_arrow_3').click(function () {
-
-            nikke_group.group3 = tmp_nikke;
-            setIcons();
-            hideArrow();
-        });
-
-        $('#group_icon_3').click(function () {
-            if (nikke_group.group3 != '') {
-                nikke_group.group3 = '';
-                $('#group_icon_3').empty();
-            }
-        });
-
-
-        $('#group_arrow_4').click(function () {
-
-            nikke_group.group4 = tmp_nikke;
-            setIcons();
-            hideArrow();
-        });
-
-        $('#group_icon_4').click(function () {
-            if (nikke_group.group4 != '') {
-                nikke_group.group4 = '';
-                $('#group_icon_4').empty();
-            }
-        });
-
-
-        $('#group_arrow_5').click(function () {
-
-            nikke_group.group5 = tmp_nikke;
-            setIcons();
-            hideArrow();
-        });
-
-        $('#group_icon_5').click(function () {
-            if (nikke_group.group5 != '') {
-                nikke_group.group5 = '';
-                $('#group_icon_5').empty();
-            }
-        });
-
-
-        function hideArrow() {
-            $("#group_arrow_1").addClass('d-none');
-            $("#group_arrow_2").addClass('d-none');
-            $("#group_arrow_3").addClass('d-none');
-            $("#group_arrow_4").addClass('d-none');
-            $("#group_arrow_5").addClass('d-none');
-
+            target = target.nikke_selected();
+            nikke_group_array.push(nikke);
+            setIcons(nikke_group_array);
         }
 
 
-        function setIcons() {
+        // 取消選取 回復外框顏色
+        $.fn.nikke_cancel_selected = function (rarity) {
 
+            switch (rarity) {
 
-            if (nikke_group.group1 != '') {
-
-                $('#group_icon_1').empty();
-                $('#group_icon_1').prepend(setIcon(nikke_group.group1));
+                case 'SSR': $(this).addClass('ssr_border'); break;
+                case 'SR': $(this).addClass('sr_border'); break;
+                case 'R': $(this).addClass('r_border'); break;
             }
 
 
-            if (nikke_group.group2 != '') {
+            $(this).removeClass('nikke_selected');
+        }
 
-                $('#group_icon_2').empty();
-                $('#group_icon_2').prepend(setIcon(nikke_group.group2));
-            }
+        // 選取 改變外框顏色
+        $.fn.nikke_selected = function () {
 
-
-            if (nikke_group.group3 != '') {
-
-                $('#group_icon_3').empty();
-                $('#group_icon_3').prepend(setIcon(nikke_group.group3));
-            }
+            $(this).removeClass("ssr_border");
+            $(this).addClass('nikke_selected');
+        }
 
 
-            if (nikke_group.group4 != '') {
 
-                $('#group_icon_4').empty();
-                $('#group_icon_4').prepend(setIcon(nikke_group.group4));
-            }
+        function setIcons(nikke_group) {
 
 
-            if (nikke_group.group5 != '') {
+            for (var i = 0; i < group_number; i++) {
 
-                $('#group_icon_5').empty();
-                $('#group_icon_5').prepend(setIcon(nikke_group.group5));
+                var _icon = $('#' + 'group_icon_' + i);
+                _icon.empty();
+
+                if (nikke_group[i] != undefined) {
+                    _icon.prepend(setIcon(nikke_group[i]));
+                }
             }
         }
 
@@ -1793,8 +1683,10 @@
 
 
 
-            var _img = '<div class="sprite ' + nikke.icon + ' icon_sm position-relative">';
-            _img += '<div class="position-absolute top-0 mt-1">';
+            var _img = '<div class="sprite ' + nikke.icon + ' icon_sm position-relative" ';
+            _img += 'data-nikke="' + nikke.icon + '"';
+            _img += '>';
+            _img += '<div class="position-absolute top-0 mt-1"> ';
 
             var svg = '<svg width="20" height="20" ';
             switch (nikke.weapon.type) {
@@ -1838,12 +1730,16 @@
 
         function iconFormatter(index, row, element) {
 
+
             return setTableIcon(row);
         }
 
 
 
         function setTableIcon(row) {
+
+
+
 
             var icon = '';
 
@@ -2082,30 +1978,15 @@
             nikkes += '<tr >';
 
 
-            if (nikke_group.group1 != '') {
-                nikkes += nikkeGroupSection(nikke_group.group1);
+            for (var i = 0; i < nikke_group_array.length; i++) {
+
+                nikkes += nikkeGroupSection(nikke_group_array[i]);
             }
-
-            if (nikke_group.group2 != '') {
-                nikkes += nikkeGroupSection(nikke_group.group2);
-            }
-
-            if (nikke_group.group3 != '') {
-                nikkes += nikkeGroupSection(nikke_group.group3);
-            }
-
-            if (nikke_group.group4 != '') {
-                nikkes += nikkeGroupSection(nikke_group.group4);
-            }
-
-            if (nikke_group.group5 != '') {
-                nikkes += nikkeGroupSection(nikke_group.group5);
-            }
-
-
 
             nikkes += '</tr>';
             nikkes += '</tbody>';
+
+
             $('#nikkes_group_table').prepend(nikkes);
         })
 
@@ -2159,8 +2040,10 @@
             var icon = '';
 
 
-            icon += '<a class="like" href="javascript:void(0)"  title="' + row.name + '">';
-            icon += '<div class="sprite ' + row.icon + ' border border-4 position-relative';
+            icon += '<a class="like" href="javascript:void(0)"  title="' + row.icon + '">';
+            icon += '<div ';
+            icon += 'id="nikke_' + row.icon + '"';
+            icon += ' class="border border-4 position-relative ';
 
             switch (row.rarity) {
                 case 'SSR': icon += ' ssr_border"'; break;
@@ -2168,6 +2051,14 @@
                 case 'R': icon += ' r_border"'; break;
                 default: icon += '';
             }
+
+
+            icon += '>';
+
+
+            icon += '<div class="sprite ';
+            icon += row.icon;
+            icon += ' "';
 
             // icon += 'id="' + row.icon + '" ';
             icon += ' style="width: 125px; height:245px"';
@@ -2259,6 +2150,7 @@
             }
             icon += '</div>'; // class
             icon += '</div>';// image   
+            icon += '</div>';
             icon += '</a>  ';
 
             return icon
