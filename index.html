@@ -1196,7 +1196,9 @@
 
                 var target = $('#' + 'nikke_' + nikke.icon);
 
-                target.nikke_cancel_selected(nikke.rarity);
+                target.nikke_cancel_selected(nikke);
+
+
 
                 $(this).empty();
             })
@@ -1622,7 +1624,7 @@
             if (index > -1) {
                 nikke_group_array.splice(index, 1);
 
-                target.nikke_cancel_selected(nikke.rarity);
+                target.nikke_cancel_selected(nikke);
 
                 setIcons(nikke_group_array);
                 return;
@@ -1642,17 +1644,22 @@
 
 
         // 取消選取 回復外框顏色
-        $.fn.nikke_cancel_selected = function (rarity) {
+        $.fn.nikke_cancel_selected = function (nikke) {
 
-            switch (rarity) {
+            $(this).removeClass('nikke_selected');
+            switch (nikke.rarity) {
 
                 case 'SSR': $(this).addClass('ssr_border'); break;
                 case 'SR': $(this).addClass('sr_border'); break;
                 case 'R': $(this).addClass('r_border'); break;
             }
 
+            const index = nikke_group_array.indexOf(nikke);
 
-            $(this).removeClass('nikke_selected');
+
+            if (index > -1) {
+                nikke_group_array.splice(index, 1);
+            }
         }
 
         // 選取 改變外框顏色
